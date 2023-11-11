@@ -1,63 +1,63 @@
-//todo  day1_level_1 1.exercise
+//---------------------------day1_level_1 1.exercise ------------------------\\
 
-// 'yorumlar kodu okubilir hale getirir'
+// comments can make code readable
 
-//todo  day1_level_1 2.exercise
+//---------------------------day1_level_1 2.exercise-------------------------\\
 
-// '30 günde javascrip eğitimine hoşgeldiz'
+//Welcome to 30DaysOfJavaScript
 
-//todo  day1_level_1 3.exercise
+//---------------------------day1_level_1 3.exercise-------------------------\\
 
-/* "Yorumlar kodu okunabilir, yeniden kullanımı kolay ve bilgilendirici bir hale getirir." */
+/*        comments can make code readable,
+           easy to reuse and informative  */
 
-//todo  day1_level_1 4.exercise
+//---------------------------day1_level_1 4.exercise-------------------------\\
 
-// let a = 'nevzat'
-// let b = 25
-// let c = true
-// let d = null
-// let e = undefined
+//variable.js
+let string = 'nevzat'
+let number = 25
+let boolean = true
+let nulll = null
+let any;     //undefined
 
+//---------------------------day1_level_1 5.exercise-------------------------\\
 
-//todo  day1_level_1 5.exercise
+//type.js
+console.log(typeof (string) )
+console.log(typeof (number))
+console.log(typeof (boolean))
+console.log(typeof (nulll))
+console.log(typeof (any))
 
-// let a = 'nevzat'
-// let b = 25
-// let c = true
-// let d = null
-// let e = undefined
+//---------------------------day1_level_1 6.exercise-------------------------\\
 
-// console.log(typeof(a),typeof(b),typeof(c),typeof(d),typeof(e))
+    let variable1;
+    let variable2;
+    var variable3;
+    let variable4;
 
-//todo  day1_level_1 6.exercise
+//---------------------------day1_level_1 7. exercise------------------------\\
 
-// let a = {};
-// const b = []
-// var c = ""
-// let d = 0
+variable1 = "nevzat"
+variable2 = "ATALAY"
+variable3 =  true;
+variable4 = 25;
 
-//todo day1_level_1 7. exercise
+//---------------------------day1_level_1 8.exercise-------------------------\\
 
-// let a = {Math}
-// const b = [1,2,3]
-// var c = "atalay"
-// let d = 0
+let firstName = "nevzat"
+let lastName = "atalay"
+let old = 25
+let isMarried = true
 
+//---------------------------day1_level_1 9.exercise-------------------------\\
 
-//todo  day1_level_1 8.exercise
+let name = "nevzat",surName="atalay",age = 25, married = true
 
-// let name = "nevzat"
-// let surName = "atalay"
-// let age = 25
-// let married = true
+//---------------------------day1_level_1 10.exercise------------------------\\
 
-//todo  day1_level_1 9.exercise
+myAge= 25
+let yourAge = 22
 
-// let name = "nevzat",surName="atalay",age = 25, married = true
-
-//todo  day1_level_1 10.exercise 
-
-// myAge= 25
-// let yourAge = 22
-
-// console.log(`ben ${myAge} yaşındayım ve sen ${yourAge} yaşındasın` )
+console.log("I am " + " " +  myAge + " " + "years old.")
+console.log("You are" + " " +  yourAge + " " +  "years old.")
