@@ -1,21 +1,21 @@
 //---------------------------day1_level_1 1.exercise ------------------------\\
-// 1-)Write a single line comment which says, comments can make code readable
+// Write a single line comment which says, comments can make code readable
 
 // comments can make code readable
 
 //---------------------------day1_level_1 2.exercise-------------------------\\
-// 2-)Write another single comment which says, Welcome to 30DaysOfJavaScript
+// Write another single comment which says, Welcome to 30DaysOfJavaScript
 
 //Welcome to 30DaysOfJavaScript
 
 //---------------------------day1_level_1 3.exercise-------------------------\\
-// 3-)Write a multiline comment which says, comments can make code readable, easy to reuse and informative
+// Write a multiline comment which says, comments can make code readable, easy to reuse and informative
 
 /*        comments can make code readable,
            easy to reuse and informative  */
 
 //---------------------------day1_level_1 4.exercise-------------------------\\
-// 4-)Create a variable.js file and declare variables and assign string, boolean, undefined and null data types
+// Create a variable.js file and declare variables and assign string, boolean, undefined and null data types
 
 //variable.js
 let string = 'nevzat'
@@ -25,7 +25,7 @@ let nulll = null
 let any;     //undefined
 
 //---------------------------day1_level_1 5.exercise-------------------------\\
-// 5-)Create datatypes.js file and use the JavaScript typeof operator to check different data types. Check the data type of each variable
+// Create datatypes.js file and use the JavaScript typeof operator to check different data types. Check the data type of each variable
 
 //type.js
 console.log(typeof (string) )
@@ -35,7 +35,7 @@ console.log(typeof (nulll))
 console.log(typeof (any))
 
 //---------------------------day1_level_1 6.exercise-------------------------\\
-// 6-)Declare four variables without assigning values
+// Declare four variables without assigning values
 
     let variable1;
     let variable2;
@@ -43,7 +43,7 @@ console.log(typeof (any))
     let variable4;
 
 //---------------------------day1_level_1 7. exercise------------------------\\
-// 7-)Declare four variables with assigned values
+// Declare four variables with assigned values
 
 variable1 = "nevzat"
 variable2 = "ATALAY"
@@ -51,7 +51,7 @@ variable3 =  true;
 variable4 = 25;
 
 //---------------------------day1_level_1 8.exercise-------------------------\\
-// 8-)Declare variables to store your first name, last name, marital status, country and age in multiple lines
+// Declare variables to store your first name, last name, marital status, country and age in multiple lines
 
 let firstName = "nevzat"
 let lastName = "atalay"
@@ -59,12 +59,12 @@ let old = 25
 let isMarried = true
 
 //---------------------------day1_level_1 9.exercise-------------------------\\
-// 9-)Declare variables to store your first name, last name, marital status, country and age in a single line
+// Declare variables to store your first name, last name, marital status, country and age in a single line
 
 let name = "nevzat",surName="atalay",age = 25, married = true
 
 //---------------------------day1_level_1 10.exercise------------------------\\
-// 10-)Declare two variables myAge and yourAge and assign them initial values and log to the browser console.
+// Declare two variables myAge and yourAge and assign them initial values and log to the browser console.
 
 let myAge= 25
 let yourAge = 22
