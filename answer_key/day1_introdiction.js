@@ -66,7 +66,7 @@ let name = "nevzat",surName="atalay",age = 25, married = true
 //---------------------------day1_level_1 10.exercise------------------------\\
 // 10-)Declare two variables myAge and yourAge and assign them initial values and log to the browser console.
 
-myAge= 25
+let myAge= 25
 let yourAge = 22
 
 console.log("I am " + " " +  myAge + " " + "years old.")
