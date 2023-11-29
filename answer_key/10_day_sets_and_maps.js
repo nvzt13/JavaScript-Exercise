@@ -1,10 +1,8 @@
-
-//todo exercise 1
-
+//----------------------------day10_level_1 1.exercise-------------------------\\
 // const countries = new Set()
 // console.log(countries)
 
-//todo exercise 2
+//----------------------------day10_level_1 2.exercise-------------------------\\
 
 // const set = new Set()
 // set.add(0,)
@@ -20,7 +18,7 @@
 // set.add(10)
 // console.log(set)
 
-//todo exercise 3 
+//----------------------------day10_level_1 3.exercise-------------------------\\
 
 // const set = new Set()
 // set.add(0,)
@@ -28,7 +26,7 @@
 // set.add(2)
 // console.log(set.delete(1))
 
-//todo exercise 4 
+//----------------------------day10_level_1 4.exercise-------------------------\\
 
 // const set = new Set()
 // set.add(0,)
@@ -37,13 +35,13 @@
 // set.clear()
 // console.log(set)
 
-//todo exercise 5
+//----------------------------day10_level_1 5.exercise-------------------------\\
 
 // const arr = ['ayşe','fatma','dilan','cansu']
 // const set = new Set(arr)
 // console.log(set)
 
-//todo exercise 6
+//----------------------------day10_level_1 6.exercise-------------------------\\
 
 // const map = new Map()
 
@@ -52,7 +50,10 @@
 // map.set(3,'germaby')
 // console.log(map)
 
-//? exercise 1
+//___________________________starting_exercise_level_2_______________________\\
+
+
+//----------------------------day10_level_2 1.exercise-------------------------\\
 
 // const a = [4, 5, 8, 9]
 // const b = [3, 4, 5, 7]
@@ -63,7 +64,7 @@
 // const C = new Set(c)
 // console.log(C)
 
-//? exercise 2
+//----------------------------day10_level_2 2.exercise-------------------------\\
 
 // const a = [4, 5, 8, 9]
 // const b = [3, 4, 5, 7]
@@ -72,7 +73,7 @@
 // const aUnionB =a.filter((num) => B.has(num))
 // console.log(aUnionB)
 
-//? exercise 3
+//----------------------------day10_level_2 3.exercise-------------------------\\
 
 // const a = [4, 5, 8, 9]
 // const b = [3, 4, 5, 7]
@@ -81,5 +82,7 @@
 // const aUnionB =a.filter((num) => !B.has(num))
 // console.log(aUnionB)
 
-//! exercise 1
-//! exercise 2
+//___________________________starting_exercise_level_3_______________________\\
+
+//----------------------------day10_level_3 1.exercise-------------------------\\
+//----------------------------day10_level_3 2.exercise-------------------------\\

@@ -1,13 +1,16 @@
-//todo day8_level1 1.exercise
+//----------------------------day8_level_1 1.exercise-------------------------\\
+
 // dog = {}
 
 
-//todo day8_level1 2.exercise
+//----------------------------day8_level_1 2.exercise-------------------------\\
+
 // dog = {}
 // console.log(dog)
 
 
-//todo day8_level1 3.exercise
+//----------------------------day8_level_1 3.exercise-------------------------\\
+
 // dog = {
 //     name:'garip',
 //     legs:4,
@@ -18,7 +21,8 @@
 //   console.log(dog)
 
 
-//todo day8_level1 4.exercise
+//----------------------------day8_level_1 4.exercise-------------------------\\
+
 // dog = {
 //     name:'garip',
 //     legs:4,
@@ -33,7 +37,8 @@
 // console.log(dog['bark']) 
 
 
-//todo day8_level1 5.exercise
+//----------------------------day8_level_1 5.exercise-------------------------\\
+
 // dog = {
 //     name:'garip',
 //     legs:4,
@@ -44,13 +49,17 @@
 // dog.breed = 'kangal'
 // console.log(dog.breed)
 
-//? day8_level2 .exercise
-//? day8_level2 .exercise
-//? day8_level2 .exercise
-//? day8_level2 .exercise
-//? day8_level2 .exercise
-//? day8_level2 .exercise
-//? day8_level2 .exercise
-//? day8_level2 .exercise
-//? day8_level2 .exercise
-//? day8_level2 .exercise
+//___________________________starting_exercise_level_2_______________________\\
+
+//----------------------------day8_level_2 1.exercise
+//----------------------------day8_level_2 2.exercise-------------------------\\
+
+//----------------------------day8_level_2 3.exercise-------------------------\\
+//----------------------------day8_level_2 4.exercise-------------------------\\
+//----------------------------day8_level_2 5.exercise-------------------------\\
+//----------------------------day8_level_2 6.exercise-------------------------\\
+//----------------------------day8_level_2 7.exercise-------------------------\\
+//----------------------------day8_level_2 8.exercise-------------------------\\
+//----------------------------day8_level_2 9.exercise-------------------------\\
+//----------------------------day8_level_2 10.exercise-------------------------\\
+

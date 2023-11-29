@@ -1,4 +1,4 @@
-//todo day6_level1 1.exercise
+//----------------------------day6_level_1 1.exercise-------------------------\\
 
 // for(let i= 0; i<=10; i++){
 //     console.log(i)
@@ -16,7 +16,7 @@
 //     i++
 // } while(i<=10)
 
-//todo day6_level1 2.exercise
+//----------------------------day6_level_1 1.exercise-------------------------\\
 
 // for(let i= 10; i>=0; i--){
 //     console.log(i)
@@ -34,7 +34,7 @@
 //     i--
 // } while(i>=0)
 
-//todo day6_level1 3.exercise
+//----------------------------day6_level_1 1.exercise-------------------------\\
 
 // let n =5
 
@@ -43,7 +43,7 @@
 // console.log(i)
 // }
 
-//todo day6_level1 4.exercise
+//----------------------------day6_level_1 1.exercise-------------------------\\
 
 
 // let string = ""
@@ -58,7 +58,7 @@
 //   string+= ""
 // }
 
-//todo day6_level1 5.exercise
+//----------------------------day6_level_1 1.exercise-------------------------\\
 
 // const numbers =[0,1,2,3,4,5,6,7,8,9,10]
 
@@ -66,7 +66,7 @@
 //     console.log(`${num} * ${num} = ${num*num}`)
 // }
 
-//todo day6_level1 6.exercise
+//----------------------------day6_level_1 1.exercise-------------------------\\
 
 // let output = 'i   i^2  i^3 \n'
 // for(let i=0; i<=10; i++){
@@ -78,20 +78,20 @@
 // }
 // console.log(output)
 
-//todo day6_level1 7.exercise
+//----------------------------day6_level_1 1.exercise-------------------------\\
 
 // for(let i=0; i<=100; i+=2){
 //     console.log(i)
 // }
 
-//todo day6_level1 8.exercise
+//----------------------------day6_level_1 1.exercise-------------------------\\
 
 // for(let i=1; i<=100; i+=2){
 //     console.log(i)
 // }
 
-//todo day6_level1 9.exercise
-///todo day6_level1 10.exercise
+//----------------------------day6_level_1 1.exercise-------------------------\\
+//----------------------------day6_level_1 1.exercise-------------------------\\
 
 // let sum = 0
 // for(let i=0; i<=100; i++){
@@ -99,7 +99,7 @@
 // }
 // console.log(sum)
 
-///todo day6_level1 11.exercise
+//----------------------------day6_level_1 1.exercise-------------------------\\
 
 // let sumeven = 0
 // for(let i=0; i<=100; i+=2){
@@ -114,7 +114,7 @@
 // }
 // console.log(sumodd)
 
-///todo day6_level1 12.exercise
+//----------------------------day6_level_1 1.exercise-------------------------\\
 
 // let sumeven = 0
 // for(let i=0; i<=100; i+=2){
@@ -127,7 +127,7 @@
 // let arr = [sumeven,sumodd]
 // console.log(arr)
 
-///todo day6_level1 13.exercise
+//----------------------------day6_level_1 1.exercise-------------------------\\
 
 // outPut = ''
 // for(let i =0; i<5; i++){
@@ -135,7 +135,7 @@
 // }
 // console.log(outPut)
 
-///todo day6_level1 14.exercise
+//----------------------------day6_level_1 14.exercise-------------------------\\
 
 // let arr = []
 // while(arr.length<5){
@@ -146,7 +146,7 @@
 // }
 // console.log(arr.toString())
 
-///todo day6_level1 15.exercise
+//----------------------------day6_level_1 1.exercise-------------------------\\
 
 // let text = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
 // let randomCharecters = ''
@@ -156,9 +156,9 @@
 // }
 // console.log(randomCharecters)
 
+//___________________________starting_exercise_level_2_______________________\\
 
-
-//? day6_level2 1.exercise
+//----------------------------day6_level_2 1.exercise-------------------------\\
 
 // let text = 'A1B2C3D4E5F6G7H8I9J0KLMN1O2P3Q4R5S6T7UV8W9XYZabcdefghijklmnopqrstuvwxyz'
 // let randomCharecters = ''
@@ -171,24 +171,25 @@
 //     randomCharecters += text[a]
 // }
 // console.log(randomCharecters)
-//? day6_level2 2.exercise
+
+//----------------------------day6_level_2 2.exercise-------------------------\\
 
 
-//? day6_level2 3.exercise
+//----------------------------day6_level_2 3.exercise-------------------------\\
 
 // let number1 = Math.floor(Math.random()*256)
 // let number2 = Math.floor(Math.random()*256)
 // let number3 = Math.floor(Math.random()*256)
 
 // console.log(`rgb(${number1},${number2},${number3})`)
-//? day6_level2 4.exercise
+//----------------------------day6_level_2 4.exercise-------------------------\\
 
 // newArr = []
 // for(const country of countries){
 //       newArr.push(country.toLocaleUpperCase())
 // }
 // console.log(newArr)
-//? day6_level2 5.exercise
+//----------------------------day6_level_2 5.exercise-------------------------\\
 
 // const countries = [
 //     'Albania',
@@ -209,7 +210,7 @@
 //     arr.push(country.length)
 //   }
 //   console.log(arr)
-//? day6_level2 6.exercise
+//----------------------------day6_level_2 6.exercise-------------------------\\
 
 // const countries = [
 //     'Albania',
@@ -234,7 +235,8 @@
 
 // }
 // console.log(arr)
-//? day6_level2 7.exercise
+
+//----------------------------day6_level_2 7.exercise-------------------------\\
 
 // const countries = [
 //     'Albania',
@@ -256,7 +258,8 @@
 //       }
 //   }
 //   console.log(newArr)
-  //? day6_level2 8.exercise
+
+//----------------------------day6_level_2 8.exercise-------------------------\\
 
 // const countries = [
 //     'Albania',
@@ -278,7 +281,8 @@
 // }
 //   }
 //   console.log(arr)
-//? day6_level2 9.exercise
+
+//----------------------------day6_level_2 9.exercise-------------------------\\
 
 // const arr = ['Albania', 'Bolivia','Ethiopia']
  
@@ -293,7 +297,7 @@
 // console.log(count)
 
 
-//? day6_level2 10.exercise
+//----------------------------day6_level_2 10.exercise-------------------------\\
 
 // const countries = [
 //     'Albania',
@@ -316,7 +320,7 @@
 //   }
 //   console.log(newArr)
 
-//? day6_level2 11.exercise
+//----------------------------day6_level_2 11.exercise-------------------------\\
 
 // const webTechs = [
 //     'HTML',
@@ -336,7 +340,7 @@
 //  }
 //  console.log(longWorld)
 
-//? day6_level2 12.exercise
+//----------------------------day6_level_2 12.exercise-------------------------\\
 
 // const webTechs = [
 //     'HTML',
@@ -354,7 +358,7 @@
 //   }
 //   console.log(arr)
 
-//? day6_level2 13.exercise
+//----------------------------day6_level_2 13.exercise-------------------------\\
 
 // const skills = ['MongoDB', 'Express','React', 'Node']
 
@@ -364,7 +368,7 @@
 // }
 // console.log(mern)
 
-//? day6_level2 14.exercise
+//----------------------------day6_level_2 14.exercise-------------------------\\
 
 // const arr = ["HTML", "CSS","JS","React","Redux","Node","Express","MongoDB"]
 
@@ -376,7 +380,7 @@
 //   console.log(skills)
 // }
 
-//? day6_level2 15.exercise
+//----------------------------day6_level_2 15.exercise-------------------------\\
 
 // const fruit = ["banana","orange","mango","lemon"]
 
@@ -387,7 +391,7 @@
 // }
 // console.log(reverseFruit)
 
-//? day6_level2 16.exercise
+//----------------------------day6_level_2 16.exercise-------------------------\\
 
 // const fullStack = [
 //     ['HTML', 'CSS', 'JS', 'React'],
@@ -398,9 +402,9 @@
 //     console.log(skills)
 //   }
 
+//___________________________starting_exercise_level_3_______________________\\
 
-
-//! day6_level3 1.exercise 
+//----------------------------day6_level_3 1.exercise-------------------------\\
 
 
 // const countries = [
@@ -419,7 +423,7 @@
 //   const newCountries = countries.slice()
 //   console.log(newCountries)
 
-//! day6_level3 2.exercise 
+//----------------------------day6_level_3 2.exercise-------------------------\\
 
 
 // const countries = [
@@ -438,7 +442,7 @@
 //   const sorCountries = countries.slice()
 //   console.log(sorCountries.sort())
 
-//! day6_level3 3.exercise 
+//----------------------------day6_level_3 3.exercise-------------------------\\
 
 
 // const webTechs = [
@@ -455,7 +459,7 @@
 //   webTechs.sort()
 //   console.log(webTechs,mernStack)
 
-//! day6_level3 4.exercise 
+//----------------------------day6_level_3 4.exercise-------------------------\\
 
 
 // const countries = [
@@ -480,7 +484,7 @@
 // )  
 // console.log(newArr)
 
-//! day6_level3 5.exercise 
+//----------------------------day6_level_3 5.exercise-------------------------\\
 
 
 // const arr = [
@@ -506,7 +510,7 @@
 // }
 // console.log(count)
 
-//! day6_level3 6.exercise 
+//----------------------------day6_level_3 6.exercise-------------------------\\
 
 // const countries = [
 //     'Afghanistan',
@@ -713,7 +717,7 @@
 
 
 
-//! day6_level3 7.exercise 
+//----------------------------day6_level_3 7.exercise-------------------------\\
 
 //   let outPut = []
 //   for(let country of countries){
@@ -723,7 +727,7 @@
 //   }
 //   console.log(outPut)
 
-//! day6_level3 8.exercise 
+//----------------------------day6_level_3 8.exercise-------------------------\\
 
 // let result = []
 //   for(let country of countries){
@@ -734,7 +738,7 @@
 //   }
 //   console.log(result)
 
-//! day6_level3 9.exercise 
+//----------------------------day6_level_3 9.exercise-------------------------\\
 
 // let result = []
 // let newArr = countries.reverse()

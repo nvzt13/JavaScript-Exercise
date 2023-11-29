@@ -1,17 +1,18 @@
-//todo day7_level1 1.exercise
+//---------------------------day7_level_1 1.exercise ------------------------\\
 
 // function fullName(){
 //     console.log("nevzat atalay")
 // }
 // fullName()
-//todo day7_level1 2.exercise
+//---------------------------day7_level_1 2.exercise ------------------------\\
 
 // function fullName(name,lastname){
 //     let str="  "
 //     console.log(name + str + lastname)
 // }
 // fullName('nevzat','atalay')
-//todo day7_level1 3.exercise
+
+//---------------------------day7_level_1 3.exercise ------------------------\\
 
 // function addNumbers(num1,num2){
 //     let sum =0
@@ -19,42 +20,48 @@
 //         return  sum
 // }
 // console.log(addNumbers(7,8))
-//todo day7_level1 4.exercise
+
+//---------------------------day7_level_1 4.exercise ------------------------\\
 
 // function areaOfRengle(width,length){
 //     area = width * length
 //         return  area
 // }
 // console.log(areaOfRengle(7,8))
-//todo day7_level1 5.exercise
+
+//---------------------------day7_level_1 5.exercise ------------------------\\
 
 // function perimeterOfRengle(width,length){
 //     perimeter = 2 * (width + length)
 //         return  perimeter
 // }
 // console.log(perimeterOfRengle(7,8))
-//todo day7_level1 6.exercise
+
+//---------------------------day7_level_1 6.exercise ------------------------\\
 
 // function volumeOfRengle(width,length,height){
 //     volume = width * length *height
 //         return  volume
 // }
 // console.log(volumeOfRengle(7,8,9))
-//todo day7_level1 7.exercise
+
+//---------------------------day7_level_1 7.exercise ------------------------\\
 
 // function areaCircle(r){
 //     area = Math.floor(Math.PI)*r*r
 //     return area
 // }
 // console.log(areaCircle(3))
-//todo day7_level1 8.exercise
+
+//---------------------------day7_level_1 8.exercise ------------------------\\
 
 // function ferenceCircle(r){
 //     ference = 2 *  Math.floor(Math.PI)*r
 //     return ference
 // }
 // console.log(ferenceCircle(3))
-//todo day7_level1 9.exercise
+
+//---------------------------day7_level_1 9.exercise ------------------------\\
 
 // function densitySubtance(mass,volume){
 //     density = mass/volume
@@ -62,7 +69,7 @@
 // }
 // console.log(densitySubtance(10,2))
 
-//todo day7_level1 10.exercise
+//---------------------------day7_level_1 10.exercise ------------------------\\
 
 // function speedDivid(distance,time){
 
@@ -71,7 +78,7 @@
 // }
 // console.log(speedDivid(100,2))
 
-//todo day7_level1 11.exercise
+//---------------------------day7_level_1 11.exercise ------------------------\\
 
 // function weightSubtance(mass,gravity){
 //     weight = mass * gravity
@@ -79,7 +86,7 @@
 // }
 // console.log(weightSubtance(5,10))
 
-//todo day7_level1 12.exercise
+//---------------------------day7_level_1 12.exercise ------------------------\\
 
 // function convertCelciusToFahrenheit(celcius){
 //     fahrenheit = (celcius * 9/5) + 32
@@ -87,7 +94,7 @@
 // }
 // console.log(convertCelciusToFahrenheit(1))
 
-//todo day7_level1 13.exercise
+//---------------------------day7_level_1 13.exercise ------------------------\\
 
 // function bmiPeople(weight,height,){
 
@@ -115,7 +122,7 @@
 // }
 // bmiPeople(100,1.54)
 
-//todo day7_level1 14.exercise
+//---------------------------day7_level_1 14.exercise ------------------------\\
 
 // function checkSeason(mount){
 //     if(mount=='september' || mount=='november' ||mount=='october' ){
@@ -130,7 +137,7 @@
 // }
 // checkSeason('september')
 
-//todo day7_level1 15.exercise
+//---------------------------day7_level_1 15.exercise ------------------------\\
 
 // function findMaxNumber(a,b,c){
 
@@ -139,10 +146,11 @@
 // }
 // console.log(findMaxNumber(3,5,7))
 
+//___________________________starting_exercise_level_2_______________________\\
 
-//? day7_level2 1.exercise
-//? day7_level2 2.exercise 
-//? day7_level2 3.exercise
+//---------------------------day7_level_2 1.exercise ------------------------\\
+//---------------------------day7_level_2 2.exercise ------------------------\\
+//---------------------------day7_level_2 3.exercise ------------------------\\
 
 // const arr = [1,2,3,4,5,6,7]
 
@@ -153,7 +161,7 @@
 // }
 // printArr(arr)
 
-//? day7_level2 4.exercise
+//---------------------------day7_level_2 4.exercise ------------------------\\
 
 // function showDateTime(){
 
@@ -183,7 +191,7 @@
 // }
 // showDateTime()
 
-//? day7_level2 5.exercise
+//---------------------------day7_level_2 5.exercise ------------------------\\
 
 // function swapValue(x,y){
 
@@ -192,7 +200,7 @@
     // return  console.log(`${changeX},${changeY}`)}
     // swapValue(5,4)
 
-//? day7_level2 6.exercise
+//---------------------------day7_level_2 6.exercise ------------------------\\
 
 // const arr = [1,2,3,4,5,6,7]
 
@@ -201,7 +209,7 @@
 // }
 // reverseArr(arr)
 
-//? day7_level2 7.exercise
+//---------------------------day7_level_2 7.exercise ------------------------\\
 
 // const arr = ['nevzat', 'atalay', 'bitlis']
 
@@ -209,7 +217,7 @@
 //     console.log( word.toUpperCase())  
 // })
 
-//? day7_level2 8.exercise
+//---------------------------day7_level_2 8.exercise ------------------------\\
 
 // function addItem(text){
 //     arr = text.split(" ")
@@ -217,7 +225,7 @@
 //   }
 //   console.log(addItem('Nevzat Atalay Bitlis'))
   
-//? day7_level2 9.exercise
+//---------------------------day7_level_2 9.exercise ------------------------\\
 
 // function removeItem(index) {
     // array = [1,2,3,4,5,6,7,8,9]
@@ -228,7 +236,7 @@
 //   }
 //   console.log(removeItem(2))
   
-//? day7_level2 10.exercise
+  //--------------------------day7_level_2 10.exercise ------------------------\\
 
 // function sumOfNumbers(number){
     
@@ -240,7 +248,7 @@
 // }
 // console.log(sumOfNumbers(5));
 
-//? day7_level2 11.exercise
+//---------------------------day7_level_2 11.exercise ------------------------\\
 
 // function sumOfOddNumbers(number){
     
@@ -252,7 +260,7 @@
 // }
 // console.log(sumOfOddNumbers(4));
 
-//? day7_level2 12.exercise
+//---------------------------day7_level_2 12.exercise ------------------------\\
 
 // function sumOfEvenNumbers(number){
     
@@ -264,8 +272,9 @@
 // }
 // console.log(sumOfEvenNumbers(4));
 
-//? day7_level2 13.exercise
-//? day7_level2 14.exercise
+//---------------------------day7_level_2 13.exercise ------------------------\\
+
+//---------------------------day7_level_2 14.exercise ------------------------\\
 
 // function sumNumbers(number1,number2,number3){
 //     let sum = number1+number2+number3
@@ -274,7 +283,8 @@
 //  }
 //  sumNumbers(1,2,3,)
 
-//? day7_level2 15.exercise
+//---------------------------day7_level_2 15.exercise ------------------------\\
+
 // function getRandomInt(min, max) {
 //     return Math.floor(Math.random() * (max - min + 1)) + min;
 //   }
@@ -286,7 +296,8 @@
 //   console.log(randomUserIp())
 
   
-//? day7_level2 16.exercise
+//---------------------------day7_level_2 16.exercise ------------------------\\
+
 // function getRandomHex(){
 //     const arr = ['0',"1","2","3","4","5","6","7","8","9","A","B","C","D","E","F"]
 //     return arr[Math.floor(Math.random()*arr.length)]
@@ -302,7 +313,8 @@
 //   console.log(randomMacAdres())
   
 
-//? day7_level2 17.exercise
+//---------------------------day7_level_2 17.exercise ------------------------\\
+
 // function ranfomHexzadecimal(){
 //     let text = '0123456789ABCDEF'
 //      let hex = '#'
@@ -315,8 +327,8 @@
 
 //   console.log(ranfomHexzadecimal())
 
+//---------------------------day7_level_2 18.exercise ------------------------\\
 
-//? day7_level2 18.exercise
 // function userIdGenerator(){
 //     let text = '0123456789ABCDEFGHJKLMNOPRSŞTOVYZabcdefghojklmnprsştvyz'
 //      let id = ''
@@ -328,25 +340,44 @@
 //   }
 //   console.log(userIdGenerator())
 
+//___________________________starting_exercise_level_3_______________________\\
 
+//---------------------------day7_level_3 1.exercise ------------------------\\
 
-//! day7_level3 1.exercise
-//! day7_level3 2.exercise
-//! day7_level3 3.exercise
-//! day7_level3 4.exercise
-//! day7_level3 5.exercise
-//! day7_level3 6.exercise
-//! day7_level3 7.exercise
-//! day7_level3 8.exercise
-//! day7_level3 9.exercise
-//! day7_level3 10.exercise
-//! day7_level3 11.exercise
-//! day7_level3 12.exercise
-//! day7_level3 13.exercise
-//! day7_level3 14.exercise
-//! day7_level3 15.exercise
-//! day7_level3 16.exercise
-//! day7_level3 17.exercise
-//! day7_level3 18.exercise
-//! day7_level3 19.exercise
-//! day7_level3 20.exercise
+//---------------------------day7_level_3 1.exercise ------------------------\\
+
+//---------------------------day7_level_3 1.exercise ------------------------\\
+
+//---------------------------day7_level_3 1.exercise ------------------------\\
+
+//---------------------------day7_level_3 1.exercise ------------------------\\
+
+//---------------------------day7_level_3 1.exercise ------------------------\\
+
+//---------------------------day7_level_3 1.exercise ------------------------\\
+
+//---------------------------day7_level_3 1.exercise ------------------------\\
+
+//---------------------------day7_level_3 1.exercise ------------------------\\
+
+//---------------------------day7_level_3 1.exercise ------------------------\\
+
+//---------------------------day7_level_3 1.exercise ------------------------\\
+
+//---------------------------day7_level_3 1.exercise ------------------------\\
+
+//---------------------------day7_level_3 1.exercise ------------------------\\
+
+//---------------------------day7_level_3 1.exercise ------------------------\\
+
+//---------------------------day7_level_3 1.exercise ------------------------\\
+
+//---------------------------day7_level_3 1.exercise ------------------------\\
+
+//---------------------------day7_level_3 1.exercise ------------------------\\
+
+//---------------------------day7_level_3 1.exercise ------------------------\\
+
+//---------------------------day7_level_3 1.exercise ------------------------\\
+
+//---------------------------day7_level_3 1.exercise ------------------------\\
