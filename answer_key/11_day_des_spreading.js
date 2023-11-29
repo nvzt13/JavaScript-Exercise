@@ -1,10 +1,12 @@
-//todo exercise 1
+//----------------------------day11_level_1 1.exercise-------------------------\\
+// # Destructure and assign the elements of constants array to e, pi, gravity, humanBodyTemp, waterBoilingTemp.
 
 const constants = [2.72, 3.14, 9.81, 37.5, 100]
 const [E,PI,G,humanBodyTemp,waterBoilingTemp] =constants
 console.log(E,PI,G,humanBodyTemp,waterBoilingTemp)
 
-//todo exercise 2
+//----------------------------day11_level_1 2.exercise-------------------------\\
+// #Destructure and assign the elements of countries array to fin, est, sw, den, nor
 
 const countries =['Finland','Estonia','Sweden','Denmark','Norway']
 const [fin,est,swd,den,nor] = countries
@@ -12,7 +14,8 @@ console.log(fin,est,swd,den,nor)
 
 
 
-//todo exercise 3
+//----------------------------day11_level_1 3.exercise-------------------------\\
+// #Destructure the rectangle object by its properties or keys.
 
 const rectangle ={
     width:20,
@@ -25,8 +28,12 @@ const {width,height,are,perimeter} = rectangle
 console.log(width,height,are,perimeter)
 
 
-//? exercise 1
+//___________________________starting_exercise_level_2_______________________\\
 
+
+
+//----------------------------day11_level_2 1.exercise-------------------------\\
+// # Iterate through the users array and get all the keys of the object using destructuring
 
 const users = [
     {
@@ -76,7 +83,8 @@ const users = [
            console.log(name,scores,skills,age)
     }
 
-// //? exercise 2
+//----------------------------day11_level_2 2.exercise-------------------------\\
+// # Find the persons who have less than two skills
 
 const users = [
 {

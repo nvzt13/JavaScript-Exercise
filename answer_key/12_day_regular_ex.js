@@ -1,4 +1,5 @@
-//todo day12_level1 1.excercise
+//----------------------------day12_level_1 1.exercise-------------------------\\
+// # Calculate the total annual income of the person from the following text. ‘He earns 4000 euro from salary per month, 10000 euro annual bonus, 5500 euro online courses per month.’
 
 let text ="He earns 4000 euro from salary per month, 10000 euro  annual bonus, 5500 euro online courses per month."
 let pattern = /\d+/g
@@ -10,7 +11,13 @@ let montCourses = numbers[2]
 console.log(`Annual income is ${(montlySalary*12) + (bonus) + (montCourses *12)}`)
 
 
-//todo day12_level1 2.excercise
+//----------------------------day12_level_1 2.exercise-------------------------\\
+// # The position of some particles on the horizontal x-axis -12, -4, -3 and -1 in the negative direction, 0 at origin, 4 and 8 in the positive direction. Extract these numbers and find the distance between the two furthest particles.
+
+
+
+//----------------------------day12_level_1 3.exercise-------------------------\\
+// # The position of some particles on the horizontal x-axis -12, -4, -3 and -1 in the negative direction, 0 at origin, 4 and 8 in the positive direction. Extract these numbers and find the distance between the two furthest particles.
 
 // Bir dizenin geçerli bir JavaScript değişkeni olup olmadığını kontrol eden bir fonksiyon
 function isValidVariableName(str) {
@@ -26,7 +33,13 @@ function isValidVariableName(str) {
 console.log(isValidVariableName('21dzfgdf'))
 
 
-//? day12_level2 1.exercise
+
+//___________________________starting_exercise_level_2_______________________\\
+
+//----------------------------day12_level_2 1.exercise-------------------------\\
+// # Write a function called tenMostFrequentWords which get the ten most frequent word from a string?
+
+
 // Paragrafınızdaki en sık kullanılan 10 kelimeyi döndüren bir fonksiyon
 
 let paragraph = `I love teaching. If you do not love teaching what else can you love. I love Python if you do not love something which can give you all the capabilities to develop an application what else can you love.`
@@ -50,3 +63,8 @@ function tenMostFrequentWords(paragraph) {
     });
   }
 console.log( tenMostFrequentWords(paragraph))
+
+//___________________________starting_exercise_level_3_______________________\\
+
+//----------------------------day12_level_3 1.exercise-------------------------\\
+// # Writ a function which cleans text. Clean the following text. After cleaning, count three most frequent words in the string.

@@ -1,9 +1,12 @@
-//todo day13_level1 1.exercise
+//----------------------------day13_level_1 1.exercise-------------------------\\
+// # Display the countries array as a table
 
 const countries = ['Norway', 'Sweden','England','Iceland']
 console.table(countries)
 
-//todo day13_level1 2.exercise
+//----------------------------day13_level_1 2.exercise-------------------------\\
+// # Display the countries object as a table
+
 
 
 const countries ={
@@ -13,8 +16,8 @@ const countries ={
 }
 console.table(countries)
     
-
-//todo day13_level1 3.exercise
+//----------------------------day13_level_1 3.exercise-------------------------\\
+// # Use console.group() to group logs
 
 const names = ['Asabeneh', 'Brook', 'David', 'John']
 const countries = [
