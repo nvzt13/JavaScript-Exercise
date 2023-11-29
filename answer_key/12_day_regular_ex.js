@@ -1,4 +1,5 @@
 //todo day12_level1 1.excercise
+
 let text ="He earns 4000 euro from salary per month, 10000 euro  annual bonus, 5500 euro online courses per month."
 let pattern = /\d+/g
 let numbers = text.match(pattern)
@@ -10,6 +11,7 @@ console.log(`Annual income is ${(montlySalary*12) + (bonus) + (montCourses *12)}
 
 
 //todo day12_level1 2.excercise
+
 // Bir dizenin geçerli bir JavaScript değişkeni olup olmadığını kontrol eden bir fonksiyon
 function isValidVariableName(str) {
     // Birinci karakterin harf, alt çizgi veya dolar işareti olup olmadığını kontrol eden bir kalıp
