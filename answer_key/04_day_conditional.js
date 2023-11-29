@@ -1,4 +1,4 @@
-//todo day4_level1 1.exercise
+//----------------------------day4_level_1 1.exercise-------------------------\\
 
 // let age = Number(prompt("lüefen yaşınızı giriniz"))
 // if(age >=18){
@@ -8,7 +8,7 @@
 //     console.log(`araba kullanabilmek için ${18-age} yıl beklemeniz gerekmektedir`)
 // )
 
-//todo day4_level1 2.exercise
+//----------------------------day4_level_1 2.exercise-------------------------\\
 
 // let myAge =18
 // let yourAge=18
@@ -24,7 +24,7 @@
 //     console.log(`sen benden ${yourAge - myAge} yıl büyüksün`)
 // )
 
-//todo day4_level1 3.exercise
+//----------------------------day4_level_1 3.exercise-------------------------\\
 
 // let a = 4
 // let b =3
@@ -33,7 +33,7 @@
 //   ? console.log("a büyüktür b")
 //   : console.log("b büyüktür a")
 
-//todo day4_level1 4.exercise
+//----------------------------day4_level_1 4.exercise-------------------------\\
 
 // let num = Number(prompt("sayı giriniz"))
 
@@ -44,7 +44,10 @@
 //     console.log(`${num} sayısı tektir`)
 // }
 
-//? day4_level2 1.exercise
+//___________________________starting_exercise_level_2_______________________\\
+
+
+//----------------------------day4_level_2 1.exercise-------------------------\\
 
 // let scores = Number(prompt("notunuzu giriniiz"))
 
@@ -64,7 +67,7 @@
 //     console.log("notunuz E")
 // }
 
-//? day4_level2 2.exercise
+//----------------------------day4_level_2 2.exercise-------------------------\\
 
 // const mount = String(prompt('hangi aydayız')).toLowerCase();
 
@@ -85,7 +88,7 @@
 //   console.log(`${mount} is not a mount`)
 
 // }
-//? day4_level2 3.exercise
+//----------------------------day4_level_2 3.exercise-------------------------\\
 
 // let day = prompt('What day is today').toLowerCase()
 
@@ -104,7 +107,9 @@
 //     default: console.log(`${day} is't a day`)
 // }
 
-//! day4_level3 1.exercise 
+//___________________________starting_exercise_level_3______________________\\
+
+//----------------------------day4_level_3 1.exercise-------------------------\\
 
 // let month = prompt('Please enter a month')
 

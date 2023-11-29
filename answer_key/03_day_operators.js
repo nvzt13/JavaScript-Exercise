@@ -1,5 +1,4 @@
-
-//todo day3_level1 1.exercise 
+//----------------------------day3_level_1 1.exercise-------------------------\\
 
 // let name = "nevzat"
 // let lastName = "atalay"
@@ -9,17 +8,17 @@
 // let isMarried = true
 // console.log(typeof(name),typeof(lastName),typeof(country),typeof(city),typeof(age),typeof(isMarried))
 
-//todo day3_level1 2.exercise 
+//----------------------------day3_level_1 2.exercise-------------------------\\
 
 // let number ="10"
 // console.log(number==10)
 
-//todo day3_level1 3.exercise 
+//----------------------------day3_level_1 3.exercise-------------------------\\
 
 // let number = parseInt(9.8)
 // console.log(number==10)
 
-//todo day3_level1 4.exercise 
+//----------------------------day3_level_1 4.exercise-------------------------\\
 
 // console.log(!!"merhaba")
 // console.log(!!1)
@@ -29,7 +28,7 @@
 // console.log(!!0)
 // console.log(!!null)
 
-//todo day3_level1 5.exercise 
+//----------------------------day3_level_1 5.exercise-------------------------\\
 
 // const arr = [
 //     4 > 3,
@@ -49,7 +48,7 @@
 // let string = "phyton", string1 = "jargon"
 // console.log(string.length >= string1.length )
 
-//todo day3_level1 6.exercise 
+//----------------------------day3_level_1 6.exercise-------------------------\\
 
 /*
 const arr = [
@@ -69,7 +68,7 @@ const arr = [
 // let string = "phyton", string1 = "jargon"
 // console.log(string.includes("on") && string1.includes("on"))
 
-//todo day3_level1 7.exercise 
+//----------------------------day3_level_1 7.exercise-------------------------\\
 
 // let now = new Date()
 
@@ -80,14 +79,17 @@ const arr = [
 // console.log(now.getMinutes())
 // console.log(now.getTime())
 
-//? day3_level2 1.exercise
+
+//___________________________starting_exercise_level_2_______________________\\
+
+//----------------------------day3_level_2 1.exercise-------------------------\\
 
 // let width =Number(prompt("üçgenin genişligini giriniz"))
 // let height =Number(prompt("üçgenin yğksekliğini giriniz"))
 // let area = width*height / 2
 // console.log(area)
 
-//? day3_level2 2.exercise
+//----------------------------day3_level_2 2.exercise-------------------------\\
 
 // let width =Number(prompt("üçgenin a kenarını  giriniz"))
 // let height =Number(prompt("üçgenin yüksekliğini giriniz"))
@@ -95,46 +97,46 @@ const arr = [
 // let perimeter = width+height+widthb
 // console.log(perimeter)
 
-//? day3_level2 3.exercise
+//----------------------------day3_level_2 3.exercise-------------------------\\
 
 // let width = Number(prompt("dikdörtgenin  genişliğini  giriniz"))
 // let height = Number(prompt("dikdörtgenin yüksekliğini giriniz"))
 // let perimeter = 2*(width+height) 
 // console.log(perimeter)
 
-//? day3_level2 4.exercise
+//----------------------------day3_level_2 4.exercise-------------------------\\
 
 // let r = 5
 // let area = Math.PI  *  r**2
 // console.log(area)
 
-//? day3_level2 5.exercise
+//----------------------------day3_level_2 5.exercise-------------------------\\
 
 // let slope = 2 //x in katsayısı egimi verir
 // let x_intercept = 1
 // let y_intercept = 2
 // console.log(`denklemin eğimi ${slope}, x in kesme noktası ${x_intercept}, y nin kesme noktası ${y_intercept} dir`)
 
-//? day3_level2 6.exercise
+//----------------------------day3_level_2 6.exercise-------------------------\\
 
 // let x1 =2 , x2 = 6
 // let y1 = 2 ,y2 =10
 // let slope =( y2 - y1 ) / (x2 - x1)
 // console.log(slope)
 
-//? day3_level2 7.exercise
+//----------------------------day3_level_2 7.exercise-------------------------\\
 
 // let slope1 = 2
 // let slope2 = 2
 // console.log(slope1==slope2)
 
-//? day3_level2 8.exercise
+//----------------------------day3_level_2 8.exercise-------------------------\\
 
 // let y = (x + 3)**2
 // let x = [-3,-2,-1,0,1,2,3]
 // y nin 0 debuggeri için x -3tür
 
-//? day3_level2 9.exercise
+//----------------------------day3_level_2 9.exercise-------------------------\\
 
 // let hours = Number(prompt("günde kaç saat çalışıyorsunuz"))
 // let workingWage = Number(prompt("saatlik çalışma ücretinizi giriniz"))
@@ -142,7 +144,7 @@ const arr = [
 // console.log(`maaşınız ${wage} tl dir`)
 
 
-//? day3_level2 10.exercise
+//----------------------------day3_level_2 10.exercise-------------------------\\
 
 // let myName = "nevzat"
 // if(myName.length > 7){
@@ -153,7 +155,7 @@ const arr = [
 // }
 
 
-//? day3_level2 11.exercise
+//----------------------------day3_level_2 11.exercise-------------------------\\
 
 // let myName = "nevzat"
 // let myLastName = "talay"
@@ -165,7 +167,7 @@ const arr = [
 // }
 
 
-//? day3_level2 12.exercise
+//----------------------------day3_level_2 12.exercise-------------------------\\
 
 // let myAge =25
 // let yourAge =18
@@ -173,7 +175,7 @@ const arr = [
 // console.log(message)
 
 
-//? day3_level2 13.exercise
+//----------------------------day3_level_2 13.exercise-------------------------\\
 
 // let birtYear = Number(prompt("doğum yılınızı giriniz"))
 // let now = new Date()
@@ -187,7 +189,7 @@ const arr = [
 // }
 
 
-//? day3_level2 14.exercise
+//----------------------------day3_level_2 14.exercise-------------------------\\
 
 // let age = Number(prompt("kaç yaşındasınız"))
 // let lastSecond = age*365*24*60*60
@@ -195,7 +197,7 @@ const arr = [
 // console.log(`en fazla ${remainingSeconds} saniye ömrÜn kaldı WAKW UP`)
 
 
-//? day3_level2 15.exercise
+//----------------------------day3_level_2 15.exercise-------------------------\\
 
 // let now = new Date()
 
@@ -209,7 +211,11 @@ const arr = [
 // console.log(`${day}-${mount}-${year}           ${hours} : ${minuts}`)
 // console.log(`${year} / ${mount} / ${day}       ${hours} : ${minuts}`)
 
-//! day3_level3 1.exercise 
+
+//___________________________starting_exercise_level_3_______________________\\
+
+
+//----------------------------day3_level_3 1.exercise-------------------------\\
 
 // let now = new Date()
 
