@@ -1,4 +1,5 @@
 //----------------------------day6_level_1 1.exercise-------------------------\\
+// # Iterate 0 to 10 using for loop, do the same using while and do while loop
 
 for(let i= 0; i<=10; i++){
     console.log(i)
@@ -16,7 +17,8 @@ do{
     i++
 } while(i<=10)
 
-//----------------------------day6_level_1 1.exercise-------------------------\\
+//----------------------------day6_level_1 2.exercise-------------------------\\
+// # Iterate 10 to 0 using for loop, do the same using while and do while loop
 
 for(let i= 10; i>=0; i--){
     console.log(i)
@@ -34,7 +36,8 @@ do{
     i--
 } while(i>=0)
 
-//----------------------------day6_level_1 1.exercise-------------------------\\
+//----------------------------day6_level_1 3.exercise-------------------------\\
+// # Iterate 0 to n using for loop
 
 let n =5
 
@@ -43,8 +46,8 @@ for(let i=0; i<=n; i++){
 console.log(i)
 }
 
-//----------------------------day6_level_1 1.exercise-------------------------\\
-
+//----------------------------day6_level_1 4.exercise-------------------------\\
+// # Write a loop that makes the following pattern using console.log():
 
 let string = ""
 
@@ -58,7 +61,8 @@ for(let i=1; i<=7; i++){
   string+= ""
 }
 
-//----------------------------day6_level_1 1.exercise-------------------------\\
+//----------------------------day6_level_1 5.exercise-------------------------\\
+// # Use loop to print the following pattern:
 
 const numbers =[0,1,2,3,4,5,6,7,8,9,10]
 
@@ -66,7 +70,8 @@ for(num of numbers){
     console.log(`${num} * ${num} = ${num*num}`)
 }
 
-//----------------------------day6_level_1 1.exercise-------------------------\\
+//----------------------------day6_level_1 6.exercise-------------------------\\
+// # Using loop print the following pattern
 
 let output = 'i   i^2  i^3 \n'
 for(let i=0; i<=10; i++){
@@ -78,20 +83,24 @@ for(let i=0; i<=10; i++){
 }
 console.log(output)
 
-//----------------------------day6_level_1 1.exercise-------------------------\\
+//----------------------------day6_level_1 7.exercise-------------------------\\
+// # Use for loop to iterate from 0 to 100 and print only even numbers
 
 for(let i=0; i<=100; i+=2){
     console.log(i)
 }
 
-//----------------------------day6_level_1 1.exercise-------------------------\\
+//----------------------------day6_level_1 8.exercise-------------------------\\
+// # Use for loop to iterate from 0 to 100 and print only odd numbers
 
 for(let i=1; i<=100; i+=2){
     console.log(i)
 }
 
-//----------------------------day6_level_1 1.exercise-------------------------\\
-//----------------------------day6_level_1 1.exercise-------------------------\\
+//----------------------------day6_level_1 9.exercise-------------------------\\
+// # Use for loop to iterate from 0 to 100 and print only prime numbers
+//----------------------------day6_level_1 10.exercise-------------------------\\
+// # Use for loop to iterate from 0 to 100 and print the sum of all numbers.
 
 let sum = 0
 for(let i=0; i<=100; i++){
@@ -99,7 +108,8 @@ sum+=i
 }
 console.log(sum)
 
-//----------------------------day6_level_1 1.exercise-------------------------\\
+//----------------------------day6_level_1 11.exercise-------------------------\\
+// # Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds.
 
 let sumeven = 0
 for(let i=0; i<=100; i+=2){
@@ -114,7 +124,8 @@ sumodd+=i
 }
 console.log(sumodd)
 
-//----------------------------day6_level_1 1.exercise-------------------------\\
+//----------------------------day6_level_1 12.exercise-------------------------\\
+// # Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds. Print sum of evens and sum of odds as array
 
 let sumeven = 0
 for(let i=0; i<=100; i+=2){
@@ -127,7 +138,8 @@ sumodd+=i
 let arr = [sumeven,sumodd]
 console.log(arr)
 
-//----------------------------day6_level_1 1.exercise-------------------------\\
+//----------------------------day6_level_1 13.exercise-------------------------\\
+// # Develop a small script which generate array of 5 random numbers
 
 outPut = ''
 for(let i =0; i<5; i++){
@@ -136,6 +148,7 @@ for(let i =0; i<5; i++){
 console.log(outPut)
 
 //----------------------------day6_level_1 14.exercise-------------------------\\
+// # Develop a small script which generate array of 5 random numbers and the numbers must be unique
 
 let arr = []
 while(arr.length<5){
@@ -146,7 +159,8 @@ while(arr.length<5){
 }
 console.log(arr.toString())
 
-//----------------------------day6_level_1 1.exercise-------------------------\\
+//----------------------------day6_level_1 15.exercise-------------------------\\
+// # Develop a small script which generate a six characters random id:
 
 let text = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
 let randomCharecters = ''
@@ -159,6 +173,7 @@ console.log(randomCharecters)
 //___________________________starting_exercise_level_2_______________________\\
 
 //----------------------------day6_level_2 1.exercise-------------------------\\
+// # Develop a small script which generate any number of characters random id:
 
 let text = 'A1B2C3D4E5F6G7H8I9J0KLMN1O2P3Q4R5S6T7UV8W9XYZabcdefghijklmnopqrstuvwxyz'
 let randomCharecters = ''
@@ -173,9 +188,10 @@ for (let i = 0; i < index; i++) {
 console.log(randomCharecters)
 
 //----------------------------day6_level_2 2.exercise-------------------------\\
-
+// # Write a script which generates a random hexadecimal number.
 
 //----------------------------day6_level_2 3.exercise-------------------------\\
+// # Write a script which generates a random rgb color number
 
 let number1 = Math.floor(Math.random()*256)
 let number2 = Math.floor(Math.random()*256)
@@ -184,6 +200,7 @@ let number3 = Math.floor(Math.random()*256)
 console.log(`rgb(${number1},${number2},${number3})`)
 
 //----------------------------day6_level_2 4.exercise-------------------------\\
+// # Using the above countries array, create the following new array.
 
 newArr = []
 for(const country of countries){
@@ -192,6 +209,7 @@ for(const country of countries){
 console.log(newArr)
 
 //----------------------------day6_level_2 5.exercise-------------------------\\
+// # Using the above countries array, create an array for countries length
 
 const countries = [
     'Albania',
@@ -213,6 +231,7 @@ const countries = [
   }
   console.log(arr)
 //----------------------------day6_level_2 6.exercise-------------------------\\
+// # Use the countries array to create the following array of arrays:
 
 const countries = [
     'Albania',
@@ -239,6 +258,7 @@ arr.push(`${country},'${coun}',${index}`)
 console.log(arr)
 
 //----------------------------day6_level_2 7.exercise-------------------------\\
+// # In above countries array, check if there is a country or countries containing the word 'land'. If there are countries containing 'land', print it as array. If there is no country containing the word 'land', print 'All these countries are without land'.
 
 const countries = [
     'Albania',
@@ -262,6 +282,7 @@ const countries = [
   console.log(newArr)
 
 //----------------------------day6_level_2 8.exercise-------------------------\\
+// # In above countries array, check if there is a country or countries end with a substring 'ia'. If there are countries end with, print it as array. If there is no country containing the word 'ai', print 'These are countries ends without ia'.
 
 const countries = [
     'Albania',
@@ -285,6 +306,7 @@ if(country.endsWith('ia')){
   console.log(arr)
 
 //----------------------------day6_level_2 9.exercise-------------------------\\
+// # Using the above countries array, find the country containing the biggest number of characters.
 
 const arr = ['Albania', 'Bolivia','Ethiopia']
  
@@ -300,6 +322,7 @@ console.log(count)
 
 
 //----------------------------day6_level_2 10.exercise-------------------------\\
+// # Using the above countries array, find the country containing only 5 characters.
 
 const countries = [
     'Albania',
@@ -323,6 +346,7 @@ const countries = [
   console.log(newArr)
 
 //----------------------------day6_level_2 11.exercise-------------------------\\
+// # Find the longest word in the webTechs array
 
 const webTechs = [
     'HTML',
@@ -343,6 +367,7 @@ if(tech.length>longWorld.length){
  console.log(longWorld)
 
 //----------------------------day6_level_2 12.exercise-------------------------\\
+// # Use the webTechs array to create the following array of arrays:
 
 const webTechs = [
     'HTML',
@@ -361,6 +386,7 @@ const webTechs = [
   console.log(arr)
 
 //----------------------------day6_level_2 13.exercise-------------------------\\
+// # An application created using MongoDB, Express, React and Node is called a MERN stack app. Create the acronym MERN by using the array mernStack
 
 const skills = ['MongoDB', 'Express','React', 'Node']
 
@@ -371,6 +397,7 @@ mern += skills[i][0]
 console.log(mern)
 
 //----------------------------day6_level_2 14.exercise-------------------------\\
+// # Iterate through the array, ["HTML", "CSS", "JS", "React", "Redux", "Node", "Express", "MongoDB"] using a for loop or for of loop and print out the items.
 
 const arr = ["HTML", "CSS","JS","React","Redux","Node","Express","MongoDB"]
 
@@ -383,6 +410,7 @@ for(const skills of arr){
 }
 
 //----------------------------day6_level_2 15.exercise-------------------------\\
+// # This is a fruit array , ['banana', 'orange', 'mango', 'lemon'] reverse the order using loop without using a reverse method.
 
 const fruit = ["banana","orange","mango","lemon"]
 
@@ -394,6 +422,7 @@ reverseFruit.push(fruit[i])
 console.log(reverseFruit)
 
 //----------------------------day6_level_2 16.exercise-------------------------\\
+// # Print all the elements of array as shown below.
 
 const fullStack = [
     ['HTML', 'CSS', 'JS', 'React'],
@@ -407,7 +436,7 @@ const fullStack = [
 //___________________________starting_exercise_level_3_______________________\\
 
 //----------------------------day6_level_3 1.exercise-------------------------\\
-
+// # Copy countries array(Avoid mutation)
 
 const countries = [
     'Albania',
@@ -426,7 +455,7 @@ const countries = [
   console.log(newCountries)
 
 //----------------------------day6_level_3 2.exercise-------------------------\\
-
+// # Arrays are mutable. Create a copy of array which does not modify the original. Sort the copied array and store in a variable sortedCountries
 
 const countries = [
     'Albania',
@@ -445,6 +474,7 @@ const countries = [
   console.log(sorCountries.sort())
 
 //----------------------------day6_level_3 3.exercise-------------------------\\
+// # Sort the webTechs array and mernStack array
 
 
 const webTechs = [
@@ -462,7 +492,7 @@ const webTechs = [
   console.log(webTechs,mernStack)
 
 //----------------------------day6_level_3 4.exercise-------------------------\\
-
+// # Extract all the countries contain the word 'land' from the countries array and print it as array
 
 const countries = [
     'Albania',
@@ -487,6 +517,7 @@ if(countri.includes('land')){
 console.log(newArr)
 
 //----------------------------day6_level_3 5.exercise-------------------------\\
+// # Find the country containing the hightest number of characters in the countries array
 
 
 const arr = [
@@ -513,6 +544,7 @@ for(let i = 0; i<arr.length; i++){
 console.log(count)
 
 //----------------------------day6_level_3 6.exercise-------------------------\\
+// # Extract all the countries contain the word 'land' from the countries array and print it as array
 
 const countries = [
     'Afghanistan',
@@ -720,6 +752,7 @@ const countries = [
 
 
 //----------------------------day6_level_3 7.exercise-------------------------\\
+// # Extract all the countries containing only four characters from the countries array and print it as array
 
   let outPut = []
   for(let country of countries){
@@ -730,6 +763,7 @@ const countries = [
   console.log(outPut)
 
 //----------------------------day6_level_3 8.exercise-------------------------\\
+// # Extract all the countries containing two or more words from the countries array and print it as array
 
 let result = []
   for(let country of countries){
@@ -741,7 +775,7 @@ let result = []
   console.log(result)
 
 //----------------------------day6_level_3 9.exercise-------------------------\\
-
+// # Reverse the countries array and capitalize each country and stored it as an array
 let result = []
 let newArr = countries.reverse()
 
