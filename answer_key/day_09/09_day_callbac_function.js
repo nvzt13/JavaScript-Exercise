@@ -1,6 +1,11 @@
 //----------------------------day9_level_1 1.exercise-------------------------\\
 // # Explain the difference between forEach, map, filter, and reduce.
 
+foreach dizideki her bir eleman için bir fonksiyon çalıştırir.Dizideki elemani degistirebilir ama yeni bir dizi olisturamaz.
+map foreach ile aynidir farki map yeni bir dizi döndürür.
+reduce, bir dizideki her öğe için belirtilen bir fonksiyonu çalıştırır ve bu fonksiyonun sonuçlarını biriktirerek tek bir değer döndürür. Bu fonksiyon, dizinin her öğesini değiştiremez, ancak bir önceki fonksiyon çağrısının sonucunu alarak bir sonraki fonksiyon çağrısına aktarır. 
+filrer JavaScript’te filter metodu, bir dizideki elemanları belirli bir koşula göre filtrelemek için kullanılan bir dizidir. Filter metodu, orijinal diziyi değiştirmez, ancak koşulu sağlayan elemanlardan oluşan yeni bir dizi döndürür
+
 //----------------------------day9_level_1 2.exercise-------------------------\\
 // # Define a callback function before you use it in forEach, map, filter or reduce.
 
@@ -65,6 +70,26 @@ console.log(newArr)
 //----------------------------day9_level_1 10.exercise-------------------------\\
 // # Use map to map the products array to its corresponding prices.
 
+const products = [
+  { product: 'banana', price: 3 },
+  { product: 'mango', price: 6 },
+  { product: 'potato', price: ' ' },
+  { product: 'avocado', price: 8 },
+  { product: 'coffee', price: 10 },
+  { product: 'tea', price: '' },
+];
+
+// map metodu ile yeni bir dizi oluşturuyoruz
+const productsWithPrices = products.map(function(product) {
+  // her nesnenin product ve price özelliklerini birleştiriyoruz
+  return product.product + ': ' + product.price;
+});
+
+// yeni diziyi yazdırıyoruz
+console.log(productsWithPrices);
+// ["banana: 3", "mango: 6", "potato:  ", "avocado: 8", "coffee: 10", "tea: "]
+
+
 //----------------------------day9_level_1 11.exercise-------------------------\\
 // # Use filter to filter out countries containing land
 
@@ -128,15 +153,48 @@ getStringList(arr)
 
 
 //----------------------------day9_level_1 17.exercise-------------------------\\
-// Use reduce to sum all the numbers in the numbers array.
+// # Use reduce to sum all the numbers in the numbers array.
 
 const numbers = [2,3,4,5,6]
 let sum = numbers.reduce((acc,cur) => acc + cur )
 console.log(sum)
 
 //----------------------------day9_level_1 18.exercise-------------------------\\
+// # Use reduce to concatenate all the countries and to produce this sentence: Estonia, Finland, Sweden, Denmark, Norway, and IceLand are north European countries
+
+const ulkeler = ['Estonya', 'Finlandiya', 'İsveç', 'Danimarka', 'Norveç', 'İzlanda'];
+
+// reduce fonksiyonu ile yeni bir string oluşturuyoruz
+const cumle = ulkeler.reduce(function(onceki, ulke, indeks, dizi) {
+  // son elemana gelinceye kadar ülkeleri virgülle ayırıyoruz
+  if (indeks < dizi.length - 1) {
+    return onceki + ulke + ', ';
+  } else {
+    // son elemana geldiğimizde sonuna nokta ve kuzey Avrupa ülkeleridir ifadesini ekliyoruz
+    return onceki + ulke + '. kuzey Avrupa ülkeleridir';
+  }
+}, ''); // '' başlangıç değeri
+
+// yeni stringi yazdırıyoruz
+console.log(cumle);
+// Estonya, Finlandiya, İsveç, Danimarka, Norveç, İzlanda. kuzey Avrupa ülkeleridir
+
 
 //----------------------------day9_level_1 19.exercise-------------------------\\
+// # Explain different between some and every
+
+var sayilar = [1, 2, 3, 4, 5];
+var sonuc = sayilar.some(function(sayi) {
+  return sayi > 10; // sayı 10'dan büyükse true, değilse false döndürür
+});
+console.log(sonuc); // false, çünkü dizideki hiçbir sayı 10'dan büyük değil
+
+var sayilar = [1, 2, 3, 4, 5];
+var sonuc = sayilar.every(function(sayi) {
+  return sayi < 10; // sayı 10'dan küçükse true, değilse false döndürür
+});
+console.log(sonuc); // true, çünkü dizideki tüm sayılar 10'dan küçük
+
 
 //----------------------------day9_level_1 20.exercise-------------------------\\
 // # Use some to check if some names' length greater than seven in names array
