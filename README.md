@@ -1,3 +1,3 @@
 # Basic-JavaScript-Projects
-<p>My basic JavaScript projects for beginners, borrowed from respected teachers on YouTube and GitHub. Examine and
-Let's learn together.</p>
+<p> Asabenah Yetabah's answers to the 30 Day JavaScript Practice project
+</p>
