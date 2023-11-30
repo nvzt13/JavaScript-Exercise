@@ -214,6 +214,9 @@ console.log(newArr)
 
 //----------------------------day9_level_1 22.exercise-------------------------\\
 // # Explain the difference between find and findIndex
+
+Find metodu, bir dizide koşulu sağlayan ilk elemanın değerini döndürür. FindIndex metodu ise, bir dizide koşulu sağlayan ilk elemanın indeks numarasını döndürür
+
 //----------------------------day9_level_1 23.exercise-------------------------\\
 // # Use find to find the first country containing only six letters in the countries array
 

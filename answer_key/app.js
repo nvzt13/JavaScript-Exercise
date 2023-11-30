@@ -13,4 +13,4 @@ const cumle = ulkeler.reduce(function(onceki, ulke, indeks, dizi) {
 
 // yeni stringi yazdırıyoruz
 console.log(cumle);
-// Estonya, Finlandiya, İsveç, Danimarka, Norveç, İzlanda. kuzey Avrupa ülkeleridir
+// Estonya, Fin
