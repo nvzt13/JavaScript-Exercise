@@ -185,6 +185,34 @@ console.log(a)
 //---------------------------day7_level_2 2.exercise ------------------------\\
 // # Quadratic equation is calculated as follows: ax2 + bx + c = 0. Write a function which calculates value or values of a quadratic equation, solveQuadEquation.
 
+// solventQuadEquation fonksiyonu tanımlanıyor
+function solventQuadEquation(a, b, c) {
+  // diskriminant hesaplanıyor
+  let d = b * b - 4 * a * c;
+  // diskriminantın sıfırdan büyük veya eşit olup olmadığı kontrol ediliyor
+  if (d >= 0) {
+    // diskriminantın karekökü alınıyor
+    let sqrt_d = Math.sqrt(d);
+    // denklemin kökleri hesaplanıyor
+    let x1 = (-b + sqrt_d) / (2 * a);
+    let x2 = (-b - sqrt_d) / (2 * a);
+    // kökleri bir dizi olarak döndürüyor
+    return [x1, x2];
+  } else {
+    // diskriminant negatif ise, hata mesajı döndürüyor
+    return "Denklemin gerçek kökü yoktur.";
+  }
+}
+
+// denklemin katsayıları 
+let a = 1;
+let b = -5;
+let c = 6;
+
+// fonksiyon çağrılıyor ve sonucu yazdırılıyor
+console.log(solventQuadEquation(a, b, c));
+
+
 //---------------------------day7_level_2 3.exercise ------------------------\\
 // # Declare a function name printArray. It takes array as a parameter and it prints out each value of the array.
 
@@ -319,6 +347,23 @@ console.log(sumOfEvenNumbers(4));
 
 //---------------------------day7_level_2 13.exercise ------------------------\\
 // # Declare a function name evensAndOdds . It takes a positive integer as parameter and it counts number of evens and odds in the number.
+
+eventsAndOdds(100)
+
+function eventsAndOdds(number){
+ 
+  let event=0
+  let odd = 0
+  for(let i =0; i<=number; i++){
+     if(i%2 ==0){
+       event = event +1
+     }
+     else{
+       odd = odd +1
+     }
+  }
+  console.log(`Number is includes ${event} event and ${odd} odd number`)
+}
 
 //---------------------------day7_level_2 14.exercise ------------------------\\
 // # Write a function which takes any number of arguments and return the sum of the arguments
