@@ -190,6 +190,23 @@ console.log(randomCharecters)
 //----------------------------day6_level_2 2.exercise-------------------------\\
 // # Write a script which generates a random hexadecimal number.
 
+let hexzaArr = ['a','b','c','d','e','f',1,2,3,4,5,6,7,8,9,0]
+
+let hexzaNumber = '#'
+
+  
+  for(let i=1; i<=hexzaArr.length; i++){
+   let index =  hexzaArr[Math.floor(Math.random() * hexzaArr.length)]
+   
+   hexzaNumber += index
+   
+   if(hexzaNumber.length==7){
+     break;
+   }
+  }
+  console.log(hexzaNumber)
+
+
 //----------------------------day6_level_2 3.exercise-------------------------\\
 // # Write a script which generates a random rgb color number
 

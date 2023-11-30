@@ -166,6 +166,22 @@ console.log(findMaxNumber(3,5,7))
 //---------------------------day7_level_2 1.exercise ------------------------\\
 // # Linear equation is calculated as follows: ax + by + c = 0. Write a function which calculates value of a linear equation, solveLinEquation.
 
+function solveLinEquation(a, b, c, x) {
+  // ax + by + c = 0 denkleminde x değeri verildiğinde y değerini hesaplar
+  // y = (-c - ax) / b formülünü kullanır
+  // a, b, c, x sayısal değerler olmalıdır
+  // b sıfır olmamalıdır
+  // y değeri sayısal olarak döndürülür
+  if (b === 0) {
+    throw new Error("b değeri sıfır olamaz");
+  }
+  let y = (-c - a * x) / b;
+  return y;
+}
+let a = solveLinEquation(3,5,7,8)
+
+console.log(a)
+
 //---------------------------day7_level_2 2.exercise ------------------------\\
 // # Quadratic equation is calculated as follows: ax2 + bx + c = 0. Write a function which calculates value or values of a quadratic equation, solveQuadEquation.
 
