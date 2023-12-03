@@ -2,7 +2,7 @@
 | ----- | :-------------------------------------------------------------------------------------------------------------------------------------------------: |
 | 01    |                                                             [Introduction](./days/01_day_introdiction.md)                                                             |
 | 02    |                                               [Data Types](./days/02_day_datatype.md)                                                |
-| 03    |                             [Booleans, Operators, Date](./days/03_day_operators.js)                           |
+| 03    |                             [Booleans, Operators, Date](./days/03_day_operators.md)                           |
 | 04    |                                            [Conditionals](./days/04_day_conditional.js)                                               |
 | 05    |                                                     [Arrays](./days/05_day_arrays.js)                                                      |
 | 06    |                                                       [Loops](./days/06_day_loops.js)                                                       |
