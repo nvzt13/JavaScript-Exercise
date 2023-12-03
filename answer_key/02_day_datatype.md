@@ -1,161 +1,201 @@
-//----------------------------day2_level_1 1.exercise-------------------------\\
-// # Declare a variable named challenge and assign it to an initial value '30 Days Of JavaScript'.
+# Eercise Day 2
+1. Declare a variable named challenge and assign it to an initial value '30 Days Of JavaScript'.
 
-let challenge = '30 days of javascript'
+`let challenge = '30 days of javascript'`
 
-//----------------------------day2_level_1 2.exercise-------------------------\\
-// # Print the string on the browser console using console.log()
 
+2. Print the string on the browser console using console.log()
+
+```
 challenge = '30 days of javascript'
 console.log(challenge)
+```
 
-//----------------------------day2_level_1 3.exercise-------------------------\\
-// # Print the length of the string on the browser console using console.log()
 
+3. Print the length of the string on the browser console using console.log()
+
+```
 challenge = '30 days of javascript'
 console.log(challenge.length)
+```
 
-//----------------------------day2_level_1 4.exercise-------------------------\\
-// # Change all the string characters to capital letters using toUpperCase()
+
+4. Change all the string characters to capital letters using toUpperCase()
 method
 
+```
 challenge = '30 days of javascript'
 console.log(challenge.toUpperCase())
+```
 
-//----------------------------day2_level_1 5.exercise-------------------------\\
-// # Change all the string characters to lowercase letters using toLowerCase() method
 
+5. Change all the string characters to lowercase letters using toLowerCase() method
+
+```
 challenge = '30 days of javascript'
 console.log(challenge.toLowerCase())
+```
 
 
-//----------------------------day2_level_1 6.exercise-------------------------\\
-// # Cut (slice) out the first word of the string using substr() or substring() method
+6. Cut (slice) out the first word of the string using substr() or substring() method
 
+```
 challenge = '30 days of javascript'
 console.log(challenge.substring(3, 5))
+```
 
-//----------------------------day2_level_1 7.exercise-------------------------\\
-// # Slice out the phrase Days Of JavaScript from 30 Days Of JavaScript.
+7. Slice out the phrase Days Of JavaScript from 30 Days Of JavaScript.
 
+```
 challenge = '30 days of javascript'
 let newChallenge = challenge.slice(3,10)
 console.log(newChallenge)
+```
 
-//----------------------------day2_level_1 8.exercise-------------------------\\
-// # Check if the string contains a word Script using includes() method
 
+8. Check if the string contains a word Script using includes() method
+
+```
 challenge = '30 days of javascript'
 console.log(challenge.includes('script'))
+```
 
-//----------------------------day2_level_1 9.exercise-------------------------\\
-// # Split the string into an array using split() method
 
+9. Split the string into an array using split() method
+
+```
 challenge = '30 days of javascript'
 console.log(challenge.split(""))
+```
 
-//----------------------------day2_level_1 10.exercise------------------------\\
-// # Split the string 30 Days Of JavaScript at the space using split() method
 
+10. Split the string 30 Days Of JavaScript at the space using split() method
+
+```
 challenge = '30 days of javascript'
 console.log(challenge.split(" "))
+```
 
-//----------------------------day2_level_1 11.exercise------------------------\\
-// # 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon' split the string at the comma and change it to an array.
 
+11. 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon' split the string at the comma and change it to an array.
+
+```
 let companies = 'Facebook, Google, Microsoft, Apple, IBM, Oracle,Amazon'
 console.log(companies.split(`,`))
+```
 
-//----------------------------day2_level_1 12.exercise------------------------\\
-// # Change 30 Days Of JavaScript to 30 Days Of Python using replace() method.
+12. Change 30 Days Of JavaScript to 30 Days Of Python using replace() method.
 
+```
 challenge = "30 days of javascript"
 console.log(challenge.replace("javascript","phyton"))
+```
 
-//----------------------------day2_level_1 13.exercise------------------------\\
-// # What is character at index 15 in '30 Days Of JavaScript' string? Use charAt() method.
 
+13. What is character at index 15 in '30 Days Of JavaScript' string? Use charAt() method.
+
+```
 challenge = "30 days of javascript"
 console.log(challenge.charAt(15))
+```
 
-//----------------------------day2_level_1 14.exercise------------------------\\
-// # What is the character code of J in '30 Days Of JavaScript' string using 
+
+14. What is the character code of J in '30 Days Of JavaScript' string using 
 charCodeAt()
 
+```
 challenge = "30 days of javascript"
 console.log(challenge.charCodeAt("j"))
+```
 
-//----------------------------day2_level_1 15.exercise------------------------\\
-// # Use indexOf to determine the position of the first occurrence of a in 30 Days Of JavaScript
 
+15. Use indexOf to determine the position of the first occurrence of a in 30 Days Of JavaScript
+
+```
 challenge = "30 days of javascript"
 console.log(challenge.indexOf("a"))
+```
 
-//----------------------------day2_level_1 16.exercise------------------------\\
-// # Use lastIndexOf to determine the position of the last occurrence of a in 30 Days Of JavaScript.
 
+16. Use lastIndexOf to determine the position of the last occurrence of a in 30 Days Of JavaScript.
+
+```
 challenge = "30 days of javascript"
 console.log(challenge.lastIndexOf("a"))
+```
 
-//----------------------------day2_level_1 17.exercise------------------------\\
-// # Use indexOf to find the position of the first occurrence of the word because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
+17. Use indexOf to find the position of the first occurrence of the word because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
 
+```
 let sentence = "You cannot end a sentence with because because is a conjunction."
 console.log(challenge.indexOf("because"))
+```
 
-//----------------------------day2_level_1 18.exercise------------------------\\
-// # Use lastIndexOf to find the position of the last occurrence of the word because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
+18. Use lastIndexOf to find the position of the last occurrence of the word because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
 
+```
 sentence = "You cannot end a sentence with because because is a conjunction."
 console.log(challenge.lastIndexOf("because"))
+```
 
-//----------------------------day2_level_1 19.exercise------------------------\\
-// # Use search to find the position of the first occurrence of the word because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
 
+19. Use search to find the position of the first occurrence of the word because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
+
+```
 sentence = "You cannot end a sentence with because because is a conjunction."
 console.log(challenge.search("because"))
+```
 
-//----------------------------day2_level_1 20.exercise------------------------\\
-// # Use trim() to remove any trailing whitespace at the beginning and the end of a string.E.g ' 30 Days Of JavaScript '.
 
+20. Use trim() to remove any trailing whitespace at the beginning and the end of a string.E.g ' 30 Days Of JavaScript '.
+
+```
 challenge = "30 Days Of JavaScript       "
 console.log(challenge.trim())
+```
 
-//----------------------------day2_level_1 21.exercise------------------------\\
-// # Use startsWith() method with the string 30 Days Of JavaScript and make the result true
 
+21. Use startsWith() method with the string 30 Days Of JavaScript and make the result true
+
+```
 challenge = "30 Days Of JavaScript"
 console.log(challenge.startsWith(30))
+```
 
-//----------------------------day2_level_1 22.exercise------------------------\\
-// # Use endsWith() method with the string 30 Days Of JavaScript and make the result true
 
+22. Use endsWith() method with the string 30 Days Of JavaScript and make the result true
+
+```
 challenge = "30 Days Of JavaScript"
 console.log(challenge.endsWith("JavaScript"))
+```
 
-//----------------------------day2_level_1 23.exercise------------------------\\
-// # Use match() method to find all the a’s in 30 Days Of JavaScript
 
+23. Use match() method to find all the a’s in 30 Days Of JavaScript
+
+```
 challenge = "30 Days Of JavaScript"
 console.log(challenge.match("a"))
+```
 
-//----------------------------day2_level_1 24.exercise------------------------\\
-// # Use concat() and merge '30 Days of' and 'JavaScript' to a single string,
+24. Use concat() and merge '30 Days of' and 'JavaScript' to a single string,
 '30 Days Of JavaScript'
 
+```
 let stringOne = "30 Days Of "
 let stringTwo = "JavaScript"
 console.log(stringOne.concat(stringTwo))
+```
 
-//----------------------------day2_level_1 25.exercise------------------------\\
-// # Use repeat() method to print 30 Days Of JavaScript 2 times
+25. Use repeat() method to print 30 Days Of JavaScript 2 times
 
+```
 challenge = "30 Days Of JavaScript"
 console.log(challenge.repeat(2))
+```
 
 
-//___________________________starting_exercise_level_2_______________________\\
-
+## Level 2
 
 //----------------------------day2_level_2 1.exercise-------------------------\\
 // # Using console.log() print out the following statement:
