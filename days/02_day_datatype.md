@@ -1,4 +1,15 @@
+
+
 # Eercise Day 2
+
+### [Exercise:Level 1](#exercise-level-1)
+### [Exercise:Level 2](#exercise-level-2)
+### [Exercise:Level 3](#exercise-level-3)
+
+##  [Home](../README.md) [<< Day 1](./01_day_introdiction.md) | [Day 3 >>](./03_day_operators.md) 
+
+
+## Exercise Level 1
 1. Declare a variable named challenge and assign it to an initial value '30 Days Of JavaScript'.
 
 ```js
@@ -197,7 +208,7 @@ console.log(challenge.repeat(2))
 ```
 
 
-## Level 2
+## Exercise Level 2
 
 //----------------------------day2_level_2 1.exercise-------------------------\\
 // # Using console.log() print out the following statement:
@@ -281,7 +292,7 @@ console.log(statement.replace("because",""))
 
 //___________________________starting_exercise_level_3_______________________\\
 
-
+## Exercise Level 3
 
 //----------------------------day2_leve_3 1.exercise--------------------------\\
 // # 'Love is the best thing in this world. Some found their love and some are still looking for their love.' Count the number of word love in this sentence.
@@ -349,6 +360,7 @@ bonus + montlyCourses *12} euro `)
 
 
 
+## [Home](../README.md) <br><br>[<< Day 1](./01_day_introdiction.md) | [Day 3 >>](./03_day_operators.js)
 
 
 

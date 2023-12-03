@@ -1,3 +1,10 @@
+
+## [Exercise:Level 1](#exercise-level-1)
+## [Exercise:Level 2](#exercise-level-2)
+## [Exercise:Level 3](#exercise-level-3)
+
+
+
 //----------------------------day3_level_1 1.exercise-------------------------\\
 // # Declare firstName, lastName, country, city, age, isMarried, year variable and assign value to it and use the typeof operator to check different data types.
 
