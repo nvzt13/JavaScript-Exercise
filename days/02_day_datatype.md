@@ -1,12 +1,12 @@
 
+# Exercise Day 2 DataType
 
-# Eercise Day 2
+## [Home](../README.md) | [<< Day 1](./01_day_introdiction.md) | [Day 3 >>](./03_day_operators.md)
 
 ### [Exercise:Level 1](#exercise-level-1)
 ### [Exercise:Level 2](#exercise-level-2)
 ### [Exercise:Level 3](#exercise-level-3)
 
-##  [Home](../README.md) [<< Day 1](./01_day_introdiction.md) | [Day 3 >>](./03_day_operators.md) 
 
 
 ## Exercise Level 1
@@ -210,115 +210,134 @@ console.log(challenge.repeat(2))
 
 ## Exercise Level 2
 
-//----------------------------day2_level_2 1.exercise-------------------------\\
-// # Using console.log() print out the following statement:
+1. Using console.log() print out the following statement:
 
+```js
 console.log(`The quote 'There is no exercise better for the heart than reaching
 down and lifting people up.' by John Holmes teaches us to help one another.`)
+```
 
-//----------------------------day2_level_2 2.exercise-------------------------\\
-// # Using console.log() print out the following quote by Mother Teresa:
+2. Using console.log() print out the following quote by Mother Teresa: The quote 'There is no exercise better for the heart than reaching down and lifting people up.' by John Holmes teaches us to help one another.
 
+```
 console.log(`Love is not patronizing and charity isn't about pity, it is about
 love. Charity and love are the same -- with charity you give love, so don't 
 just give money but reach out your hand instead.`)
+```
 
-//----------------------------day2_level_2 3.exercise-------------------------\\
-// # Using console.log() print out the following quote by Mother Teresa:
+3. Using console.log() print out the following quote by Mother Teresa:
 
+```js
 let number = "10"
 console.log(number===10)
 
 let number1 = 10
 console.log(number1===10)
+```
 
-//----------------------------day2_level_2 4.exercise-------------------------\\
-// # Check if parseFloat('9.8') is equal to 10 if not make it exactly equal with 10.
+4. Check if parseFloat('9.8') is equal to 10 if not make it exactly equal with 10.
 
+```js
 let parseNumber =parseFloat(9.8)
 console.log(number===10)
 
 let ceilNumber = Math.ceil(parseFloat(9.8))
 console.log(number1===10)
+```
+5. Check if 'on' is found in both python and jargon
 
-//----------------------------day2_level_2 5.exercise-------------------------\\
-// # Check if 'on' is found in both python and jargon
-
+```js
 let string = "phyton"
 let string1 ="jargon"
 console.log(string.includes("on") && string1.includes("on"))
+```
 
-//----------------------------day2_level_2 6.exercise-------------------------\\
-// # I hope this course is not full of jargon. Check if jargon is in the sentence.
+6. I hope this course is not full of jargon. Check if jargon is in the sentence.
 
+```js
 let str = "I hope this course is not full of jargon."
 console.log(str.includes("jargon"))
+```
 
-//----------------------------day2_level_2 7.exercise-------------------------\\
-// # Generate a random number between 0 and 100 inclusively.
+7. Generate a random number between 0 and 100 inclusively.
 
+```js
 console.log(parseInt(Math.random()*101))
+```
 
-//----------------------------day2_level_2 8.exercise-------------------------\\
-// # Generate a random number between 50 and 100 inclusively.
+8. Generate a random number between 50 and 100 inclusively.
 
+```js
 console.log(parseInt(Math.random()*51+50))
+```
 
-//----------------------------day2_level_2 9.exercise-------------------------\\
-// # Generate a random number between 0 and 255 inclusively.
+9. Generate a random number between 0 and 255 inclusively.
 
+```js
 console.log(parseInt(Math.random()*255))
+```
 
-//----------------------------day2_level_2 10.exercise------------------------\\
-// # Access the 'JavaScript' string characters using a random number.
+10. Access the 'JavaScript' string characters using a random number.
 
+```js
 let word="javasicript"
 let n =parseInt(Math.random()*11)
 console.log(word[n])
+```
+11. Use console.log() and escape characters to print the following pattern.
 
-//----------------------------day2_level_2 11.exercise------------------------\\
-// # Use console.log() and escape characters to print the following pattern.
+```
+1 1 1 1 1
+2 1 2 4 8
+3 1 3 9 27
+4 1 4 16 64
+5 1 5 25 125
+```
 
+```js
 console.log("1 1 1 1 1 \n2 1 2 4 8 \n3 1 3 9 27 \n4 1 4 16 64 \n5 1 5 25 125 ")
+```
 
-//----------------------------day2_level_2 12.exercise------------------------\\
-// # Use substr to slice out the phrase because because because from the following sentence:'You cannot end a sentence with because because because is a conjunction'
+12. Use substr to slice out the phrase because because because from the following sentence:'You cannot end a sentence with because because because is a conjunction'
 
+```js
 let statement = `You cannot end a sentence with because because because 
 is a conjunction`
 console.log(statement.replace("because",""))
+```
 
 
-
-//___________________________starting_exercise_level_3_______________________\\
 
 ## Exercise Level 3
 
-//----------------------------day2_leve_3 1.exercise--------------------------\\
-// # 'Love is the best thing in this world. Some found their love and some are still looking for their love.' Count the number of word love in this sentence.
+1. 'Love is the best thing in this world. Some found their love and some are still looking for their love.' Count the number of word love in this sentence.
 
+```js
 let strng =`Love is the best thing in this world. Some found their love and
 some are still looking for their love.`
 let count = strng.match(/love/gi)||[].length
 console.log(count)
+```
 
-//----------------------------day2_leve_3 2.exercise--------------------------\\
-// # Use match() to count the number of all because in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
+2. Use match() to count the number of all because in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
 
+```js
 let sentence1 = `You cannot end a sentence with because because because
 is a conjunction`
 let count1 = sentence1.match(/because/gi)||[].length
 console.log(count1)
+```
+3. Clean the following text and find the most frequent word (hint, use replace and regular expressions).
 
-//----------------------------day2_leve_3 3.exercise--------------------------\\
-// # Clean the following text and find the most frequent word (hint, use replace and regular expressions).
-
+```
 let messySentence = `%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;.
 The@re $is no@th@ing; &as& mo@re rewarding as educa@ting &and& 
 @emp%o@weri@ng peo@ple. ;I found tea@ching m%o@re interesting tha@n
 any ot#her %jo@bs. %Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!? 
 %Th#is 30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of
 tea&ching`;
+```
+```js
 
 let cleanSentence = messySentence.replace(/[^a-zA-Z ]/g, " ");
 let words = cleanSentence.split(' ');
@@ -339,9 +358,11 @@ for(let word in wordCounts) {
 }
 
 console.log(`Most frequent word is '${maxWord}' with count ${maxCount}`);
+```
 
-//----------------------------day2_leve_3 4.exercise--------------------------\\
-// # Calculate the total annual income of the person by extracting the numbers from the following text. 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.'
+4. Calculate the total annual income of the person by extracting the numbers from the following text. 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.'
+
+```js
 
 let text =`He earns 5000 euro from salary per month, 10000 euro annual 
 bonus, 15000 euro online courses per month.`
@@ -357,10 +378,10 @@ let montlyCourses = numbers[2]
 
 console.log(`Annual income is ${montlySalary*12 +
 bonus + montlyCourses *12} euro `)
+```
 
 
-
-## [Home](../README.md) <br><br>[<< Day 1](./01_day_introdiction.md) | [Day 3 >>](./03_day_operators.js)
+## [Home](../README.md) | [<< Day 1](./01_day_introdiction.md) | [Day 3 >>](./03_day_operators.md)
 
 
 
