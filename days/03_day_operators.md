@@ -334,6 +334,7 @@ console.log(`en fazla ${remainingSeconds} saniye ömrÜn kaldı WAKW UP`)
 - DD-MM-YYYY HH:mm
 - DD/MM/YYYY HH:mm
 ```
+```js
 let now = new Date()
 
 let year = now.getFullYear()
@@ -345,8 +346,7 @@ let minuts = now.getMinutes()
 console.log(`${year}-${mount}-${day}           ${hours} : ${minuts}`)
 console.log(`${day}-${mount}-${year}           ${hours} : ${minuts}`)
 console.log(`${year} / ${mount} / ${day}       ${hours} : ${minuts}`)
-
-
+```
 
 ## Exercise Level 3
 
@@ -355,6 +355,7 @@ console.log(`${year} / ${mount} / ${day}       ${hours} : ${minuts}`)
 - YYY-MM-DD HH:mm eg. 20120-01-02 07:05
 ```
 
+```js
 let now = new Date()
 
 let year = now.getFullYear()
@@ -364,5 +365,6 @@ let hour = String(now.getHours()).padStart(2,'0')
 let minut = String(now.getMinutes()).padStart(2,'0')
 console.log(`${day} / ${mount} / ${year} ${hour} : ${minut}`)
 
+```
 
 ## [Home](../README.md) | [<< Day 2](./02_day_datatype.md) | [Day 4 >>](./04_day_conditional.md)
