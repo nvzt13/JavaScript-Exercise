@@ -1,94 +1,238 @@
-//----------------------------day5_level_1 1.exercise-------------------------\\
-// # Declare an empty array;
+# Day 5 -Arrays
+ 
+ ## [Home](../README.md) | [<< Day 4](./04_day_conditional.md) | [Day 6 >>](./06_day_loops.md)
+
+
+### [Exercise:Level 1](#exercise-level-1)
+
+```js
+const countries = [
+  'Albania',
+  'Bolivia',
+  'Canada',
+  'Denmark',
+  'Ethiopia',
+  'Finland',
+  'Germany',
+  'Hungary',
+  'Ireland',
+  'Japan',
+  'Kenya'
+]
+
+const webTechs = [
+  'HTML',
+  'CSS',
+  'JavaScript',
+  'React',
+  'Redux',
+  'Node',
+  'MongoDB'
+]
+```
+
+1. Declare an _empty_ array;
+2. Declare an array with more than 5 number of elements
+3. Find the length of your array
+4. Get the first item, the middle item and the last item of the array
+5. Declare an array called _mixedDataTypes_, put different data types in the array and find the length of the array. The array size should  be greater than 5
+6. Declare an array variable name itCompanies and assign initial values Facebook, Google, Microsoft, Apple, IBM, Oracle and Amazon
+7. Print the array using _console.log()_
+8. Print the number of companies in the array
+9. Print the first company, middle and last company
+10. Print out each company
+11. Change each company name  to uppercase one by one and print them out
+12. Print the array like as a sentence: Facebook, Google, Microsoft, Apple, IBM,Oracle and Amazon are big IT companies.
+13. Check if a certain company exists in the itCompanies array. If it exist return the company else return a company is _not found_
+14. Filter out companies which have more than one 'o' without the filter method
+15. Sort the array using _sort()_ method
+16. Reverse the array using _reverse()_ method
+17. Slice out the first 3 companies from the array
+18. Slice out the last 3 companies from the array
+19. Slice out the middle IT company or companies from the array
+20. Remove the first IT company from the array
+21. Remove the middle IT company or companies from the array
+22. Remove the last IT company from the array
+23. Remove all IT companies
+
+### [Exercise: Level 2](#exercise-level-2)
+
+1. Create a separate countries.js file and store the countries array in to this file, create a separate file web_techs.js and store the webTechs array in to this file. Access both file in main.js file
+1. First remove all the punctuations and change the string to array and count the number of words in the array
+
+    ```js
+    let text =
+    'I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.'
+    console.log(words)
+    console.log(words.length)
+    ```
+
+    ```sh
+    ["I", "love", "teaching", "and", "empowering", "people", "I", "teach", "HTML", "CSS", "JS", "React", "Python"]
+  
+    13
+    ```
+
+1. In the following shopping cart add, remove, edit items
+
+    ```js
+    const shoppingCart = ['Milk', 'Coffee', 'Tea', 'Honey']
+    ```
+
+   - add 'Meat' in the beginning of your shopping cart if it has not been already added
+   - add Sugar at the end of you shopping cart if it has not been already added
+   - remove 'Honey' if you are allergic to honey
+   - modify Tea to 'Green Tea'
+1. In countries array check if 'Ethiopia' exists in the array if it exists print 'ETHIOPIA'. If it does not exist add to the countries list.
+1. In the webTechs array check if Sass exists in the array  and if it exists print 'Sass is a CSS preprocess'. If it does not exist add Sass to the array and print the array.
+1. Concatenate the following two variables and store it in a fullStack variable.
+
+    ```js
+    const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux']
+    const backEnd = ['Node','Express', 'MongoDB']
+  
+    console.log(fullStack)
+    ```
+
+    ```sh
+    ["HTML", "CSS", "JS", "React", "Redux", "Node", "Express", "MongoDB"]
+    ```
+
+### [Exercise:Level 3](#exercise-level-3)
+
+1. The following is an array of 10 students ages:
+
+    ```js
+    const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+    ```
+
+    - Sort the array and find the min and max age
+    - Find the median age(one middle item or two middle items divided by two)
+    - Find the average age(all items divided by number of items)
+    - Find the range of the ages(max minus min)
+    - Compare the value of (min - average) and (max - average), use _abs()_ method
+1.Slice the first ten countries from the [countries array](https://github.com/Asabeneh/30DaysOfJavaScript/tree/master/data/countries.js)
+1. Find the middle country(ies) in the [countries array](https://github.com/Asabeneh/30DaysOfJavaScript/tree/master/data/countries.js)
+2. Divide the countries array into two equal arrays if it is even.  If countries array is not even , one more country for the first half.
+ 
+
+## Exercise Level 1
+
+ 1. Declare an empty array;
+
+```js
+// app.js
 
 const arr =[];
 console.log(arr)
 
-//----------------------------day5_level_1 2.exercise-------------------------\\
-// # Declare an array with more than 5 number of elements
+```
+ 2. Declare an array with more than 5 number of elements
 
+```js
+// app.js
 const arr =[1,2,3,4,5,6];
 console.log(arr)
+```
 
-//----------------------------day5_level_1 3.exercise-------------------------\\
-// # Find the length of your array
+ 3. Find the length of your array
 
+```js
+// app.js
 const arr =[1,2,3,4,5,6];
 console.log(arr.length)
+```
 
+ 4. Get the first item, the middle item and the last item of the array
 
-//----------------------------day5_level_1 4.exercise-------------------------\\
-// # Get the first item, the middle item and the last item of the array
-
+```js
+// app.js
 const arr =[1,2,3,4,5,6];
 console.log(arr[0])
 console.log(arr.length/2, arr.length/2+1)
 console.log(arr[arr.length-1])
+```
 
+ 5. Declare an array called mixedDataTypes, put different data types in the array and find the length of the array. The array size should be greater than 5
 
-//----------------------------day5_level_1 5.exercise-------------------------\\
-// # Declare an array called mixedDataTypes, put different data types in the array and find the length of the array. The array size should be greater than 5
-
+```js
+// app.js 
 const mixedDataTypes = [1,'nevzat',true,undefined,null, {}]
 console.log(mixedDataTypes)
+```
 
+6.  Declare an array variable name itCompanies and assign initial values Facebook, Google, Microsoft, Apple, IBM, Oracle and Amazon
 
-//----------------------------day5_level_1 6.exercise-------------------------\\
-// # Declare an array variable name itCompanies and assign initial values Facebook, Google, Microsoft, Apple, IBM, Oracle and Amazon
-
+```js
+// app.js
 const itCompanies = ['Facebook','Google','Microsoft','Apple','IBM','Oracle','Amazon']
+```
 
 
-//----------------------------day5_level_1 7.exercise-------------------------\\
-// # Print the array using console.log()
+ 7. Print the array using console.log()
 
+```js
+// app.js
 const itCompanies = ['Facebook','Google','Microsoft','Apple','IBM','Oracle','Amazon']
 console.log(itCompanies)
+```
 
+ 8. Print the number of companies in the array
 
-//----------------------------day5_level_1 8.exercise-------------------------\\
-// # Print the number of companies in the array
-
+```js
+// app.js
 const itCompanies = ['Facebook','Google','Microsoft','Apple','IBM','Oracle','Amazon']
 console.log(itCompanies.length) 
+```
 
+ 9. Print the first company, middle and last company
 
-//----------------------------day5_level_1 9.exercise-------------------------\\
-// # Print the first company, middle and last company
+```js
+//appjs
 
 const itCompanies = ['Facebook','Google','Microsoft','Apple','IBM','Oracle','Amazon']
 console.log(itCompanies[0])
 console.log(itCompanies[Math.round(itCompanies.length/2-1)])
 console.log(itCompanies[itCompanies.length-1])
+```
 
+ 10. Print out each company
 
-//----------------------------day5_level_1 10.exercise-------------------------\\
-// # Print out each company
+```js
+// app.js
 
 const itCompanies = ['Facebook','Google','Microsoft','Apple','IBM','Oracle','Amazon']
 let result = itCompanies.forEach(countri => {
   console.log(countri)
 })
+```
 
+ 11. Change each company name to uppercase one by one and print them out
 
-//----------------------------day5_level_1 11.exercise-------------------------\\
-// # Change each company name to uppercase one by one and print them out
+```js
+// app.js
 
 const itCompanies = ['Facebook','Google','Microsoft','Apple','IBM','Oracle','Amazon']
 let result = itCompanies.forEach(countri => {
 console.log(countri.toLocaleUpperCase())
 })
 
+```
 
-//----------------------------day5_level_1 12.exercise-------------------------\\
-// # Print the array like as a sentence: Facebook, Google, Microsoft, Apple, IBM,Oracle and Amazon are big IT companies.
+12.  Print the array like as a sentence: Facebook, Google, Microsoft, Apple, IBM,Oracle and Amazon are big IT companies.
+
+```js
+// app.js
 
 const itCompanies = ['Facebook','Google','Microsoft','Apple','IBM','Oracle','Amazon']
 console.log(`${itCompanies.toString()} are big companies.`)
 
+```
 
-//----------------------------day5_level_1 13.exercise-------------------------\\
-// # Check if a certain company exists in the itCompanies array. If it exist return the company else return a company is not found
+13. Check if a certain company exists in the itCompanies array. If it exist return the company else return a company is not found
+
+```js
+// app.js
 
 const itCompanies = ['Facebook','Google','Microsoft','Apple','IBM','Oracle','Amazon']
 if(itCompanies.includes('Facebook')){
@@ -97,10 +241,12 @@ if(itCompanies.includes('Facebook')){
 else{
     console.log("company is not found")
 }
+```
 
+ 14. Filter out companies which have more than one 'o' without the filter method
 
-//----------------------------day5_level_1 14.exercise-------------------------\\
-// # Filter out companies which have more than one 'o' without the filter method
+```js
+// app.js
 
 const companies = ['Facebook','Google','Microsoft','Apple','IBM','Oracle','Amazon']
 const result=[]
@@ -118,84 +264,113 @@ for(let i=0; i<companies.length; i++){
     }
 }
 console.log(result)
+```
+ 15. Sort the array using sort() method
 
-
-//----------------------------day5_level_1 15.exercise-------------------------\\
-// # Sort the array using sort() method
+```js
+// app.js
 
 const itCompanies = ['Facebook','Google','Microsoft','Apple','IBM','Oracle','Amazon']
 console.log(itCompanies.sort())
 
+```
 
-//----------------------------day5_level_1 16.exercise-------------------------\\
-// # Reverse the array using reverse() method
+ 16. Reverse the array using reverse() method
+
+```js
+// app.js
 
 const itCompanies = ['Facebook','Google','Microsoft','Apple','IBM','Oracle','Amazon']
 console.log(itCompanies.reverse())
+```
+ 17. Slice out the first 3 companies from the array
 
-
-
-//----------------------------day5_level_1 17.exercise-------------------------\\
-// # Slice out the first 3 companies from the array
+```js
+// app.js
 
 const itCompanies = ['Facebook','Google','Microsoft','Apple','IBM','Oracle','Amazon']
 console.log(itCompanies.slice(0,3))
+```
 
+ 18. Slice out the last 3 companies from the array
 
-//----------------------------day5_level_1 18.exercise-------------------------\\
-// # Slice out the last 3 companies from the array
+```js
+// aap.js
 
 const itCompanies = ['Facebook','Google','Microsoft','Apple','IBM','Oracle','Amazon']
 console.log(itCompanies.slice(itCompanies.length-3,itCompanies.length))
+```
 
+ 19. Slice out the middle IT company or companies from the array
 
-//----------------------------day5_level_1 19.exercise-------------------------\\
-// # Slice out the middle IT company or companies from the array
-
-const itCompanies = ['Facebook','Google','Microsoft','Apple','IBM','Oracle','Amazon']
+ ```js
+ // app.js
+ 
+ const itCompanies = ['Facebook','Google','Microsoft','Apple','IBM','Oracle','Amazon']
 console.log(itCompanies.length) //7
 console.log(itCompanies.slice(itCompanies.length/2,itCompanies.length/2+1))
+```
 
+ 20. Remove the first IT company from the array
 
-//----------------------------day5_level_1 20.exercise-------------------------\\
-// # Remove the first IT company from the array
+```js
+// app.js
 
 const itCompanies = ['Facebook','Google','Microsoft','Apple','IBM','Oracle','Amazon']
  itCompanies.shift()
 console.log(itCompanies)
+```
 
+ 21. Remove the middle IT company or companies from the array
 
-//----------------------------day5_level_1 21.exercise-------------------------\\
-// # Remove the middle IT company or companies from the array
+```js
+// app.js
 
 const itCompanies = ['Facebook','Google','Microsoft','Apple','IBM','Oracle','Amazon']
 itCompanies.splice(itCompanies.length/2,1)
 console.log(itCompanies)
+```
+22. Remove the last IT company from the array
 
-
-//----------------------------day5_level_1 22.exercise-------------------------\\
-// # Remove the last IT company from the array
+```js
+// app.js
 
 const itCompanies = ['Facebook','Google','Microsoft','Apple','IBM','Oracle','Amazon']
 itCompanies.pop()
 console.log(itCompanies)
+```
 
+ 23. Remove all IT companies
 
-//----------------------------day5_level_1 23.exercise-------------------------\\
-// # Remove all IT companies
+```js
+// app.js
 
 const itCompanies = ['Facebook','Google','Microsoft','Apple','IBM','Oracle','Amazon']
 itCompanies.splice(0,itCompanies.length)
 console.log(itCompanies)
 
-//___________________________starting_exercise_level_2_______________________\\
+```
 
-//----------------------------day5_level_2 1.exercise-------------------------\\
-// # Create a separate countries.js file and store the countries array in to this file, create a separate file web_techs.js and store the webTechs array in to this file. Access both file in main.js file
+## Exercise Level 2
 
 
-//----------------------------day5_level_2 2.exercise-------------------------\\
-// # First remove all the punctuations and change the string to array and count the number of words in the array
+1. Create a separate countries.js file and store the countries array in to this file, create a separate file web_techs.js and store the webTechs array in to this file. Access both file in main.js file
+
+
+2. First remove all the punctuations and change the string to array and count the number of words in the array
+
+```
+let text =
+'I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.'
+console.log(words)
+console.log(words.length)
+```
+```
+["I", "love", "teaching", "and", "empowering", "people", "I", "teach", "HTML", "CSS", "JS", "React", "Python"]
+13 
+```
+```js
+// app.js
 
 let text =
 'I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.'
@@ -203,10 +378,20 @@ let noPunctuations = text.replace(/[.,]/gi)
 let words = noPunctuations.split(' ')
 console.log(words)
 console.log(words.length)
+```
 
+ 3. In the following shopping cart add, remove, edit items
 
-//----------------------------day5_level_2 3.exercise-------------------------\\
-// # In the following shopping cart add, remove, edit items
+```
+const shoppingCart = ['Milk', 'Coffee', 'Tea', 'Honey']
+
+- add 'Meat' in the beginning of your shopping cart if it has not been already added
+- add Sugar at the end of you shopping cart if it has not been already added
+- remove 'Honey' if you are allergic to honey
+- modify Tea to 'Green Tea'
+```
+```js
+// app.js
 
 const shoppingCart = ['Milk', 'Coffee', 'Tea', 'Honey']
 
@@ -222,9 +407,11 @@ shoppingCart[3] ='Green Tea'
 
 console.log(shoppingCart)
 
+```
+ 4. In countries array check if 'Ethiopia' exists in the array if it exists print 'ETHIOPIA'. If it does not exist add to the countries list.
 
-//----------------------------day5_level_2 4.exercise-------------------------\\
-// # In countries array check if 'Ethiopia' exists in the array if it exists print 'ETHIOPIA'. If it does not exist add to the countries list.
+```js
+// app.js
 
 const countries = [
     'Albania',
@@ -242,12 +429,15 @@ const countries = [
   
 let checkEthiopia = countries.includes('Ethiopia')
 console.log(checkEthiopia)
+```
 
+ 5. In the webTechs array check if Sass exists in the array and if it exists print 'Sass is a CSS preprocess'. If it does not exist add Sass to the array and print the array.
 
-//----------------------------day5_level_2 5.exercise-------------------------\\
-// # 
-// const webTechs = [In the webTechs array check if Sass exists in the array and if it exists print 'Sass is a CSS preprocess'. If it does not exist add Sass to the array and print the array.
+```js
+// app.js
 
+// const webTechs =
+  [ 
     'HTML',
     'CSS',
     'JavaScript',
@@ -260,23 +450,48 @@ console.log(checkEthiopia)
   let chechSass = webTechs.includes('Sass')  // false
   webTechs.push('Sass')
   console.log(webTechs)
+  ```
 
 
-//----------------------------day5_level_2 6.exercise-------------------------\\
-// # Concatenate the following two variables and store it in a fullStack variable.
+ 6. Concatenate the following two variables and store it in a fullStack variable.
+ ```
+ const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux']
+const backEnd = ['Node','Express', 'MongoDB']
+
+console.log(fullStack)
+```
+```
+["HTML", "CSS", "JS", "React", "Redux", "Node", "Express", "MongoDB"]
+```
+
+```js
+// app.js 
 
 const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux']
 const backEnd = ['Node','Express', 'MongoDB']
 
 let fullStack = frontEnd.concat(backEnd)
 console.log(fullStack)
+```
 
-//___________________________starting_exercise_level_3_______________________\\
+## Exercise Level 3
 
-//----------------------------day5_level_3 1.exercise-------------------------\\
-// # The following is an array of 10 students ages:
 
+1. The following is an array of 10 students ages:
+
+```
 const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+```
+```
+Sort the array and find the min and max age
+Find the median age(one middle item or two middle items divided by two)
+Find the average age(all items divided by number of items)
+Find the range of the ages(max minus min)
+Compare the value of (min - average) and (max - average), use abs() method 1.Slice the first ten countries from the countries array
+```
+
+```js
+// app.js
 
 let min = ages.sort()
 console.log(min[0])
@@ -307,11 +522,13 @@ let min = arrangement[0]
 let max = arrangement[arrangement.length-1]
 let range = max - min
 console.log(range)
+```
 
 
-//----------------------------day5_level_3 2.exercise-------------------------\\
-// # Find the middle country(ies) in the countries array
+ 2. Find the middle country(ies) in the countries array
 
+```js
+// app.js
 const countries = [
     'Albania',
     'Bolivia',
@@ -329,11 +546,12 @@ const countries = [
   console.log(countries.length)  // 11
   let middleCountry = countries[Math.ceil(countries.length/2)-1]
   console.log(middleCountry)
+```
 
+ 3. Divide the countries array into two equal arrays if it is even. If countries array is not even , one more country for the first half.
 
-
-//----------------------------day5_level_3 3.exercise-------------------------\\
-// # Divide the countries array into two equal arrays if it is even. If countries array is not even , one more country for the first half.
+```js
+// app.js
 
 const countries = [
     'Albania',
@@ -353,3 +571,7 @@ const countries = [
   let part1 = countries.splice(0,6)
   let part2 = countries.splice(0,6)
   console.log(part1,part2)
+
+```
+
+ ## [Home](../README.md) | [<< Day 4](./04_day_conditional.md) | [Day 6 >>](./06_day_loops.md)
