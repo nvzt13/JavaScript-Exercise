@@ -1,3 +1,7 @@
+# Day 4 - Conditionals
+
+## [Home](../README.md) | [<< Day 3](./03_day_operators.md) | [Day 5 >>](./05_day_arrays.md)
+
 
 ### [Exercises: Level 1](#exercise-level-1)
 
@@ -335,6 +339,7 @@ switch(month){
 }
 ```
 
+## [Home](../README.md) | [<< Day 3](./03_day_operators.md) | [Day 5 >>](./05_day_arrays.md)
 
 
 
