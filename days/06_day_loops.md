@@ -1,4 +1,4 @@
-# Day 5 - Loops
+# Day 6 - Loops
  
  ## [Home](../README.md) | [<< Day 5](./05_day_arrays.md) | [Day 7 >>](07_day_function.md)
 
