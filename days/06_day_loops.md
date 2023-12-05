@@ -1,5 +1,45 @@
-//----------------------------day6_level_1 1.exercise-------------------------\\
-// # Iterate 0 to 10 using for loop, do the same using while and do while loop
+# Day 5 - Loops
+ 
+ ## [Home](../README.md) | [<< Day 5](./05_day_arrays.md) | [Day 7 >>](07_day_function.md)
+
+
+### [Exercise:Level 1](#exercise-level-1)
+### [Exercise:Level 2](#exercise-level-2)
+### [Exercise:Level 3](#exercise-level-3)
+
+## Exercise Level 1
+```
+const countries = [
+  'Albania',
+  'Bolivia',
+  'Canada',
+  'Denmark',
+  'Ethiopia',
+  'Finland',
+  'Germany',
+  'Hungary',
+  'Ireland',
+  'Japan',
+  'Kenya'
+]
+
+const webTechs = [
+  'HTML',
+  'CSS',
+  'JavaScript',
+  'React',
+  'Redux',
+  'Node',
+  'MongoDB'
+]
+
+const mernStack = ['MongoDB', 'Express', 'React', 'Node']
+```
+
+1. Iterate 0 to 10 using for loop, do the same using while and do while loop
+
+```js
+//app.js
 
 for(let i= 0; i<=10; i++){
     console.log(i)
@@ -17,8 +57,12 @@ do{
     i++
 } while(i<=10)
 
-//----------------------------day6_level_1 2.exercise-------------------------\\
-// # Iterate 10 to 0 using for loop, do the same using while and do while loop
+```
+
+ 2. Iterate 10 to 0 using for loop, do the same using while and do while loop
+
+```js
+// app.js
 
 for(let i= 10; i>=0; i--){
     console.log(i)
@@ -36,8 +80,11 @@ do{
     i--
 } while(i>=0)
 
-//----------------------------day6_level_1 3.exercise-------------------------\\
-// # Iterate 0 to n using for loop
+```
+ 3. Iterate 0 to n using for loop
+
+```js
+// app.js
 
 let n =5
 
@@ -45,9 +92,21 @@ for(let i=0; i<=n; i++){
 
 console.log(i)
 }
+```
 
-//----------------------------day6_level_1 4.exercise-------------------------\\
-// # Write a loop that makes the following pattern using console.log():
+ 4. Write a loop that makes the following pattern using console.log():
+
+```js
+    #
+    ##
+    ###
+    ####
+    #####
+    ######
+    #######
+```
+```js
+//app.js
 
 let string = ""
 
@@ -61,8 +120,24 @@ for(let i=1; i<=7; i++){
   string+= ""
 }
 
-//----------------------------day6_level_1 5.exercise-------------------------\\
-// # Use loop to print the following pattern:
+```
+ 5. Use loop to print the following pattern:
+```js
+0 x 0 = 0
+1 x 1 = 1
+2 x 2 = 4
+3 x 3 = 9
+4 x 4 = 16
+5 x 5 = 25
+6 x 6 = 36
+7 x 7 = 49
+8 x 8 = 64
+9 x 9 = 81
+10 x 10 = 100
+```
+```js
+
+//app.js
 
 const numbers =[0,1,2,3,4,5,6,7,8,9,10]
 
@@ -70,8 +145,24 @@ for(num of numbers){
     console.log(`${num} * ${num} = ${num*num}`)
 }
 
-//----------------------------day6_level_1 6.exercise-------------------------\\
-// # Using loop print the following pattern
+```
+ 6. Using loop print the following pattern
+```js
+ i    i^2   i^3
+ 0    0     0
+ 1    1     1
+ 2    4     8
+ 3    9     27
+ 4    16    64
+ 5    25    125
+ 6    36    216
+ 7    49    343
+ 8    64    512
+ 9    81    729
+ 10   100   1000
+ ```
+```js
+//app.js
 
 let output = 'i   i^2  i^3 \n'
 for(let i=0; i<=10; i++){
@@ -82,34 +173,50 @@ for(let i=0; i<=10; i++){
   output+= i + "     "+ square + "     " + cube + "\n"
 }
 console.log(output)
+```
 
-//----------------------------day6_level_1 7.exercise-------------------------\\
-// # Use for loop to iterate from 0 to 100 and print only even numbers
+ 7. Use for loop to iterate from 0 to 100 and print only even numbers
+
+```js
+
+//app.js
 
 for(let i=0; i<=100; i+=2){
     console.log(i)
 }
+```
 
-//----------------------------day6_level_1 8.exercise-------------------------\\
-// # Use for loop to iterate from 0 to 100 and print only odd numbers
+ 8. Use for loop to iterate from 0 to 100 and print only odd numbers
+
+```js
+//app.js
 
 for(let i=1; i<=100; i+=2){
     console.log(i)
 }
+```
 
-//----------------------------day6_level_1 9.exercise-------------------------\\
-// # Use for loop to iterate from 0 to 100 and print only prime numbers
-//----------------------------day6_level_1 10.exercise-------------------------\\
-// # Use for loop to iterate from 0 to 100 and print the sum of all numbers.
+ 9. Use for loop to iterate from 0 to 100 and print only prime numbers
+ 10. Use for loop to iterate from 0 to 100 and print the sum of all numbers.
+```
+The sum of all numbers from 0 to 100 is 5050.
+```
+```js
+//app.js
 
 let sum = 0
 for(let i=0; i<=100; i++){
 sum+=i
 }
 console.log(sum)
+```
 
-//----------------------------day6_level_1 11.exercise-------------------------\\
-// # Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds.
+ 11. Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds.
+```
+The sum of all evens from 0 to 100 is 2550. And the sum of all odds from 0 to 100 is 2500.
+```
+```js
+//app.js
 
 let sumeven = 0
 for(let i=0; i<=100; i+=2){
@@ -123,9 +230,15 @@ for(let i=1; i<=100; i+=2){
 sumodd+=i
 }
 console.log(sumodd)
+```
 
-//----------------------------day6_level_1 12.exercise-------------------------\\
-// # Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds. Print sum of evens and sum of odds as array
+
+ 12. Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds. Print sum of evens and sum of odds as array
+```
+  [2550, 2500]
+```
+```js
+//app.js
 
 let sumeven = 0
 for(let i=0; i<=100; i+=2){
@@ -137,18 +250,25 @@ sumodd+=i
 }
 let arr = [sumeven,sumodd]
 console.log(arr)
+```
 
-//----------------------------day6_level_1 13.exercise-------------------------\\
-// # Develop a small script which generate array of 5 random numbers
+ 13. Develop a small script which generate array of 5 random numbers
+
+```js
+//app.js
 
 outPut = ''
 for(let i =0; i<5; i++){
     outPut+= Math.floor(Math.random(i)*10)
 }
 console.log(outPut)
+```
 
-//----------------------------day6_level_1 14.exercise-------------------------\\
-// # Develop a small script which generate array of 5 random numbers and the numbers must be unique
+
+ 14. Develop a small script which generate array of 5 random numbers and the numbers must be unique
+
+```js
+//app.js
 
 let arr = []
 while(arr.length<5){
@@ -158,9 +278,14 @@ while(arr.length<5){
     }
 }
 console.log(arr.toString())
+```
 
-//----------------------------day6_level_1 15.exercise-------------------------\\
-// # Develop a small script which generate a six characters random id:
+15.  Develop a small script which generate a six characters random id:
+```
+5j2khz
+```
+```js
+//app.js
 
 let text = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
 let randomCharecters = ''
@@ -169,11 +294,17 @@ for (let i = 0; i < 6; i++) {
     randomCharecters += text[index]
 }
 console.log(randomCharecters)
+```
 
-//___________________________starting_exercise_level_2_______________________\\
 
-//----------------------------day6_level_2 1.exercise-------------------------\\
-// # Develop a small script which generate any number of characters random id:
+## Exercise Level 2
+
+ 1. Develop a small script which generate any number of characters random id:
+```
+  fe3jo1gl124g
+```
+```js
+//app.js
 
 let text = 'A1B2C3D4E5F6G7H8I9J0KLMN1O2P3Q4R5S6T7UV8W9XYZabcdefghijklmnopqrstuvwxyz'
 let randomCharecters = ''
@@ -186,9 +317,14 @@ for (let i = 0; i < index; i++) {
     randomCharecters += text[a]
 }
 console.log(randomCharecters)
+```
 
-//----------------------------day6_level_2 2.exercise-------------------------\\
-// # Write a script which generates a random hexadecimal number.
+ 2. Write a script which generates a random hexadecimal number.
+```
+'#ee33df'
+```
+```js
+//app.js
 
 let hexzaArr = ['a','b','c','d','e','f',1,2,3,4,5,6,7,8,9,0]
 
@@ -205,28 +341,43 @@ let hexzaNumber = '#'
    }
   }
   console.log(hexzaNumber)
+  ```
 
 
-//----------------------------day6_level_2 3.exercise-------------------------\\
-// # Write a script which generates a random rgb color number
+ 3. Write a script which generates a random rgb color number
+```
+rgb(240,180,80)
+```
+```js
+//app.js
 
 let number1 = Math.floor(Math.random()*256)
 let number2 = Math.floor(Math.random()*256)
 let number3 = Math.floor(Math.random()*256)
 
 console.log(`rgb(${number1},${number2},${number3})`)
+```
 
-//----------------------------day6_level_2 4.exercise-------------------------\\
-// # Using the above countries array, create the following new array.
+ 4. Using the above countries array, create the following new array.
+```
+["ALBANIA", "BOLIVIA", "CANADA", "DENMARK", "ETHIOPIA", "FINLAND", "GERMANY", "HUNGARY", "IRELAND", "JAPAN", "KENYA"]
+```
+```js
+//app.js
 
 newArr = []
 for(const country of countries){
       newArr.push(country.toLocaleUpperCase())
 }
 console.log(newArr)
+```
 
-//----------------------------day6_level_2 5.exercise-------------------------\\
-// # Using the above countries array, create an array for countries length
+ 5. Using the above countries array, create an array for countries length
+```
+[7, 7, 6, 7, 8, 7, 7, 7, 7, 5, 5]
+```
+```js
+//app.js
 
 const countries = [
     'Albania',
@@ -247,8 +398,27 @@ const countries = [
     arr.push(country.length)
   }
   console.log(arr)
-//----------------------------day6_level_2 6.exercise-------------------------\\
-// # Use the countries array to create the following array of arrays:
+```
+ 6. Use the countries array to create the following array of arrays:
+```
+  [
+  ['Albania', 'ALB', 7],
+  ['Bolivia', 'BOL', 7],
+  ['Canada', 'CAN', 6],
+  ['Denmark', 'DEN', 7],
+  ['Ethiopia', 'ETH', 8],
+  ['Finland', 'FIN', 7],
+  ['Germany', 'GER', 7],
+  ['Hungary', 'HUN', 7],
+  ['Ireland', 'IRE', 7],
+  ['Iceland', 'ICE', 7],
+  ['Japan', 'JAP', 5],
+  ['Kenya', 'KEN', 5]
+]
+```
+
+```js
+//app.js
 
 const countries = [
     'Albania',
@@ -273,9 +443,14 @@ arr.push(`${country},'${coun}',${index}`)
 
 }
 console.log(arr)
+```
 
-//----------------------------day6_level_2 7.exercise-------------------------\\
-// # In above countries array, check if there is a country or countries containing the word 'land'. If there are countries containing 'land', print it as array. If there is no country containing the word 'land', print 'All these countries are without land'.
+ 7. In above countries array, check if there is a country or countries containing the word 'land'. If there are countries containing 'land', print it as array. If there is no country containing the word 'land', print 'All these countries are without land'.
+```
+['Finland','Ireland', 'Iceland']
+```
+```js
+//app.js
 
 const countries = [
     'Albania',
@@ -297,10 +472,15 @@ const countries = [
       }
   }
   console.log(newArr)
+```
 
-//----------------------------day6_level_2 8.exercise-------------------------\\
-// # In above countries array, check if there is a country or countries end with a substring 'ia'. If there are countries end with, print it as array. If there is no country containing the word 'ai', print 'These are countries ends without ia'.
+ 8. In above countries array, check if there is a country or countries end with a substring 'ia'. If there are countries end with, print it as array. If there is no country containing the word 'ai', print 'These are countries ends without ia'.
+```
+['Albania', 'Bolivia','Ethiopia']
+```
 
+```js
+//app.js
 const countries = [
     'Albania',
     'Bolivia',
@@ -321,9 +501,15 @@ if(country.endsWith('ia')){
 }
   }
   console.log(arr)
+```
 
-//----------------------------day6_level_2 9.exercise-------------------------\\
-// # Using the above countries array, find the country containing the biggest number of characters.
+9. Using the above countries array, find the country containing the biggest number of characters.
+```
+Ethiopia
+```
+
+```js
+//app.js
 
 const arr = ['Albania', 'Bolivia','Ethiopia']
  
@@ -336,11 +522,15 @@ for(let i = 0; i<arr.length; i++){
   }
 }
 console.log(count)
+```
 
 
-//----------------------------day6_level_2 10.exercise-------------------------\\
-// # Using the above countries array, find the country containing only 5 characters.
-
+ 10. Using the above countries array, find the country containing only 5 characters.
+```
+['Japan', 'Kenya']
+```
+```js
+//app.js
 const countries = [
     'Albania',
     'Bolivia',
@@ -361,9 +551,12 @@ const countries = [
     }
   }
   console.log(newArr)
+```
 
-//----------------------------day6_level_2 11.exercise-------------------------\\
-// # Find the longest word in the webTechs array
+ 11. Find the longest word in the webTechs array
+
+```js
+//app.js
 
 const webTechs = [
     'HTML',
@@ -382,9 +575,13 @@ if(tech.length>longWorld.length){
 }
  }
  console.log(longWorld)
-
-//----------------------------day6_level_2 12.exercise-------------------------\\
-// # Use the webTechs array to create the following array of arrays:
+```
+12.  Use the webTechs array to create the following array of arrays:
+```
+[["HTML", 4], ["CSS", 3],["JavaScript", 10],["React", 5],["Redux", 5],["Node", 4],["MongoDB", 7]]
+```
+```js
+//app.js
 
 const webTechs = [
     'HTML',
@@ -401,9 +598,12 @@ const webTechs = [
     arr.push(`${tech},${tech.length}`)
   }
   console.log(arr)
+```
 
-//----------------------------day6_level_2 13.exercise-------------------------\\
-// # An application created using MongoDB, Express, React and Node is called a MERN stack app. Create the acronym MERN by using the array mernStack
+13.  An application created using MongoDB, Express, React and Node is called a MERN stack app. Create the acronym MERN by using the array mernStack
+
+```js
+//app.js
 
 const skills = ['MongoDB', 'Express','React', 'Node']
 
@@ -412,9 +612,12 @@ for(let i=0; i<skills.length; i++){
 mern += skills[i][0]
 }
 console.log(mern)
+```
 
-//----------------------------day6_level_2 14.exercise-------------------------\\
-// # Iterate through the array, ["HTML", "CSS", "JS", "React", "Redux", "Node", "Express", "MongoDB"] using a for loop or for of loop and print out the items.
+ 14. Iterate through the array, ["HTML", "CSS", "JS", "React", "Redux", "Node", "Express", "MongoDB"] using a for loop or for of loop and print out the items.
+
+```js
+//app.js
 
 const arr = ["HTML", "CSS","JS","React","Redux","Node","Express","MongoDB"]
 
@@ -425,9 +628,12 @@ for(let i=0; i<arr.length; i++){
 for(const skills of arr){
   console.log(skills)
 }
+```
 
-//----------------------------day6_level_2 15.exercise-------------------------\\
-// # This is a fruit array , ['banana', 'orange', 'mango', 'lemon'] reverse the order using loop without using a reverse method.
+15. This is a fruit array , ['banana', 'orange', 'mango', 'lemon'] reverse the order using loop without using a reverse method.
+
+```js
+//app.js
 
 const fruit = ["banana","orange","mango","lemon"]
 
@@ -437,10 +643,26 @@ for(let i=fruit.length-1; i>=0; i--){
 reverseFruit.push(fruit[i])
 }
 console.log(reverseFruit)
+```
 
-//----------------------------day6_level_2 16.exercise-------------------------\\
-// # Print all the elements of array as shown below.
-
+ 16. Print all the elements of array as shown below.
+```
+  const fullStack = [
+    ['HTML', 'CSS', 'JS', 'React'],
+    ['Node', 'Express', 'MongoDB']
+  ]
+```
+```
+  HTML
+  CSS
+  JS
+  REACT
+  NODE
+  EXPRESS
+  MONGODB
+```
+```js
+//app.js
 const fullStack = [
     ['HTML', 'CSS', 'JS', 'React'],
     ['Node', 'Express', 'MongoDB']
@@ -450,10 +672,14 @@ const fullStack = [
     console.log(skills)
   }
 
-//___________________________starting_exercise_level_3_______________________\\
+```
+## Exercise Level 3
 
-//----------------------------day6_level_3 1.exercise-------------------------\\
-// # Copy countries array(Avoid mutation)
+1. Copy countries array(Avoid mutation)
+
+
+```js
+//app.js
 
 const countries = [
     'Albania',
@@ -470,9 +696,13 @@ const countries = [
   ]
   const newCountries = countries.slice()
   console.log(newCountries)
+```
 
-//----------------------------day6_level_3 2.exercise-------------------------\\
-// # Arrays are mutable. Create a copy of array which does not modify the original. Sort the copied array and store in a variable sortedCountries
+
+
+ 2. Arrays are mutable. Create a copy of array which does not modify the original. Sort the copied array and store in a variable sortedCountries
+```js
+//app.js
 
 const countries = [
     'Albania',
@@ -489,10 +719,14 @@ const countries = [
   ]
   const sorCountries = countries.slice()
   console.log(sorCountries.sort())
+```
 
-//----------------------------day6_level_3 3.exercise-------------------------\\
-// # Sort the webTechs array and mernStack array
 
+
+ 3. Sort the webTechs array and mernStack array
+
+```js
+//app.js
 
 const webTechs = [
     'HTML',
@@ -507,9 +741,13 @@ const webTechs = [
   mernStack.sort()
   webTechs.sort()
   console.log(webTechs,mernStack)
+```
 
-//----------------------------day6_level_3 4.exercise-------------------------\\
-// # Extract all the countries contain the word 'land' from the countries array and print it as array
+
+
+4.  Extract all the countries contain the word 'land' from the countries array and print it as array
+```js
+//app.js
 
 const countries = [
     'Albania',
@@ -532,10 +770,14 @@ if(countri.includes('land')){
 }
 )  
 console.log(newArr)
+```
 
-//----------------------------day6_level_3 5.exercise-------------------------\\
-// # Find the country containing the hightest number of characters in the countries array
 
+
+ 5. Find the country containing the hightest number of characters in the countries array
+
+```js
+//app.js
 
 const arr = [
     'Albania',
@@ -559,9 +801,13 @@ for(let i = 0; i<arr.length; i++){
   }
 }
 console.log(count)
+```
 
-//----------------------------day6_level_3 6.exercise-------------------------\\
-// # Extract all the countries contain the word 'land' from the countries array and print it as array
+
+
+6. Extract all the countries contain the word 'land' from the countries array and print it as array
+```js
+//app.js
 
 const countries = [
     'Afghanistan',
@@ -766,21 +1012,29 @@ const countries = [
   }
   console.log(outPut)
 
+```
 
 
-//----------------------------day6_level_3 7.exercise-------------------------\\
-// # Extract all the countries containing only four characters from the countries array and print it as array
 
-  let outPut = []
+
+ 7. Extract all the countries containing only four characters from the countries array and print it as array
+```js
+//app.js
+
+ let outPut = []
   for(let country of countries){
           if(country.length == 4){
             outPut.push(country)
           }
   }
   console.log(outPut)
+```
 
-//----------------------------day6_level_3 8.exercise-------------------------\\
-// # Extract all the countries containing two or more words from the countries array and print it as array
+ 
+
+ 8. Extract all the countries containing two or more words from the countries array and print it as array
+```js
+//app.js
 
 let result = []
   for(let country of countries){
@@ -790,9 +1044,15 @@ let result = []
     }
   }
   console.log(result)
+```
 
-//----------------------------day6_level_3 9.exercise-------------------------\\
-// # Reverse the countries array and capitalize each country and stored it as an array
+
+
+ 9. Reverse the countries array and capitalize each country and stored it as an array
+
+ ```js
+//app.js
+
 let result = []
 let newArr = countries.reverse()
 
@@ -800,3 +1060,6 @@ let newArr = countries.reverse()
     result.push(country.toLocaleUpperCase())
   }
   console.log(result)
+```
+
+ ## [Home](../README.md) | [<< Day 5](./05_day_arrays.md) | [Day 7 >>](07_day_function.md)
