@@ -1,19 +1,23 @@
 # Day 7 - Functions
  
- ## [Home](../README.md) | [<< Day 6](./06_day_loops.md) | [Day 8 >>](./08_day_object.md)
 
-## Exercise
+
+## [Exercise](#exercise)
 
 ### [Exercises:Level 1](#exercises-level-1)
 ### [Exercises:Level 2](#exercises-level-2)
 ### [Exercises:Level 3](#exercises-level-3)
 
-## Exercise Answers
+## [Exercise:Answers](#exercise-answers)
 
 
 ### [Exercise Answers:Level 1](#exercise-answers-level-1)
 ### [Exercise Answers:Level 2](#exercise-answers-level-2)
-### [Exercise Answers:Level 3](#exercise-answers-level-3)
+### [Exercise Answers:Level 3](#exercise-answers-level-3) <hr>
+
+ #### [Home](../README.md) | [<< Day 6](./06_day_loops.md) | [Day 8 >>](./08_day_object.md)
+
+## Exercise
 
 ### Exercises Level 1
 
@@ -208,6 +212,7 @@
 
 1. Write a function called reverseCountries, it takes countries array and first it copy the array and returns the reverse of the original array
 
+## Exercise Answers
 
 ## Exercise Answers Level 1
 
@@ -803,4 +808,4 @@ function userIdGenerator(){
 ## Exercise Answers Level 3
 
 
- ## [Home](../README.md) | [<< Day 6](./06_day_loops.md) | [Day 8 >>](./08_day_object.md)
+ #### [Home](../README.md) | [<< Day 6](./06_day_loops.md) | [Day 8 >>](./08_day_object.md)

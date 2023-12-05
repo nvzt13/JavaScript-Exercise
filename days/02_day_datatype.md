@@ -1,9 +1,25 @@
+# Day 2 - Datatype
+ 
+## [Exercise](#exercise)
 
-# Exercise Day 2 DataType
+### [Exercises:Level 1](#exercises-level-1)
+### [Exercises:Level 2](#exercises-level-2)
+### [Exercises:Level 3](#exercises-level-3)
 
-## [Home](../README.md) | [<< Day 1](./01_day_introdiction.md) | [Day 3 >>](./03_day_operators.md)
+## [Exercise:Answers](#exercise-answers)
 
-### [Exercise:Level 1](#exercise-level-1)
+
+### [Exercise Answers:Level 1](#exercise-answers-level-1)
+### [Exercise Answers:Level 2](#exercise-answers-level-2)
+### [Exercise Answers:Level 3](#exercise-answers-level-3) <hr>
+
+ #### [Home](../README.md) | [<< Day 1](./01_day_introdiction.md) | [Day 3 >>](./03_day_operators.md)
+
+
+
+## Exercise
+
+### Exercises Level 1
 
 1. Declare a variable named challenge and assign it to an initial value **'30 Days Of JavaScript'**.
 2. Print the string on the browser console using __console.log()__
@@ -32,7 +48,7 @@
 25. Use __repeat()__ method to print 30 Days Of JavaScript 2 times
 
 
-### [Exercise:Level 2](#exercise-level-2)
+### Exercises Level 2
 
 1. Using console.log() print out the following statement:
 
@@ -66,7 +82,7 @@
 
 12.  Use __substr__ to slice out the phrase __because because because__ from the following sentence:__'You cannot end a sentence with because because because is a conjunction'__
 
-### [Exercise:Level 3](#exercise-level-3)
+## Exercises Level 3
 
 
 1. 'Love is the best thing in this world. Some found their love and some are still looking for their love.' Count the number of word __love__ in this sentence.
@@ -80,8 +96,9 @@
 4. Calculate the total annual income of the person by extracting the numbers from the following text. 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.'
 
 
+## Exercise Answers
 
-## Exercise Level 1
+## Exercise Answers Level 1
 1. Declare a variable named challenge and assign it to an initial value '30 Days Of JavaScript'.
 
 ```js
@@ -280,7 +297,7 @@ console.log(challenge.repeat(2))
 ```
 
 
-## Exercise Level 2
+## Exercise Answers Level 2
 
 1. Using console.log() print out the following statement:
 
@@ -380,7 +397,7 @@ console.log(statement.replace("because",""))
 
 
 
-## Exercise Level 3
+## Exercise Answers Level 3
 
 1. 'Love is the best thing in this world. Some found their love and some are still looking for their love.' Count the number of word love in this sentence.
 
@@ -452,9 +469,7 @@ console.log(`Annual income is ${montlySalary*12 +
 bonus + montlyCourses *12} euro `)
 ```
 
-
-## [Home](../README.md) | [<< Day 1](./01_day_introdiction.md) | [Day 3 >>](./03_day_operators.md)
-
+ #### [Home](../README.md) | [<< Day 1](./01_day_introdiction.md) | [Day 3 >>](./03_day_operators.md)
 
 
 

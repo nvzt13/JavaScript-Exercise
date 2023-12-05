@@ -1,9 +1,25 @@
-# Day 5 -Arrays
+# Day 5 - Arrays
  
- ## [Home](../README.md) | [<< Day 4](./04_day_conditional.md) | [Day 6 >>](./06_day_loops.md)
+## [Exercise](#exercise)
+
+### [Exercises:Level 1](#exercises-level-1)
+### [Exercises:Level 2](#exercises-level-2)
+### [Exercises:Level 3](#exercises-level-3)
+
+## [Exercise:Answers](#exercise-answers)
 
 
-### [Exercise:Level 1](#exercise-level-1)
+### [Exercise Answers:Level 1](#exercise-answers-level-1)
+### [Exercise Answers:Level 2](#exercise-answers-level-2)
+### [Exercise Answers:Level 3](#exercise-answers-level-3) <hr>
+
+ #### [Home](../README.md) | [<< Day 4](./04_day_conditional.md) | [Day 6 >>](./06_day_loops.md)
+
+
+
+## Exercise
+
+### Exercises Level 1
 
 ```js
 const countries = [
@@ -55,7 +71,7 @@ const webTechs = [
 22. Remove the last IT company from the array
 23. Remove all IT companies
 
-### [Exercise: Level 2](#exercise-level-2)
+### Exercises Level 2
 
 1. Create a separate countries.js file and store the countries array in to this file, create a separate file web_techs.js and store the webTechs array in to this file. Access both file in main.js file
 1. First remove all the punctuations and change the string to array and count the number of words in the array
@@ -98,7 +114,7 @@ const webTechs = [
     ["HTML", "CSS", "JS", "React", "Redux", "Node", "Express", "MongoDB"]
     ```
 
-### [Exercise:Level 3](#exercise-level-3)
+### Exercises Level 3
 
 1. The following is an array of 10 students ages:
 
@@ -114,9 +130,10 @@ const webTechs = [
 1.Slice the first ten countries from the [countries array](https://github.com/Asabeneh/30DaysOfJavaScript/tree/master/data/countries.js)
 1. Find the middle country(ies) in the [countries array](https://github.com/Asabeneh/30DaysOfJavaScript/tree/master/data/countries.js)
 2. Divide the countries array into two equal arrays if it is even.  If countries array is not even , one more country for the first half.
- 
 
-## Exercise Level 1
+## Exercise Answers 
+
+## Exercise Answers Level 1
 
  1. Declare an empty array;
 
@@ -351,7 +368,7 @@ console.log(itCompanies)
 
 ```
 
-## Exercise Level 2
+## Exercise Answers Level 2
 
 
 1. Create a separate countries.js file and store the countries array in to this file, create a separate file web_techs.js and store the webTechs array in to this file. Access both file in main.js file
@@ -474,7 +491,7 @@ let fullStack = frontEnd.concat(backEnd)
 console.log(fullStack)
 ```
 
-## Exercise Level 3
+## Exercise Answers Level 3
 
 
 1. The following is an array of 10 students ages:
@@ -574,4 +591,4 @@ const countries = [
 
 ```
 
- ## [Home](../README.md) | [<< Day 4](./04_day_conditional.md) | [Day 6 >>](./06_day_loops.md)
+ #### [Home](../README.md) | [<< Day 5](./05_day_arrays.md) | [Day 7 >>](./07_day_function.md)

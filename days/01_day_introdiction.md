@@ -1,10 +1,21 @@
-# Day 1 Introduction
+# Day 1 - Introdiction
+ 
+## [Exercise](#exercise)
 
-## [< Home >](../README.md) | [Day 2 >>](./02_day_datatype.md)
+### [Exercises:Level 1](#exercises-level-1)
 
-### [Exercise Level 1](#exercise-level-1)
+## [Exercise:Answers](#exercise-answers)
 
-### Exercise Level 1
+
+### [Exercise Answers:Level 1](#exercise-answers-level-1)
+
+ #### [Home](../README.md) | [Day 2 >>](./02_day_datatype.md)
+
+
+
+## Exercise
+
+### Exercises Level 1
 
 1. Write a single line comment which says, _comments can make code readable_
 2. Write another single comment which says, _Welcome to 30DaysOfJavaScript_
@@ -24,7 +35,9 @@ I am 25 years old.
 You are 30 years old.
 ```
 
-### Exercise Level 1
+## Exercise Answers
+
+### Exercise Answers Level 1
 
 
 1. Write a single line comment which says, comments can make code readable
@@ -117,5 +130,4 @@ let yourAge = 22
 console.log("I am " + " " +  myAge + " " + "years old.") // I am 25 years old.
 console.log("You are" + " " +  yourAge + " " +  "years old.") // You are 22 years old.
 ```
-
-## [< Home >](../README.md) | [Day 2 >>](./02_day_datatype.md)
+ #### [Home](../README.md) | [Day 2 >>](./02_day_datatype.md.md)
