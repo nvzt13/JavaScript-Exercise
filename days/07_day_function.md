@@ -807,5 +807,215 @@ function userIdGenerator(){
 
 ## Exercise Answers Level 3
 
+1. Modify the userIdGenerator function. Declare a function name userIdGeneratedByUser. It doesn’t take any parameter but it takes two inputs using prompt(). One of the input is the number of characters and the second input is the number of ids which are supposed to be generated.
 
- #### [Home](../README.md) | [<< Day 6](./06_day_loops.md) | [Day 8 >>](./08_day_object.md)
+```js
+// app.js
+
+let charecter = prompt("Kaç karekterli id istiyorsunuz");
+let piece = prompt("kaç adet id istiyorsunuz");
+
+function userIdGeneratedByUser() {
+  let str = "1234567890abcdefghıijklmnoöprsştyüvyz";
+  let id = "";
+
+  for (let i = 0; i <= charecter; i++) {
+    id += str[Math.floor(Math.random() * str.length)];
+  }
+
+  console.log(id);
+}
+
+callingUserIdGeneratedByUser(piece);
+
+function callingUserIdGeneratedByUser(n) {
+  for (let i = 0; i < n; i++) {
+    userIdGeneratedByUser();
+  }
+}
+```
+2. Write a function name rgbColorGenerator and it generates rgb colors.
+
+
+```js
+// app.js
+
+function rgbColor(){
+    let randomNumber1 = Math.floor(Math.random() * 255)
+    let randomNumber2 = Math.floor(Math.random() * 255)
+    let randomNumber3 = Math.floor(Math.random() * 255)
+
+    return `rgb(${randomNumber1},${randomNumber2},${randomNumber3})`
+
+}
+console.log(rgbColor())
+```
+
+3. Write a function arrayOfHexaColors which return any number of hexadecimal colors in an array.
+
+```js
+// app.js
+
+
+const array = [1,2,3,4,5,6,7,8,9,0,"A","B","C","D","E","F"]
+
+function arrayOfHexaColors(n){
+    let hexaColor = "#"
+     
+    for(let i=0; i<6; i++){
+        hexaColor+= n[Math.floor(Math.random()*n.length)]
+    }
+
+    return  console.log(hexaColor)
+}
+
+arrayOfHexaColors(array)
+```
+4. Write a function arrayOfRgbColors which return any number of RGB colors in an array.
+
+ ```js
+// app.js
+
+function arrayOfRgbColors(num) {
+    const colors = [];
+    for (let i = 0; i < num; i++) {
+      const r = Math.floor(Math.random() * 256);
+      const g = Math.floor(Math.random() * 256);
+      const b = Math.floor(Math.random() * 256);
+      colors.push(`rgb(${r}, ${g}, ${b})`);
+    }
+    return colors;
+  }
+  
+```
+5. Write a function convertHexaToRgb which converts hexa color to rgb and it returns an rgb color.
+
+ ```js
+// app.js
+
+function convertHexaToRgb(hex) {
+    const r = parseInt(hex.substring(1, 3), 16);
+    const g = parseInt(hex.substring(3, 5), 16);
+    const b = parseInt(hex.substring(5, 7), 16);
+    return `rgb(${r}, ${g}, ${b})`;
+  }
+  
+  srt="#34f354"
+  
+  console.log(convertHexaToRgb(srt))
+
+
+```
+6. Write a function convertRgbToHexa which converts rgb to hexa color and it returns an hexa color.
+
+ ```js
+// app.js
+
+  function convertRgbToHexa(r, g, b) {
+    const hexR = r.toString(16).padStart(2, "0");
+    const hexG = g.toString(16).padStart(2, "0");
+    const hexB = b.toString(16).padStart(2, "0");
+    return `#${hexR}${hexG}${hexB}`;
+  }
+```
+
+7. Write a function generateColors which can generate any number of hexa or rgb colors.
+
+
+
+ ```js
+// app.js
+
+function rgbColor(){
+    let randomNumber1 = Math.floor(Math.random() * 255)
+    let randomNumber2 = Math.floor(Math.random() * 255)
+    let randomNumber3 = Math.floor(Math.random() * 255)
+    
+    return console.log(`rgb(${randomNumber1},${randomNumber2},${randomNumber3})`)
+    
+}
+
+
+function arrayOfHexaColors(){
+    const array = [1,2,3,4,5,6,7,8,9,0,"A","B","C","D","E","F"]
+    
+    let hexaColor = "#"
+    
+    for(let i=0; i<6; i++){
+        hexaColor+= array[Math.floor(Math.random()*array.length)]
+    }
+    
+    return  console.log(hexaColor)
+}
+
+function generateColors(color,number){
+    
+    if(color=="hexa"){
+        for(let i =0; i<number; i++){
+            arrayOfHexaColors()
+        }
+    }else if(color=="rgb"){
+        for(let i=0; i<number; i++){
+            rgbColor()
+        }
+    }
+}
+console.log(generateColors("hexa",1))
+```
+
+8. Call your function shuffleArray, it takes an array as a parameter and it returns a shuffled array
+
+```js
+// app.js
+
+const array= [1,2,3,4,5,6,7,8,9]
+
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+  }
+  console.log(   shuffleArray(array)   )
+```
+
+```js
+// app.js
+```
+
+```js
+// app.js
+```
+
+```js
+// app.js
+```
+
+```js
+// app.js
+```
+
+```js
+// app.js
+```
+
+```js
+// app.js
+```
+
+```js
+// app.js
+```
+
+```js
+// app.js
+```
+
+```js
+// app.js
+```
+
+```js
+// app.js
+```
