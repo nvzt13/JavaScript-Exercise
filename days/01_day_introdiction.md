@@ -1,19 +1,19 @@
 # Day 1 - Introdiction
  
 
-## [Exercise:Answers](#exercise-answers)
+## [Exercise:Solutions](#exercise-solutions)
 
 
-- ### [Exercise Answers:Level 1](#exercise-answers-level-1)
+- ### [Exercise Level 1](#exercise-level-1)
 
  #### [Home](../README.md) | [Day 2 >>](./02_day_datatype.md)
 
 
 
 
-## Exercise Answers
+## Exercise Solutions
 
-### Exercise Answers Level 1
+### Exercise  Level 1
 
 
 1. Write a single line comment which says, comments can make code readable

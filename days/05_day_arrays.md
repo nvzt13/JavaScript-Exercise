@@ -1,17 +1,17 @@
 # Day 5 - Arrays
  
 
-## [Exercise:Answers](#exercise-answers)
+## [Exercise:Solutions](#exercise-solutions)
 
-- ### [Exercise Answers:Level 1](#exercise-answers-level-1)
-- ### [Exercise Answers:Level 2](#exercise-answers-level-2)
-- ### [Exercise Answers:Level 3](#exercise-answers-level-3) <hr>
+- ### [Exercise:Level 1](#exercise-level-1)
+- ### [Exercise:Level 2](#exercise-level-2)
+- ### [Exercise:Level 3](#exercise-level-3) <hr>
 
  #### [Home](../README.md) | [<< Day 4](./04_day_conditional.md) | [Day 6 >>](./06_day_loops.md)
 
-## Exercise Answers 
+## Exercise Solutions
 
-### Exercise Answers Level 1
+### Exercise Level 1
 
  1. Declare an empty array;
 
@@ -246,7 +246,7 @@ console.log(itCompanies)
 
 ```
 
-## Exercise Answers Level 2
+## Exercise Level 2
 
 
 1. Create a separate countries.js file and store the countries array in to this file, create a separate file web_techs.js and store the webTechs array in to this file. Access both file in main.js file
@@ -369,7 +369,7 @@ let fullStack = frontEnd.concat(backEnd)
 console.log(fullStack)
 ```
 
-## Exercise Answers Level 3
+## Exercise Level 3
 
 
 1. The following is an array of 10 students ages:

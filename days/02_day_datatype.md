@@ -1,18 +1,18 @@
 # Day 2 - Datatype
  
 
-## [Exercise:Answers](#exercise-answers)
+## [Exercise:Solutions](#exercise-solutions)
 
-- ### [Exercise Answers:Level 1](#exercise-answers-level-1)
-- ### [Exercise Answers:Level 2](#exercise-answers-level-2)
-- ### [Exercise Answers:Level 3](#exercise-answers-level-3) <hr>
+- ### [Exercise:Level 1](#exercise-level-1)
+- ### [Exercise:Level 2](#exercise-level-2)
+- ### [Exercise:Level 3](#exercise-level-3) <hr>
 
  #### [Home](../README.md) | [<< Day 1](./01_day_introdiction.md) | [Day 3 >>](./03_day_operators.md)
 
 
-## Exercise Answers
+## Exercise Solutions
 
-### Exercise Answers Level 1
+### Exercise  Level 1
 1. Declare a variable named challenge and assign it to an initial value '30 Days Of JavaScript'.
 
 ```js
@@ -211,7 +211,7 @@ console.log(challenge.repeat(2))
 ```
 
 
-## Exercise Answers Level 2
+## Exercise Level 2
 
 1. Using console.log() print out the following statement:
 
@@ -311,7 +311,7 @@ console.log(statement.replace("because",""))
 
 
 
-## Exercise Answers Level 3
+## Exercise Level 3
 
 1. 'Love is the best thing in this world. Some found their love and some are still looking for their love.' Count the number of word love in this sentence.
 

@@ -1,18 +1,18 @@
 # Day 4 - Conditional
  
 
-## [Exercise:Answers](#exercise-answers)
+## [Exercise:Solutions](#exercise-solutions)
 
-- ### [Exercise Answers:Level 1](#exercise-answers-level-1)
-- ### [Exercise Answers:Level 2](#exercise-answers-level-2)
-- ### [Exercise Answers:Level 3](#exercise-answers-level-3) <hr>
+- ### [Exercise:Level 1](#exercise-level-1)
+- ### [Exercise:Level 2](#exercise-level-2)
+- ### [Exercise:Level 3](#exercise-level-3) <hr>
 
  #### [Home](../README.md) | [<< Day 3](./03_day_operators.md) | [Day 5 >>](./05_day_arrays.md)
 
 
-## Exercise Answers
+## Exercise Solutions
 
-### Exercise Answers Level 1
+### Exercise Level 1
 
 1.  Get user input using prompt(“Enter your age:”). If user is 18 or older , give feedback:'You are old enough to drive' but if not 18 give another feedback stating to wait for the number of years he needs to turn 18.
 
@@ -99,7 +99,7 @@ else{
 }
 ```
 
-### Exercise Answers Level 2
+### Exercise Level 2
 
  1. Write a code which can give grades to students according to theirs scores:
 
@@ -202,7 +202,7 @@ break;
     default: console.log(`${day} is't a day`)
 }
 ```
-### Exercise Answers Level 3
+### Exercise Level 3
 
 1. Write a program which tells the number of days in a month.
 

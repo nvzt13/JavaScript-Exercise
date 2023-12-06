@@ -2,19 +2,19 @@
  
 
 
-## [Exercise:Answers](#exercise-answers)
+## [Exercise:Solutions](#exercise-solutions)
 
 
-- ### [Exercise Answers:Level 1](#exercise-answers-level-1)
-- ### [Exercise Answers:Level 2](#exercise-answers-level-2)
-- ### [Exercise Answers:Level 3](#exercise-answers-level-3) <hr>
+- ### [Exercise:Level 1](#exercise-level-1)
+- ### [Exercise:Level 2](#exercise-level-2)
+- ### [Exercise:Level 3](#exercise-level-3) <hr>
 
  #### [Home](../README.md) | [<< Day 5](./05_day_arrays.md) | [Day 7 >>](./07_day_function.md)
 
 
-## Exercise Answers
+## Exercise Solutions
 
-### Exercise Answers Level 1
+### Exercise Level 1
 ```
 const countries = [
   'Albania',
@@ -304,7 +304,7 @@ console.log(randomCharecters)
 ```
 
 
-## Exercise Answers Level 2
+## Exercise Level 2
 
 
  1. Develop a small script which generate any number of characters random id:
@@ -681,7 +681,7 @@ const fullStack = [
   }
 
 ```
-## Exercise Answers Level 3
+## Exercise Level 3
 
 
 1. Copy countries array(Avoid mutation)

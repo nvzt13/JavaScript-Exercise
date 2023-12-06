@@ -1,18 +1,18 @@
 # Day 7 - Functions
  
 
-## [Exercise:Answers](#exercise-answers)
+## [Exercise:Solutions](#exercise-solutions)
 
-- ### [Exercise Answers:Level 1](#exercise-answers-level-1)
-- ### [Exercise Answers:Level 2](#exercise-answers-level-2)
-- ### [Exercise Answers:Level 3](#exercise-answers-level-3) <hr>
+- ### [Exercise:Level 1](#exercise-level-1)
+- ### [Exercise:Level 2](#exercise-level-2)
+- ### [Exercise:Level 3](#exercise-level-3) <hr>
 
  #### [Home](../README.md) | [<< Day 6](./06_day_loops.md) | [Day 8 >>](./08_day_object.md)
 
 
-## Exercise Answers
+## Exercise Solutions
 
-### Exercise Answers Level 1
+### Exercise Level 1
 
 1.  Declare a function fullName and it print out your full name.
 
@@ -236,7 +236,7 @@ function findMaxNumber(a,b,c){
 console.log(findMaxNumber(3,5,7))
 ```
 
-## Exercise Answers Level 2
+## Exercise Level 2
 
  1. Linear equation is calculated as follows: ax + by + c = 0. Write a function which calculates value of a linear equation, solveLinEquation.
 ```js
@@ -603,7 +603,7 @@ function userIdGenerator(){
   console.log(userIdGenerator())
 ```
 
-## Exercise Answers Level 3
+## Exercise Level 3
 
 1. Modify the userIdGenerator function. Declare a function name userIdGeneratedByUser. It doesn’t take any parameter but it takes two inputs using prompt(). One of the input is the number of characters and the second input is the number of ids which are supposed to be generated.
 

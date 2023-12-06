@@ -1,18 +1,18 @@
 # Day 3 - Operators
  
 
-## [Exercise:Answers](#exercise-answers)
+## [Exercise:Solutions](#exercise-solutions)
 
-- ### [Exercise Answers:Level 1](#exercise-answers-level-1)
-- ### [Exercise Answers:Level 2](#exercise-answers-level-2)
-- ### [Exercise Answers:Level 3](#exercise-answers-level-3) <hr>
+- ### [Exercise:Level 1](#exercise-level-1)
+- ### [Exercise:Level 2](#exercise-level-2)
+- ### [Exercise:Level 3](#exercise-level-3) <hr>
 
  #### [Home](../README.md) | [<< Day 2](./02_day_datatype.md) | [Day 4 >>](./04_day_conditional.md)
 
 
-# Exercise Answers
+# Exercise Solutions
 
-## Exercise Answers Level 1
+## Exercise Level 1
 
 1. Declare firstName, lastName, country, city, age, isMarried, year variable and assign value to it and use the typeof operator to check different data types.
 
@@ -144,7 +144,7 @@ console.log(now.getMinutes())
 console.log(now.getTime())
 ```
 
-## Exercise Answers Level 2
+## Exercise Level 2
 
 1. Write a script that prompt the user to enter base and height of the triangle and calculate an area of a triangle (area = 0.5 x b x h).
 
@@ -353,7 +353,7 @@ console.log(`${year}-${mount}-${day}           ${hours} : ${minuts}`)
 console.log(`${day}-${mount}-${year}           ${hours} : ${minuts}`)
 console.log(`${year} / ${mount} / ${day}       ${hours} : ${minuts}`)
 ```
-## Exercise Answers Level 3
+## Exercise Level 3
 
 1. Create a human readable time format using the Date time object. The hour and the minute should be all the time two digits(7 hours should be 07 and 5 minutes should be 05 )
 ```
