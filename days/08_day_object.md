@@ -17,14 +17,23 @@
  
  1. Create an empty object called dog
 
+```js
+//app.js
 dog = {}
-
+```
 2. Print the the dog object on the console
+
+```js
+//app.js
 
 dog = {}
 console.log(dog)
+```
+
 
  3. Add name, legs, color, age and bark properties for the dog object. The bark property is a method which return woof woof
+```js
+//app.js
 
 dog = {
     name:'garip',
@@ -34,8 +43,12 @@ dog = {
     bark:'woof woof'
   }
   console.log(dog)
+```
+
 
  4. Get name, legs, color, age and bark value from the dog object
+```js
+//app.js
 
 dog = {
     name:'garip',
@@ -49,9 +62,11 @@ console.log(dog.legs)
 console.log(dog['age'])
 console.log(dog['color'])  
 console.log(dog['bark']) 
-
+```
 
  5. Set new properties the dog object: breed, getDogInfo
+```js
+//app.js
 
 dog = {
     name:'garip',
@@ -62,14 +77,29 @@ dog = {
   }
 dog.breed = 'kangal'
 console.log(dog.breed)
-
+```
 
 ### Exercises Level 2
 
 1. Find the person who has many skills in the users object.
-1. Count logged in users, count users having greater than equal to 50 points from the following object.
 
-   ````js
+```js
+//app.js
+  let maxSkills = 0;
+let mostSkilledUser = "";
+for (let user in users) {
+    if (users[user].skills.length > maxSkills) {
+        maxSkills = users[user].skills.length;
+        mostSkilledUser = user;
+    }
+}
+console.log(mostSkilledUser + " isimli kullanıcının yetenek sayısı: " + maxSkills);
+
+```
+
+2. Count logged in users, count users having greater than equal to 50 points from the following object.
+
+```js
    const users = {
      Alex: {
        email: 'alex@alex.com',
@@ -120,20 +150,119 @@ console.log(dog.breed)
        isLoggedIn: false,
        points: 40
      }
-   }```
+   }
 
-1. Find people who are MERN stack developer from the users object
-1. Set your name in the users object without modifying the original users object
-1. Get all keys or properties of users object
-1. Get all the values of users object
-1. Use the countries object to print a country name, capital, populations and languages.
+  
+let pointsIsFifty = 0;
+
+for (let user in users) {
+  if (users[user].points == 50) {
+    pointsIsFifty++;
+  }
+}
+
+console.log(pointsIsFifty);
+```
+
+3. Find people who are MERN stack developer from the users object
+```js
+//app.js
+let mernStackDevelopers = [];
+
+for (let user in users) {
+    if (users[user].skills.includes('MongoDB', 'Express', 'React', 'Node')) {
+        mernStackDevelopers.push(user);
+    }
+}
+console.log(mernStackDevelopers)
+```
+4. Set your name in the users object without modifying the original users object
+```js
+//app.js
+const myName = "Nevzat";
+const newUsers = {...users, [myName]: {email: 'bing@microsoft.com', skills: ['search', 'AI'], age: 3, isLoggedIn: true, points: 100}};
+
+console.log(newUsers);
+```
+5. Get all keys or properties of users object
+```js
+//app.js
+const keys = Object.keys(users);
+console.log(keys);
+```
+6. Get all the values of users object
+```js
+//app.js
+const value = Object.keys(users);
+console.log(value);
+```
+7. Use the countries object to print a country name, capital, populations and languages.
+```js
+//app.js
+for(let country in countries){
+  console.log(country)
+  console.log(countries[country].capital)
+  console.log(countries[country].populations)
+  console.log(countries[country].langue)
+}
+```
 
 ### Exercises Level 3
 
 1. Create an object literal called _personAccount_. It has _firstName, lastName, incomes, expenses_ properties and it has _totalIncome, totalExpense, accountInfo,addIncome, addExpense_ and _accountBalance_ methods. Incomes is a set of incomes and its description and expenses is a set of incomes and its description.
+```js
+//app.js
+const personAccount = {
+  firstName: "Nevzat",
+  lastName: "Atalay",
+  incomes: [
+      {description: "Maaş", amount: 5000},
+      {description: "Kira", amount: 1000},
+      {description: "Yatırım", amount: 2000}
+  ],
+  expenses: [
+      {description: "Kira", amount: 500},
+      {description: "Yemek", amount: 200},
+      {description: "Eğlence", amount: 100}
+  ],
+  totalIncome: function() {
+      let sum = 0;
+      for (let i = 0; i < this.incomes.length; i++) {
+          sum += this.incomes[i].amount;
+      }
+      return sum;
+  },
+  totalExpense: function() {
+      let sum = 0;
+      for (let i = 0; i < this.expenses.length; i++) {
+          sum += this.expenses[i].amount;
+      }
+      return sum;
+  },
+  accountInfo: function() {
+      return "Hesap sahibi: " + this.firstName + " " + this.lastName + "\nToplam gelir: " + this.totalIncome() + "\nToplam gider: " + this.totalExpense();
+  },
+  addIncome: function(description, amount) {
+      this.incomes.push({description: description, amount: amount});
+  },
+  addExpense: function(description, amount) {
+      this.expenses.push({description: description, amount: amount});
+  },
+  accountBalance: function() {
+      return this.totalIncome() - this.totalExpense();
+  }
+};
+
+console.log(personAccount.accountInfo());
+personAccount.addIncome("Bonus", 1000);
+personAccount.addExpense("Kira", 750);
+console.log(personAccount.accountBalance());
+
+```
+
 2. **** Questions:2, 3 and 4 are based on the following two arrays:users and products ()
 
-  ```js
+```js
       const users = [
       {
           _id: 'ab12ex',
