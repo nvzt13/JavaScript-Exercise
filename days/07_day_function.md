@@ -777,43 +777,174 @@ function shuffleArray(array) {
   }
   console.log(   shuffleArray(array)   )
 ```
+9. 
 
 ```js
 // app.js
+
+function factorial(num) {
+    if (num < 0) {
+      return -1;
+    } else if (num == 0) {
+      return 1;
+    } else {
+      return (num * factorial(num - 1));
+    }
+  }
+  
+  console.log(factorial(5))
+```
+10. Call your function isEmpty, it takes a parameter and it checks if it is empty or not
+
+```js
+// app.js
+function isEmpty(variable) {
+  if (variable === null || variable === undefined) {
+    return true;
+  } else if (typeof variable === 'string' && variable.trim().length === 0) {
+    return true;
+  } else if (Array.isArray(variable) && variable.length === 0) {
+    return true;
+  } else if (typeof variable === 'object' && Object.keys(variable).length === 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+```
+11. Call your function sum, it takes any number of arguments and it returns the sum.
+
+
+```js
+// app.js
+
+function sum(...args) {
+  return args.reduce((a, b) => a + b, 0);
+}
+```
+12. Write a function called sumOfArrayItems, it takes an array parameter and return the sum of all the items. Check if all the array items are number types. If not give return reasonable feedback.
+
+```js
+// app.js
+function sumOfArrayItems(arr) {
+  if (!Array.isArray(arr)) {
+    return "Error: The input is not an array.";
+  } else if (arr.length === 0) {
+    return "Error: The array is empty.";
+  } else if (arr.some(isNaN)) {
+    return "Error: The array contains non-numeric elements.";
+  } else {
+    return arr.reduce((a, b) => a + b, 0);
+  }
+}
+```
+13. Write a function called average, it takes an array parameter and returns the average of the items. Check if all the array items are number types. If not give return reasonable feedback.
+
+```js
+// app.js
+function average(arr) {
+    let sum = 0;
+    let count = 0;
+    for (let i = 0; i < arr.length; i++) {
+      if (typeof arr[i] !== "number") {
+        return "Error: All elements of the array must be numbers.";
+      }
+      sum += arr[i];
+      count++;
+    }
+    return sum / count;
+  }
+
+```
+14. Write a function called modifyArray takes array as parameter and modifies the fifth item of the array and return the array. If the array length is less than five it return 'item not found'.
+
+```js
+// app.js
+function modifyArray(arr) {
+    if (arr.length < 5) {
+      return 'item not found';
+    }
+    arr[4] = 'modified';
+    return arr;
+  }
+```
+15. Write a function called isPrime, which checks if a number is prime number.
+
+
+```js
+// app.js
+function isPrime(num) {
+  if (num <= 1) {
+    return false;
+  }
+  for (let i = 2; i <= Math.sqrt(num); i++) {
+    if (num % i === 0) {
+      return false;
+    }
+  }
+  return true;
+}
+
+```
+16. Write a functions which checks if all items are unique in the array.
+
+```js
+// app.js
+function areAllItemsUnique(arr) {
+    return new Set(arr).size === arr.length;
+  }
+  
+  const hey = [1,2,4,4]
+  console.log(areAllItemsUnique(hey))
+```
+17. 
+```js
+// app.js
+function areAllItemsSameType(arr) {
+    if (arr.length === 0) {
+      return true;
+    }
+    const firstType = typeof arr[0];
+    return arr.every((item) => typeof item === firstType);
+  }
+  
+  const array = [1,2,null,4,5]
+  console.log(areAllItemsSameType(array))
+```
+18. JavaScript variable name does not support special characters or symbols except $ or _. Write a function isValidVariable which check if a variable is valid or invalid variable.
+
+
+```js
+// app.js
+function isValidVariable(variableName) {
+    const regex = /^[a-zA-Z_$][0-9a-zA-Z_$]*$/;
+    return regex.test(variableName);
+  }
+```
+19. Write a function which returns array of seven random numbers in a range of 0-9. All the numbers must be unique.
+```
+sevenRandomNumbers()
+[(1, 4, 5, 7, 9, 8, 0)]
 ```
 
 ```js
 // app.js
+function getUniqueRandomNumbers() {
+  const numbers = new Set();
+  while (numbers.size < 7) {
+    numbers.add(Math.floor(Math.random() * 10));
+  }
+  return Array.from(numbers);
+}
+
 ```
+20. Write a function called reverseCountries, it takes countries array and first it copy the array and returns the reverse of the original array
+
 
 ```js
 // app.js
-```
-
-```js
-// app.js
-```
-
-```js
-// app.js
-```
-
-```js
-// app.js
-```
-
-```js
-// app.js
-```
-
-```js
-// app.js
-```
-
-```js
-// app.js
-```
-
-```js
-// app.js
+function reverseCountries(countries) {
+  const copy = countries.slice();
+  return copy.reverse();
+}
 ```
