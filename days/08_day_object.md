@@ -1,5 +1,5 @@
  
-# Day 7 - Functions
+# Day 8 - Object
  
 
 ## [Exercise:Solutions](#exercise-solutions)
