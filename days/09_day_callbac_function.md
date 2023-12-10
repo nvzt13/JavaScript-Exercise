@@ -338,6 +338,24 @@ console.log(newArr)
 ### Exercises: Level 2
 
 1. Find the total price of products by chaining two or more array iterators(eg. arr.map(callback).filter(callback).reduce(callback))
+ 
+```js 
+// app.js 
+
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+// Filter the odd numbers
+const oddNumbers = numbers.filter(number => number % 2 === 1);
+
+// Map the odd numbers to their squares
+const squares = oddNumbers.map(number => number ** 2);
+
+// Reduce the squares to get the sum
+const sum = squares.reduce((total, square) => total + square, 0);
+
+// Log the result
+console.log(sum); // 165
+```
 1. Find the sum of price of products using only reduce reduce(callback))
 1. Declare a function called **_categorizeCountries_** which returns an array of countries which have some common pattern(you find the countries array in this repository as countries.js(eg 'land', 'ia', 'island','stan')).
 1. Create a function which return an array of objects, which is the letter and the number of times the letter use to start with a name of a country.
