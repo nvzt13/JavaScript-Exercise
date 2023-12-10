@@ -1,11 +1,9 @@
-//----------------------------day10_level_1 1.exercise-------------------------\\
-// # create an empty set
+ 1. create an empty set
 
 const countries = new Set()
 console.log(countries)
 
-//----------------------------day10_level_1 2.exercise-------------------------\\
-// # Create a set containing 0 to 10 using loop
+2. Create a set containing 0 to 10 using loop
 
 const set = new Set()
 set.add(0,)
@@ -21,8 +19,7 @@ set.add(9)
 set.add(10)
 console.log(set)
 
-//----------------------------day10_level_1 3.exercise-------------------------\\
-// # Remove an element from a set
+3. Remove an element from a set
 
 const set = new Set()
 set.add(0,)
@@ -30,8 +27,7 @@ set.add(1)
 set.add(2)
 console.log(set.delete(1))
 
-//----------------------------day10_level_1 4.exercise-------------------------\\
-// # Clear a set
+4. Clear a set
 
 const set = new Set()
 set.add(0,)
@@ -40,15 +36,13 @@ set.add(2)
 set.clear()
 console.log(set)
 
-//----------------------------day10_level_1 5.exercise-------------------------\\
-// # Create a set of 5 string elements from array
+ 5. Create a set of 5 string elements from array
 
 const arr = ['ayşe','fatma','dilan','cansu']
 const set = new Set(arr)
 console.log(set)
 
-//----------------------------day10_level_1 6.exercise-------------------------\\
-// # Create a map of countries and number of characters of a country
+ 6. Create a map of countries and number of characters of a country
 
 const map = new Map()
 
@@ -57,11 +51,11 @@ map.set(2,'russıa')
 map.set(3,'germaby')
 console.log(map)
 
-//___________________________starting_exercise_level_2_______________________\\
+### Exercise Level 2
 
-
-//----------------------------day10_level_2 1.exercise-------------------------\\
-// # Find a union b
+1. Find a union b
+```js
+//app.js
 
 const a = [4, 5, 8, 9]
 const b = [3, 4, 5, 7]
@@ -72,8 +66,12 @@ const B = new Set(b)
 const C = new Set(c)
 console.log(C)
 
-//----------------------------day10_level_2 2.exercise-------------------------\\
-// # Find a intersection b
+```
+
+
+ 2. Find a intersection b
+```js
+//app.js
 
 const a = [4, 5, 8, 9]
 const b = [3, 4, 5, 7]
@@ -82,8 +80,12 @@ const B = new Set(b)
 const aUnionB =a.filter((num) => B.has(num))
 console.log(aUnionB)
 
-//----------------------------day10_level_2 3.exercise-------------------------\\
-// # Find a with b
+```
+
+
+ 3. Find a with b
+```js
+//app.js
 
 const a = [4, 5, 8, 9]
 const b = [3, 4, 5, 7]
@@ -91,8 +93,62 @@ const A = new Set(a)
 const B = new Set(b)
 const aUnionB =a.filter((num) => !B.has(num))
 console.log(aUnionB)
+```
+### Exercises Level 3
 
-//___________________________starting_exercise_level_3_______________________\\
+1. How many languages are there in the countries object file.
 
-//----------------------------day10_level_3 1.exercise-------------------------\\
-//----------------------------day10_level_3 2.exercise-------------------------\\
+2. Use the countries data to find the 10 most spoken languages:
+```
+
+   // Your output should look like this
+   console.log(mostSpokenLanguages(countries, 10))
+   [
+     { English: 91 },
+     { French: 45 },
+     { Arabic: 25 },
+     { Spanish: 24 },
+     { Russian: 9 },
+     { Portuguese: 9 },
+     { Dutch: 8 },
+     { German: 7 },
+     { Chinese: 5 },
+     { Swahili: 4 },
+     { Serbian: 4 }
+   ]
+
+  // Your output should look like this
+  console.log(mostSpokenLanguages(countries, 3))
+  [
+  {English:91},
+  {French:45},
+  {Arabic:25}
+  ]
+```
+
+```js
+// app.js
+   // Your output should look like this
+   console.log(mostSpokenLanguages(countries, 10))
+   [
+     { English: 91 },
+     { French: 45 },
+     { Arabic: 25 },
+     { Spanish: 24 },
+     { Russian: 9 },
+     { Portuguese: 9 },
+     { Dutch: 8 },
+     { German: 7 },
+     { Chinese: 5 },
+     { Swahili: 4 },
+     { Serbian: 4 }
+   ]
+
+  // Your output should look like this
+  console.log(mostSpokenLanguages(countries, 3))
+  [
+  {English:91},
+  {French:45},
+  {Arabic:25}
+  ]
+```
