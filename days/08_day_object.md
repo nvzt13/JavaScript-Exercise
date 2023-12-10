@@ -8,7 +8,7 @@
 - ### [Exercise:Level 2](#exercises-level-2)
 - ### [Exercise:Level 3](#exercises-level-3) <hr>
 
- #### [Home](../README.md) | [<< Day 6](./06_day_loops.md) | [Day 8 >>](./08_day_object.md)
+ #### [Home](../README.md) | [<< Day 7](./07_day_function.md) | [Day 9 >>](./09_day_callbac_function.md)
 
 
 ## Exercise Solutions
@@ -563,3 +563,6 @@ const products = [
 
 likeProduct("hedfcg","hedfcg")
 ```
+
+ #### [Home](../README.md) | [<< Day 7](./07_day_function.md) | [Day 9 >>](./09_day_callbac_function.md)
+

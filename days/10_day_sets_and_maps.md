@@ -1,3 +1,20 @@
+
+# Day 10 - Set And Maps
+ 
+
+## [Exercise:Solutions](#exercise-solutions)
+
+- ### [Exercise:Level 1](#exercises-level-1)
+- ### [Exercise:Level 2](#exercises-level-2)
+- ### [Exercise:Level 3](#exercises-level-3) <hr>
+
+ #### [Home](../README.md) | [<< Day 9](./09_day_callbac_function.md) | [Day 11 >>](./11_day_des_spreading.md)
+
+
+## Exercise Solutions
+ 
+ ### Exercises Level 1
+
  1. create an empty set
 
 const countries = new Set()
@@ -51,7 +68,7 @@ map.set(2,'russıa')
 map.set(3,'germaby')
 console.log(map)
 
-### Exercise Level 2
+### Exercises Level 2
 
 1. Find a union b
 ```js
@@ -152,3 +169,6 @@ console.log(aUnionB)
   {Arabic:25}
   ]
 ```
+
+#### [Home](../README.md) | [<< Day 9](./09_day_callbac_function.md) | [Day 11 >>](./11_day_des_spreading.md)
+

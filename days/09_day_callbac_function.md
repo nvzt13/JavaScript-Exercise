@@ -8,7 +8,7 @@
 - ### [Exercise:Level 2](#exercises-level-2)
 - ### [Exercise:Level 3](#exercises-level-3) <hr>
 
- #### [Home](../README.md) | [<< Day 6](./06_day_loops.md) | [Day 8 >>](./08_day_object.md)
+ #### [Home](../README.md) | [<< Day 8](./08_day_object.md) | [Day 10 >>](./10_day_sets_and_maps.md)
 
 
 ## Exercise Solutions
@@ -510,3 +510,6 @@ console.log(result);
    Standard Deviation:  4.2
    Frequency Distribution: [(20.0, 26), (16.0, 27), (12.0, 32), (8.0, 37), (8.0, 34), (8.0, 33), (8.0, 31), (8.0, 24), (4.0, 38), (4.0, 29), (4.0, 25)]
    ```
+
+   
+ #### [Home](../README.md) | [<< Day 8](./08_day_object.md) | [Day 10 >>](./10_day_sets_and_maps.md)

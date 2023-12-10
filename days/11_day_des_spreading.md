@@ -1,22 +1,45 @@
-//----------------------------day11_level_1 1.exercise-------------------------\\
-// # Destructure and assign the elements of constants array to e, pi, gravity, humanBodyTemp, waterBoilingTemp.
+# Day 11 - Destruction And Spreading
+ 
 
+## [Exercise:Solutions](#exercise-solutions)
+
+- ### [Exercise:Level 1](#exercises-level-1)
+- ### [Exercise:Level 2](#exercises-level-2)
+- ### [Exercise:Level 3](#exercises-level-3) <hr>
+
+ #### [Home](../README.md) | [<< Day 9](./09_day_callbac_function.md) | [Day 11 >>](./11_day_des_spreading.md)
+
+
+## Exercise Solutions
+ 
+ ### Exercises Level 1
+
+
+1.  Destructure and assign the elements of constants array to e, pi, gravity, humanBodyTemp, waterBoilingTemp.
+
+```js
+//app.js
 const constants = [2.72, 3.14, 9.81, 37.5, 100]
 const [E,PI,G,humanBodyTemp,waterBoilingTemp] =constants
 console.log(E,PI,G,humanBodyTemp,waterBoilingTemp)
 
-//----------------------------day11_level_1 2.exercise-------------------------\\
-// #Destructure and assign the elements of countries array to fin, est, sw, den, nor
+```
 
+
+2. Destructure and assign the elements of countries array to fin, est, sw, den, nor
+```js
+//app.js
 const countries =['Finland','Estonia','Sweden','Denmark','Norway']
 const [fin,est,swd,den,nor] = countries
 console.log(fin,est,swd,den,nor)
 
+```
 
 
-//----------------------------day11_level_1 3.exercise-------------------------\\
-// #Destructure the rectangle object by its properties or keys.
 
+3. Destructure the rectangle object by its properties or keys.
+```js
+//app.js
 const rectangle ={
     width:20,
     height:10,
@@ -28,13 +51,16 @@ const {width,height,are,perimeter} = rectangle
 console.log(width,height,are,perimeter)
 
 
-//___________________________starting_exercise_level_2_______________________\\
+```
 
 
 
-//----------------------------day11_level_2 1.exercise-------------------------\\
-// # Iterate through the users array and get all the keys of the object using destructuring
+ ### Exercises Level 2
 
+
+1.  Iterate through the users array and get all the keys of the object using destructuring
+```js
+//app.js
 const users = [
     {
       name:'Brook',
@@ -83,8 +109,12 @@ const users = [
            console.log(name,scores,skills,age)
     }
 
-//----------------------------day11_level_2 2.exercise-------------------------\\
-// # Find the persons who have less than two skills
+```
+
+
+2.  Find the persons who have less than two skills
+```js
+//app.js
 
 const users = [
 {
@@ -135,6 +165,10 @@ let a = users.forEach((element) => {
         console.log(element)
     }
 })
+```
+
+
+ ### Exercises Level 3
 
 //! exercise 1
 //! exercise 2
