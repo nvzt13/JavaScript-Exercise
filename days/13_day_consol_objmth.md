@@ -1,14 +1,33 @@
-//----------------------------day13_level_1 1.exercise-------------------------\\
-// # Display the countries array as a table
+  # Day 13  - Console Object Methods
+ 
 
+## [Exercise:Solutions](#exercise-solutions)
+
+- ### [Exercise:Level 1](#exercises-level-1)
+- ### [Exercise:Level 2](#exercises-level-2)
+- ### [Exercise:Level 3](#exercises-level-3) <hr>
+
+
+ #### [Home](../README.md) | [<< Day 12](./12_day_regular_ex.md) | [Day 14 >>](./14_day_error_handling.md)
+
+
+
+## Exercise Solutions
+ 
+ ### Exercises Level 1
+
+ 
+ 1. Display the countries array as a table
+```js
+// app.js
 const countries = ['Norway', 'Sweden','England','Iceland']
 console.table(countries)
 
-//----------------------------day13_level_1 2.exercise-------------------------\\
-// # Display the countries object as a table
+```
 
-
-
+ 2. Display the countries object as a table
+```js
+// app.js
 const countries ={
     countri: 'Germany',
     popolation: 564654,
@@ -16,8 +35,11 @@ const countries ={
 }
 console.table(countries)
     
-//----------------------------day13_level_1 3.exercise-------------------------\\
-// # Use console.group() to group logs
+```
+
+ 3. Use console.group() to group logs
+```js
+// app.js
 
 const names = ['Asabeneh', 'Brook', 'David', 'John']
 const countries = [
@@ -75,21 +97,17 @@ console.group('user')
 console.log(user)
 console.groupEnd()
 
-//? exercise 1
+```
 
-console.assert(10>2*10)
+### Exercises Level 2
+1. 10 > 2 * 10 use console.assert()
+2. Write a warning message using console.warn()
+3. Write an error message using console.error()
 
-//? exercise 2
+### Exercises Level 3
+1. Check the speed difference among the following loops: while, for, for of, forEach
 
-console.warn("this is a warning message")
 
-//? exercise 3
 
-console.error('This is a error message')
+ #### [Home](../README.md) | [<< Day 12](./12_day_regular_ex.md) | [Day 14 >>](./14_day_error_handling.md)
 
-!  exercise 1
-Create an array of 1000000 elements
-let arr = [];
-for (let i = 0; i < 1000000; i++) {
-  arr.push(i);
-}

@@ -1,7 +1,5 @@
+### No exercise today. Continue from day 15
 
-throw 'Error2' // generates an exception with a string value
-throw 42 // generates an exception with the value 42
-throw true // generates an exception with the value true
-throw new Error('Required') // generates an error object with the message of Required
 
-// Pratice
+ #### [Home](../README.md) | [<< Day 13](./13_day_consol_objmth.md) | [Day 15>>](./15_day_classes.md)
+

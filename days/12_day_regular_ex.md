@@ -1,6 +1,23 @@
-//----------------------------day12_level_1 1.exercise-------------------------\\
-// # Calculate the total annual income of the person from the following text. ‘He earns 4000 euro from salary per month, 10000 euro annual bonus, 5500 euro online courses per month.’
+ # Day 12 - Regex
+ 
 
+## [Exercise:Solutions](#exercise-solutions)
+
+- ### [Exercise:Level 1](#exercises-level-1)
+- ### [Exercise:Level 2](#exercises-level-2)
+- ### [Exercise:Level 3](#exercises-level-3) <hr>
+
+ #### [Home](../README.md) | [<< Day 11](./11_day_des_spreading.md) | [Day 13 >>](./13_day_consol_objmth.md)
+
+
+## Exercise Solutions
+ 
+ ### Exercises Level 1
+
+ 
+ 1. Calculate the total annual income of the person from the following text. ‘He earns 4000 euro from salary per month, 10000 euro annual bonus, 5500 euro online courses per month.’
+```js
+// app.js
 let text ="He earns 4000 euro from salary per month, 10000 euro  annual bonus, 5500 euro online courses per month."
 let pattern = /\d+/g
 let numbers = text.match(pattern)
@@ -10,16 +27,18 @@ let bonus = numbers[1]
 let montCourses = numbers[2]
 console.log(`Annual income is ${(montlySalary*12) + (bonus) + (montCourses *12)}`)
 
-
-//----------------------------day12_level_1 2.exercise-------------------------\\
-// # The position of some particles on the horizontal x-axis -12, -4, -3 and -1 in the negative direction, 0 at origin, 4 and 8 in the positive direction. Extract these numbers and find the distance between the two furthest particles.
+```
 
 
+2. The position of some particles on the horizontal x-axis -12, -4, -3 and -1 in the negative direction, 0 at origin, 4 and 8 in the positive direction. Extract these numbers and find the distance between the two furthest particles.
+```js
+// app.js
+```
 
-//----------------------------day12_level_1 3.exercise-------------------------\\
-// # The position of some particles on the horizontal x-axis -12, -4, -3 and -1 in the negative direction, 0 at origin, 4 and 8 in the positive direction. Extract these numbers and find the distance between the two furthest particles.
+3. Write a pattern which identify if a string is a valid JavaScript variable
 
-// Bir dizenin geçerli bir JavaScript değişkeni olup olmadığını kontrol eden bir fonksiyon
+```js
+// app.js
 function isValidVariableName(str) {
     // Birinci karakterin harf, alt çizgi veya dolar işareti olup olmadığını kontrol eden bir kalıp
     var firstCharPattern = /^[a-zA-Z_$]/;
@@ -32,18 +51,18 @@ function isValidVariableName(str) {
   }
 console.log(isValidVariableName('21dzfgdf'))
 
+```
 
+### Exercises Level 2
 
-//___________________________starting_exercise_level_2_______________________\\
+1. Write a function called tenMostFrequentWords which get the ten most frequent word from a string?
 
-//----------------------------day12_level_2 1.exercise-------------------------\\
-// # Write a function called tenMostFrequentWords which get the ten most frequent word from a string?
-
-
-// Paragrafınızdaki en sık kullanılan 10 kelimeyi döndüren bir fonksiyon
-
+```
 let paragraph = `I love teaching. If you do not love teaching what else can you love. I love Python if you do not love something which can give you all the capabilities to develop an application what else can you love.`
+```
 
+```js
+// app.js
 function tenMostFrequentWords(paragraph) {
     // Paragrafı kelimelere ayırırken noktalama işaretlerini ve büyük harfleri yok sayar
     var words = paragraph.toLowerCase().replace(/[.,]/g, '').split(/\s/);
@@ -64,7 +83,12 @@ function tenMostFrequentWords(paragraph) {
   }
 console.log( tenMostFrequentWords(paragraph))
 
-//___________________________starting_exercise_level_3_______________________\\
+```
+### Exercises Level 3
 
-//----------------------------day12_level_3 1.exercise-------------------------\\
-// # Writ a function which cleans text. Clean the following text. After cleaning, count three most frequent words in the string.
+
+1. Writ a function which cleans text. Clean the following text. After cleaning, count three most frequent words in the string.
+
+
+ #### [Home](../README.md) | [<< Day 11](./11_day_des_spreading.md) | [Day 13 >>](./13_day_consol_objmth.md)
+
