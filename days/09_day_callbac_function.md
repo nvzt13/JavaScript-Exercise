@@ -356,17 +356,71 @@ const sum = squares.reduce((total, square) => total + square, 0);
 // Log the result
 console.log(sum); // 165
 ```
-1. Find the sum of price of products using only reduce reduce(callback))
-1. Declare a function called **_categorizeCountries_** which returns an array of countries which have some common pattern(you find the countries array in this repository as countries.js(eg 'land', 'ia', 'island','stan')).
-1. Create a function which return an array of objects, which is the letter and the number of times the letter use to start with a name of a country.
-1. Declare a **_getFirstTenCountries_** function and return an array of ten countries. Use different functional programming to work on the countries.js array
-1. Declare a **_getLastTenCountries_** function which which returns the last ten countries in the countries array.
-1. Find out which _letter_ is used many _times_ as initial for a country name from the countries array (eg. Finland, Fiji, France etc)
+2. Find the sum of price of products using only reduce reduce(callback)
+```js 
+//app.js 
 
+const products = [
+    { product: 'banana', price: 3 },
+    { product: 'mango', price: 6 },
+    { product: 'potato', price: ' ' },
+    { product: 'avocado', price: 8 },
+    { product: 'coffee', price: 10 },
+    { product: 'tea', price: '' },
+  ];
+  
+  const sum = products.reduce((previousValue, currentValue) => {
+    const price = parseFloat(currentValue.price);
+    if (!isNaN(price)) {
+      return previousValue + price;
+    }
+    return previousValue;
+  }, 0);
+  
+  console.log(sum); // Output: 27
+```
+3. Declare a function called **_categorizeCountries_** which returns an array of countries which have some common pattern(you find the countries array in this repository as countries.js(eg 'land', 'ia', 'island','stan')).
+```js
+//app.js
+
+const countries = [ 'China', 'Belarus', 'Ireland', 'New Zealand', 'Germany', 'Switzerland', 'Thailand', 'Uzbekistan' ,"Turkey","Rusia"]
+
+
+function categorizeCountries(patterns) {
+  return countries.filter(country => {
+    return patterns.some(pattern => {
+      return country.toLowerCase().includes(pattern.toLowerCase());
+    });
+  });
+}
+
+const patterns = ['land', 'ia', 'island', 'stan'];
+const result = categorizeCountries(patterns);
+console.log(result); 
+```
+4. Create a function which return an array of objects, which is the letter and the number of times the letter use to start with a name of a country.
+```js
+//app.js
+```
+5. Declare a **_getFirstTenCountries_** function and return an array of ten countries. Use different functional programming to work on the countries.js array
+```js
+//app.js
+```
+6. Declare a **_getLastTenCountries_** function which which returns the last ten countries in the countries array.
+```js
+//app.js
+```
+7. Find out which _letter_ is used many _times_ as initial for a country name from the countries array (eg. Finland, Fiji, France etc)
+```js
+//app.js
+```
 ### Exercises: Level 3
 
 1. Use the countries information, in the data folder. Sort countries by name, by capital, by population
-1. \*\*\* Find the 10 most spoken languages:
+```js
+//app.js
+```
+2. \*\*\* Find the 10 most spoken languages:
 
    ````js
    // Your output should look like this
@@ -393,8 +447,9 @@ console.log(sum); // 165
    ]```
 
    ````
+   
 
-2. \*\*\* Use countries_data.js file create a function which create the ten most populated countries
+3. \*\*\* Use countries_data.js file create a function which create the ten most populated countries
 
    ````js
    console.log(mostPopulatedCountries(countries, 10))
@@ -422,7 +477,7 @@ console.log(sum); // 165
 
    ````
 
-3. \*\*\* Try to develop a program which calculate measure of central tendency of a sample(mean, median, mode) and measure of variability(range, variance, standard deviation). In addition to those measures find the min, max, count, percentile, and frequency distribution of the sample. You can create an object called statistics and create all the functions which do statistical calculations as method for the statistics object. Check the output below.
+4. \*\*\* Try to develop a program which calculate measure of central tendency of a sample(mean, median, mode) and measure of variability(range, variance, standard deviation). In addition to those measures find the min, max, count, percentile, and frequency distribution of the sample. You can create an object called statistics and create all the functions which do statistical calculations as method for the statistics object. Check the output below.
 
    ```js
    const ages = [31, 26, 34, 37, 27, 26, 32, 32, 26, 27, 27, 24, 32, 33, 27, 25, 26, 38, 37, 31, 34, 24, 33, 29, 26]
