@@ -170,8 +170,6 @@ let a = users.forEach((element) => {
 
  ### Exercises Level 3
 
-//! exercise 1
-//! exercise 2
-//! exercise 3
-//! exercise 4
 
+
+ #### [Home](../README.md) | [<< Day 10](./10_day_sets_and_maps.md) | [Day 12 >>](./12_day_regular_ex.md)

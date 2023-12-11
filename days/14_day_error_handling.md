@@ -1,3 +1,6 @@
+
+# Day 14 - Error Handling
+
 ### No exercise today. Continue from day 15
 
 

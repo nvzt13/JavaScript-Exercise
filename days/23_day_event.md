@@ -4,7 +4,7 @@
 
 - ### [Exercise:Level 1](#exercises-level-1)
 
-#### [Home](../README.md) | [<< Day 22](./22_day_DOM2.md) | [Day 24 >>](./)
+#### [Home](../README.md) | [<< Day 22](./22_day_DOM2.md) | [Day 24 >>](../days/day_24/day_24.md)
 
 ## Exercise Solutions
 
@@ -14,3 +14,5 @@
 
 
 2. Generating the keyboard code code using even listener. The image below.
+
+#### [Home](../README.md) | [<< Day 22](./22_day_DOM2.md) | [Day 24 >>](../days/day_24/day_24.md)

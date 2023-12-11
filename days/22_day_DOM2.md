@@ -157,3 +157,6 @@ for (let i = 0; i < rows; i++) {
 ```
 
 ### Exercie Level 3
+
+
+ #### [Home](../README.md) | [<< Day 21](./21_day_DOM.md) | [Day 23 >>](./23_day_event.md)

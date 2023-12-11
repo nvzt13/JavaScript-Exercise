@@ -469,4 +469,4 @@ const countries = [
 
 ```
 
- #### [Home](../README.md) | [<< Day 5](./05_day_arrays.md) | [Day 7 >>](./07_day_function.md)
+ #### [Home](../README.md) | [<< Day 4](./04_day_conditional.md) | [Day 6 >>](./06_day_loops.md)

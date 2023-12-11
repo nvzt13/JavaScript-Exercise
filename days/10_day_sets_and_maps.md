@@ -16,11 +16,17 @@
  ### Exercises Level 1
 
  1. create an empty set
+```js
+// app.js
 
 const countries = new Set()
 console.log(countries)
+```
+
 
 2. Create a set containing 0 to 10 using loop
+```js
+// app.js
 
 const set = new Set()
 set.add(0,)
@@ -36,15 +42,23 @@ set.add(9)
 set.add(10)
 console.log(set)
 
+```
+
 3. Remove an element from a set
+```js
+// app.js
 
 const set = new Set()
 set.add(0,)
 set.add(1)
 set.add(2)
 console.log(set.delete(1))
+```
+
 
 4. Clear a set
+```js
+// app.js
 
 const set = new Set()
 set.add(0,)
@@ -52,14 +66,22 @@ set.add(1)
 set.add(2)
 set.clear()
 console.log(set)
+```
+
 
  5. Create a set of 5 string elements from array
+```js
+// app.js
 
 const arr = ['ayşe','fatma','dilan','cansu']
 const set = new Set(arr)
 console.log(set)
 
+```
+
  6. Create a map of countries and number of characters of a country
+```js
+// app.js
 
 const map = new Map()
 
@@ -67,6 +89,8 @@ map.set(1,'turkey')
 map.set(2,'russıa')
 map.set(3,'germaby')
 console.log(map)
+```
+
 
 ### Exercises Level 2
 

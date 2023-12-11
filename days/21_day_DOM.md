@@ -159,3 +159,4 @@ par.textContent='This is a paragraph '
   </body>
 </html>
 ```
+#### [Home](../README.md) | [<< Day 20](./20_day_cleanCode.md) | [Day 22 >>](./22_day_DOM2.md)

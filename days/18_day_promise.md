@@ -25,3 +25,6 @@
 1. Read the cats api and find the average weight of cat in metric unit.
 2. Read the countries api and find out the 10 largest countries
 3. Read the countries api and count total number of languages in the world used as officials.
+
+
+ #### [Home](../README.md) | [<< Day 17](./17_day_wep%20storege.md) | [Day 19 >>](./19_day_clouse.md)

@@ -948,3 +948,4 @@ function reverseCountries(countries) {
   return copy.reverse();
 }
 ```
+ #### [Home](../README.md) | [<< Day 6](./06_day_loops.md) | [Day 8 >>](./08_day_object.md)
