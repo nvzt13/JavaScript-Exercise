@@ -1,4 +1,28 @@
-// //todo exercise 1
+
+  # Day 22  - Dom 2
+ 
+
+## [Exercise:Solutions](#exercise-solutions)
+
+- ### [Exercise:Level 1](#exercises-level-1)
+- ### [Exercise:Level 2](#exercises-level-2)
+- ### [Exercise:Level 3](#exercises-level-3) <hr>
+
+
+ #### [Home](../README.md) | [<< Day 21](./21_day_DOM.md) | [Day 23 >>](./23_day_event.md)
+
+## Exercise Solutions
+
+### Exercise Level 1
+
+1. Create a div container on HTML document and create 100 to 100 numbers dynamically and append to the container div.
+- Even numbers background is green
+- Odd numbers background is yellow
+- Prime numbers background is red
+
+```js
+// app.js
+
 // Bir asal sayı olup olmadığını kontrol eden bir fonksiyon tanımlayın
 function isPrime(n) {
     // 0 ve 1 asal sayı değildir
@@ -74,9 +98,15 @@ function isPrime(n) {
     // Satırı tabloya ekleyin
     table.appendChild(tr);  
   }
-  
+  ```
 
-//todo exercise 2
+### Exercised Level 2
+
+1. Use the countries array to display all the countries.See the design
+
+```js
+// app.js 
+
 // Create an array of country names
 let countries = ["Afghanistan", "Albania", "Algeria", "Andorra", "Angola", "Antigua and Barbuda", "Argentina", "Armenia", "Australia", "Austria", "Azerbaijan", "Bahamas", "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bhutan", "Bolivia", "Bosnia and Herzegovina", "Botswana", "Brazil", "Brunei", "Bulgaria", "Burkina Faso", "Burundi", "Cambodia", "Cameroon"];
 
@@ -124,3 +154,6 @@ for (let i = 0; i < rows; i++) {
   // Append the paragraph to the div
   div.appendChild(p);
 }
+```
+
+### Exercie Level 3
