@@ -1,10 +1,11 @@
+const countryApiUrl = 'https://restcountries.com/v2/all';
 
-const ctxx = document.getElementById('population');
+const ctx = document.getElementById('population');
 let chartData = []; // Grafik verilerini saklamak için boş bir dizi
 const countryName = []
 let Word=0
 // Grafik oluşturuluyor
-const myChart = new Chart(ctxx, {
+const myChart = new Chart(ctx, {
   type: 'bar',
   data: {
     labels: [],
@@ -19,7 +20,6 @@ const myChart = new Chart(ctxx, {
   }
 });
 
-const countryApiUrl = 'https://restcountries.com/v2/all';
 
 fetch(countryApiUrl)
   .then(response => response.json())
@@ -45,43 +45,42 @@ fetch(countryApiUrl)
 
 
 
-// // const langues = []
-// const countryApiUrl = 'https://restcountries.com/v2/all';
-//   const ctx = document.getElementById('langue');
-//   const langue = new Chart(ctx, {
-//     type: 'bar',
-//     data: {
-//       labels: [],
-//       datasets: [{
-//         label: 'Most Langue',
-//         data: [],
-//         borderWidth: 1
-//       }]
-//     },
-//     options: {
-//     indexAxis: 'y',
+const langues = []
+  const ctxx = document.getElementById('langue');
+  const langue = new Chart(ctxx, {
+    type: 'bar',
+    data: {
+      labels: [],
+      datasets: [{
+        label: 'Most Langue',
+        data: [],
+        borderWidth: 1
+      }]
+    },
+    options: {
+    indexAxis: 'y',
       
-//     }
-//   });
+    }
+  });
 
-// fetch(countryApiUrl)
-// .then((response)=> response.json())
-// .then((data)=>{
-//     const langs = data.map((country) => country.languages[0].name );
-//     console.log(typeof langs)
-//     const counts = {};
-//     langs.forEach((lang) => {
-//         if (counts[lang]) {
-//             counts[lang]++;
-//         } else {
-//             counts[lang] = 1;
-//         }
-//     });
-//     const sortedLangs = Object.entries(counts).sort((a, b) => b[1] - a[1]).map(a => a[0]);
+fetch(countryApiUrl)
+.then((response)=> response.json())
+.then((data)=>{
+    const langs = data.map((country) => country.languages[0].name );
+    console.log(typeof langs)
+    const counts = {};
+    langs.forEach((lang) => {
+        if (counts[lang]) {
+            counts[lang]++;
+        } else {
+            counts[lang] = 1;
+        }
+    });
+    const sortedLangs = Object.entries(counts).sort((a, b) => b[1] - a[1]).map(a => a[0]);
     
-//     langue.data.labels = sortedLangs.slice(0,10);
-//     langue.data.datasets[0].data = sortedLangs.map((lang) => counts[lang]);
-//     langue.update();
-// });
+    langue.data.labels = sortedLangs.slice(0,10);
+    langue.data.datasets[0].data = sortedLangs.map((lang) => counts[lang]);
+    langue.update();
+});
 
 
