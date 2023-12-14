@@ -1,10 +1,10 @@
 ```js
-const ctx = document.getElementById('myChart');
+const ctxx = document.getElementById('myChart2');
 let chartData = []; // Grafik verilerini saklamak için boş bir dizi
 const countryName = []
 let Word=0
 // Grafik oluşturuluyor
-const myChart = new Chart(ctx, {
+const myChart = new Chart(ctxx, {
   type: 'bar',
   data: {
     labels: [],

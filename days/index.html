@@ -2,13 +2,23 @@
 <html lang="en">
 
 <head>
+  <link rel="stylesheet" href="style.css">
   <title>JavaScript for Everyone:DOM</title>
 </head>
-
 <body>
 
 <div>
-  <canvas id="myChart"></canvas>
+<div class="header">
+  <h1>World Countries Data</h1>
+  <p>Current we have 250 countries</p>
+</div>
+<div class="button-wrapper">
+  <button class="btn">POPULATİON</button>
+  <button class="btn">LANGUES</button>
+  <p>10 Most spoken langues in the World</p>
+</div>
+  <canvas id="population"></canvas>
+  <canvas id="langue"></canvas>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-horizontalBar"></script>
