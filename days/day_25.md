@@ -1,23 +1,21 @@
+```js
 const ctx = document.getElementById('myChart');
 let chartData = []; // Grafik verilerini saklamak için boş bir dizi
-
+const countryName = []
+let Word=0
 // Grafik oluşturuluyor
 const myChart = new Chart(ctx, {
   type: 'bar',
   data: {
-    labels: ['Kırmızı', 'Mavi', 'Sarı', 'Yeşil', 'Mor', 'Turuncu'],
+    labels: [],
     datasets: [{
-      label: '# Oy Sayısı',
-      data: [], // Boş olarak başlıyoruz
+      label: '# Country Poplulation',
+      data: ["word"], // Boş olarak başlıyoruz
       borderWidth: 1
     }]
   },
   options: {
-    scales: {
-      y: {
-        beginAtZero: true
-      }
-    }
+    indexAxis: 'y',
   }
 });
 
@@ -26,17 +24,22 @@ const countryApiUrl = 'https://restcountries.com/v2/all';
 fetch(countryApiUrl)
   .then(response => response.json())
   .then(data => { 
-    const arr= data.sort((a,b) =>a.area-b.area)
-    
-    
+    console.log(data)
+    const arr= data.sort((a,b) =>b.population-a.population)
     arr.forEach((country, index) => {
-      if (index < 5) {
-        chartData.push(country.area);
+        Word += country.population
+        if (index < 10) {
+        chartData.push(country.population);
+        countryName.push(country.name)
       }
     });
-
+    chartData.unshift(Word)
+    countryName.unshift("word")
+    console.log(Word)
     // Verileri güncelleyip grafik yeniden çiziliyor
     myChart.data.datasets[0].data = chartData;
+    myChart.data.labels=countryName
     myChart.update();
   })
   .catch(err => console.log(err));
+  ```
