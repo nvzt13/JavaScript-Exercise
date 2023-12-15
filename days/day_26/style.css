@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif,'Courier New', Courier, monospace;
+    /* border: 1px solid; */
+}
+li{
+    list-style: none;
+    border: 1px solid;
+    padding: 20px 10px;
+    background-image: url(./images/map_image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-position: 50% 50%;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    filter: drop-shadow(8px 8px 10px  green);
+
+}
+body{
+    background-image: url("./images/globe-2.jpg");
+    background-repeat: no-repeat;
+    background-size:100% 400px;
+}
+.btn{
+    background-color: blueviolet;
+    color: white;
+    border-radius: 5px;
+    padding: 8px 5px;
+    font-weight: 100;
+}
+.btn:hover{
+    background-color: brown;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: aliceblue;
+}
+.form-wrapper{
+margin-top: 40px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.form-wrapper .search{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.form-wrapper .search input{
+    width: 100%;
+    margin-right: 10px;
+    border-radius: 10px;
+    padding: 3px 0;
+    border: none;
+}
+.country-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 230px;
+}
