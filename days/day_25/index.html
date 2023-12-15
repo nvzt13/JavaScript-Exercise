@@ -13,15 +13,19 @@
   <p>Current we have 250 countries</p>
 </div>
 <div class="button-wrapper">
-  <button class="btn">POPULATİON</button>
-  <button class="btn">LANGUES</button>
+  <button class="btn" onclick="displayCountry()">POPULATİON</button>
+  <button class="btn" onclick="displayLan()">LANGUES</button>
 </div>
 <div class="chart-wrapper">
+  <div id="country">
+  <p>10 Most populated countries in the World</p>
+    <canvas id="population" class="graf"></canvas>
+  </div>
+  <div id="lan">
   <p>10 Most spoken langues in the World</p>
-  <canvas id="population"></canvas>
-  <canvas id="langue"></canvas>
+  <canvas id="langue" class="graf" ></canvas>
 </div>
-
+</div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-horizontalBar"></script>

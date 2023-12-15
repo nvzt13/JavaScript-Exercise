@@ -1,5 +1,4 @@
 *{
-    border: 1px solid;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -7,6 +6,10 @@
 .container{
     display: flex;
     flex-direction: column;
+    align-content: space-around;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: wrap;
 }
 .header{
     display: flex;
@@ -33,34 +36,29 @@
     outline: none;
     transition: .3s ease all;
     margin: 15px 15px;
+    color: #fff;
 }
 .chart-wrapper{
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    width: 60%;
+    width: 100%;
     margin: 0 auto;
-    /* display: none; */
 }
-#langue{
+
+#country{
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: 60%;
-    margin: 0 auto;
+}
+#lan{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     display: none;
-    height: auto;
-
-}
-#population{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
     width: 60%;
-    height: auto;
-    margin: 0 auto;
 }
-

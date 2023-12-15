@@ -1,6 +1,27 @@
-const countryApiUrl = 'https://restcountries.com/v2/all';
+  # Day 25  - Mini Project
+ 
+## [Exercise:Solutions](#exercise-solutions)
 
+ #### [Home](../README.md) | [<< Day 24](../day_24/day_24.md) | [Day 26 >>](./09_day_callbac_function.md)
+
+
+### Exercise: Level 1
+
+1. Visualize the ten most populated countries and the ten most spoken languages in the world using DOM(HTML, CSS, JS)
+
+<img src="../image/day25_level1.png">
+
+
+### Exercise Level 1
+
+```js
+//app.js
+const countryApiUrl = 'https://restcountries.com/v2/all';
 const ctx = document.getElementById('population');
+const ctxx = document.getElementById('langue');
+const lan = document.getElementById("lan")
+const country = document.getElementById("country")
+
 let chartData = []; // Grafik verilerini saklamak için boş bir dizi
 const countryName = []
 let Word=0
@@ -10,8 +31,8 @@ const myChart = new Chart(ctx, {
   data: {
     labels: [],
     datasets: [{
-      label: '# Country Poplulation',
-      data: ["word"], // Boş olarak başlıyoruz
+      label: 'Country Poplulation',
+      data: ["word"],
       borderWidth: 1
     }]
   },
@@ -46,7 +67,6 @@ fetch(countryApiUrl)
 
 
 const langues = []
-  const ctxx = document.getElementById('langue');
   const langue = new Chart(ctxx, {
     type: 'bar',
     data: {
@@ -83,4 +103,12 @@ fetch(countryApiUrl)
     langue.update();
 });
 
-
+function displayCountry(){
+ country.style.display="flex"
+ lan.style.display="none"
+}
+function displayLan(){
+  country.style.display="none"
+  lan.style.display="flex"
+ }
+ ```
