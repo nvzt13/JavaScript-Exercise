@@ -19,7 +19,7 @@
     display: flex;
     flex-direction: column;
     justify-content:space-between;
-    height:20%;
+    height:25%;
 }
 .header .title{
     letter-spacing: 1em;
@@ -54,3 +54,23 @@ span{
     color:fuchsia;
     font-weight: bold;
 }
+
+
+#header {
+    animation-duration: 2s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    display: inline;
+    font-weight: bold;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 0;
+    }
+  
+    to {
+      margin-left: 10%;
+    }
+  }
+  
