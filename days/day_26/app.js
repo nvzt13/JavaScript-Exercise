@@ -10,8 +10,10 @@ let filteredCountries = [];
 addEventListener();
 
 function addEventListener() {
- input.addEventListener("keyup", filter);
+ input.addEventListener("keydown", filter);
 }
+
+// fetchging data
 
 fetch(countryApiUrl)
  .then((response) => response.json())
@@ -20,20 +22,24 @@ fetch(countryApiUrl)
       countries.push(element.name);
       filteredCountries.push(element.name);
     });
-    // display(filteredCountries);
+   //  display(filteredCountries);
  });
 
-console.log(countries);
+
+
+ // display arr mutod in the HTML
 
 function display(arr) {
- const ul = document.querySelector('#list');
- ul.innerHTML = '';
+ const countryWrapper = document.querySelector('#list');
+ countryWrapper.innerHTML = '';
 
  arr.map((ar) => {
     const li = `<li>${ar}</li>`;
-    ul.innerHTML += li;
+    countryWrapper.innerHTML += li;
  });
 }
+
+// filter country name function
 
 function filter(e) {
  let filterValue = e.target.value;
@@ -47,16 +53,16 @@ function filter(e) {
     });
     filteredCountries = filter;
  } else {
-    filteredCountries = countries;
+   const ul = document.querySelector('#list');
+   ul.innerHTML = '';
  }
 
  display(filteredCountries);
 }
 
-// // Yeni işlev: Tüm ülkeleri göstermek için
-function displayAll() {
- display(filteredCountries);
-}
 
-// // Varsayılan olarak tüm ülkeleri göster
-displayAll();
+// function displayAll() {
+//  display(filteredCountries);
+// }
+
+// displayAll();
