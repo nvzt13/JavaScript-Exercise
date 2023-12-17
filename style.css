@@ -1,0 +1,56 @@
+*{
+    /* border: 1px solid; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif,'Times New Roman', Times, serif,monospace;
+}
+.container{
+    display: flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    margin: 0 10%;
+    height: 100vh;
+}
+
+/*   Header CSS */
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    height:20%;
+}
+.header .title{
+    letter-spacing: 1em;
+}
+.header .header-animation{
+    background-color:yellow;
+   padding: 25px;
+}
+
+/* Main CSS */
+
+.main{
+    display:  flex;
+    flex-direction: column;
+}
+.container .main .challenge{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.container .main .challenge .skill{
+    padding: 50px 25px;
+    text-align: center;
+    margin-top: 10px;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+/* Footer CSS*/
+
+span{
+    color:fuchsia;
+    font-weight: bold;
+}

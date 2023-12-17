@@ -2,7 +2,7 @@
  
 ## [Exercise:Solutions](#exercise-solutions)
 
- #### [Home](../README.md) | [<< Day 24](../day_24/day_24.md) | [Day 26 >>](./09_day_callbac_function.md)
+ #### [Home](../README.md) | [<< Day 24](../day_24/day_24.md) | [Day 26 >>](../day_26/26_day_World_2.md)
 
 
 ### Exercise: Level 1
