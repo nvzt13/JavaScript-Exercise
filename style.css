@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif,'Times New Roman', Times, serif;
+    /* border: 1px solid; */
+}
+.container{
+    display: flex;
+    flex-direction: column;   
+    justify-content: space-evenly;
+    height: 100vh;
+}
+
+/* Header CSS*/
+.container .header{
+
+}
+.container .header .title h3{
+    text-align: center;
+}
+.container .header .form-wrapper{
+    width: 60%;
+    margin: 0 auto;
+}
+.container .header .form-wrapper form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.container .header .form-wrapper form input{
+padding: 5px 14px;
+width: 20%;
+}
+
+/* Main CSS*/
+
+.main{
+    display: flex;
+    flex-direction: column;
+    
+}
+.main .player{
+   
+}
+.main .player ul{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid;
+    justify-content: space-between;
+    width: 60%;
+    margin: 0 auto;
+    background-color: thistle;
+}
+.main .player ul li{
+    list-style: none;
+    padding: 10px 20px;
+}
+.main .player .button-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    text-align: center;
+}
+.main .player .button-wrapper button{
+    border-radius: 50%;
+    padding: 8px;
+    margin: 0 3px;
+    background-color: aqua;
+}
+.main .player .button-wrapper button:hover{
+    background-color: tomato;
+}
+
