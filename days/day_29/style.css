@@ -7,7 +7,7 @@
 }
 #header{
     display: flex;
+    line-height: 2em;
+    font-size: 4em;
     flex-wrap: wrap;
-    width: 100vh;
 }
-
