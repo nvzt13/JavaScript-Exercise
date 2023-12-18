@@ -1,4 +1,4 @@
-const countries_data = [
+const countriesData = [
 	{
 			"name": "Afghanistan",
 			"capital": "Kabul",
