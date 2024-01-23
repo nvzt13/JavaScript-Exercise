@@ -39,12 +39,13 @@ form > input{
 }
 #wrapper{
     display:flex;
-    flex-direction: column;
+    flex-direction:row;
     justify-content:center;
+    align-content: center;
     background-color:#ffffff;
     opacity: 0.6;
     margin: 300px 20px;
-    padding: 100px;
+    flex-wrap: wrap;
 }
 #wrapper > img{
     width: 200px;
@@ -62,11 +63,22 @@ form > input{
   
 }
 
-@media screen and (min-width:600px){
-    form{
-        flex-direction: row;
+@media screen and (max-width:600px){
+  
+    #wrapper > p{
+      
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      flex-wrap:wrap;
+      margin: 15px 0;
     }
     #wrapper{
-        flex-direction: row;
+        display: flex;
+      flex-direction: column;
+      margin-top:20px;
+    }
+    #wrapper img{
+      margin: 0 auto;
     }
 }
