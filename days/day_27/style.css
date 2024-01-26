@@ -24,6 +24,20 @@
 .header .title{
     letter-spacing: 1em;
 }
+.header .title .card-wrapper{
+  
+}
+.header .title .card-wrapper .card{
+ 
+}
+.header .title .card-wrapper .card img{
+  width:300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: 50% 38%;
+  border-radius: 50%;
+  
+}
 .header .header-animation{
     background-color:yellow;
    padding: 25px;
