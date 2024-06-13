@@ -1,8 +1,8 @@
-  # Day 28  - Portfolio
+  # Day 29  - Portfolio
  
 ## [Exercise:Solutions](#exercise-solutions)
 
- #### [Home](../README.md) | [<< Day 27](../day_27/27_day_portfolio.md) | [Day 29 >>](../day_29/29_day_animatingcharecter.md)
+ #### [Home](../README.md) | [<< Day 28](../day_28/day_28_leaderboard.md) | [Day 30 >>](../day_30/30_day_finalprohects.md)
 
 ### Exercise Level 1
 

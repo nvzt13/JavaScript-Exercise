@@ -2,7 +2,7 @@
  
 ## [Exercise:Solutions](#exercise-solutions)
 
-### Exercise: Level 1
+ #### [Home](../README.md) | [<< Day 23](../23_day_event.md) | [Day 25 >>](../day_25/25_day.md)
 
 
 1. Develop a small application which calculate a weight of an object in a certain planet. The gif image is not complete check the video in the starter file.
