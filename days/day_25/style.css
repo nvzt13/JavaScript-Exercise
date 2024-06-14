@@ -10,6 +10,7 @@
     align-items: center;
     align-content: space-around;
     flex-wrap: wrap;
+    margin: 10px 10px;
 }
 .header{
     display: flex;

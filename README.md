@@ -23,10 +23,10 @@
 | 21    |                                                          [DOM](./days/21_day_DOM.md)                                                          |
 | 22    |                            [Manipulating DOM Object](./days/22_day_DOM2.md)                            |
 | 23    |                                        [Event Listeners](./days/23_day_event.md)                                        |
-| 24    |                             [Mini Project: Solar System](./days/24_Day_Project_solar_system/24_day_project_solar_system.md)                              |
-| 25    | [Mini Project: World Countries Data Visualization 1](./days/25_Day_World_countries_data_visualization_1/25_day_world_countries_data_visualization_1.md) |
-| 26    | [Mini Project: World Countries Data Visualization 2](./26_Day_World_countries_data_visualization_2/26_day_world_countries_data_visualization_2.md) |
-| 27    |                             [Mini Project: Portfolio](./27_Day_Mini_project_portfolio/27_day_mini_project_portfolio.md)                             |
-| 28    |                          [Mini Project: Leaderboard](./28_Day_Mini_project_leaderboard/28_day_mini_project_leaderboard.md)                          |
-| 29    |             [Mini Project: Animating characters](./29_Day_Mini_project_animating_characters/29_day_mini_project_animating_characters.md)             |
-| 30    |                                     [Final Projects](./30_Day_Mini_project_final/30_day_mini_project_final.md)                                      |
+| 24    |                             [Mini Project: Solar System](./days/day_24/day_24.md)                              |
+| 25    | [Mini Project: World Countries Data Visualization 1](./days/day_25/25_day.md) |
+| 26    | [Mini Project: World Countries Data Visualization 2](./days/day_26/26_day_World_2.md) |
+| 27    |                             [Mini Project: Portfolio](./days/day_27/27_day_portfolio.md)                             |
+| 28    |                          [Mini Project: Leaderboard](./days/day_28/day_28_leaderboard.md)                          |
+| 29    |             [Mini Project: Animating characters](./days/day_29/29_day_animatingcharecter.md)             |
+| 30    |                                     [Final Projects](./days/day_30/30_day_finalprohects.md)                                      |
