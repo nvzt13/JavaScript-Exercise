@@ -23,8 +23,8 @@
 | 21    |                                                          [DOM](./days/21_day_DOM.md)                                                          |
 | 22    |                            [Manipulating DOM Object](./days/22_day_DOM2.md)                            |
 | 23    |                                        [Event Listeners](./days/23_day_event.md)                                        |
-| 24    |                             [Mini Project: Solar System](./24_Day_Project_solar_system/24_day_project_solar_system.md)                              |
-| 25    | [Mini Project: World Countries Data Visualization 1](./25_Day_World_countries_data_visualization_1/25_day_world_countries_data_visualization_1.md) |
+| 24    |                             [Mini Project: Solar System](./days/24_Day_Project_solar_system/24_day_project_solar_system.md)                              |
+| 25    | [Mini Project: World Countries Data Visualization 1](./days/25_Day_World_countries_data_visualization_1/25_day_world_countries_data_visualization_1.md) |
 | 26    | [Mini Project: World Countries Data Visualization 2](./26_Day_World_countries_data_visualization_2/26_day_world_countries_data_visualization_2.md) |
 | 27    |                             [Mini Project: Portfolio](./27_Day_Mini_project_portfolio/27_day_mini_project_portfolio.md)                             |
 | 28    |                          [Mini Project: Leaderboard](./28_Day_Mini_project_leaderboard/28_day_mini_project_leaderboard.md)                          |
