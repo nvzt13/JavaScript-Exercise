@@ -9,7 +9,7 @@
 
 1. Visualize the ten most populated countries and the ten most spoken languages in the world using DOM(HTML, CSS, JS)
 
-<img src="../image/day25_level1.png">
+<img src="day25_level1.png">
 
 
 ### Exercise Level 1

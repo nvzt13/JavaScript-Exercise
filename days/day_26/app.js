@@ -3,6 +3,7 @@ const startButton = document.getElementById("start");
 const nyButton = document.getElementById("any");
 const sort = document.getElementById("sort");
 const input = document.getElementById("filter");
+const form = document.getElementById("form")
 
 let countries = [];
 let filteredCountries = [];
@@ -10,7 +11,37 @@ let filteredCountries = [];
 addEventListener();
 
 function addEventListener() {
- input.addEventListener("keydown", filter);
+  form.addEventListener("click",choseButton)
+
+  
+  input.addEventListener("keydown", filter);
+}
+
+//chose buttton whick filter aray
+
+function choseButton(e){
+  switch(e.target.id){
+    
+    case "form": 
+    e.preventDefault()
+    console.log("you click form")
+    break;
+    
+    case "start": 
+    e.preventDefault()
+    console.log("you click start button")
+    break;
+    
+    case "any": 
+    e.preventDefault()
+    console.log("you click any button")
+    break;
+    
+    case "sort": 
+    e.preventDefault()
+    console.log("you click sory button")
+    break;    
+  }
 }
 
 // fetchging data
@@ -60,9 +91,3 @@ function filter(e) {
  display(filteredCountries);
 }
 
-
-// function displayAll() {
-//  display(filteredCountries);
-// }
-
-// displayAll();
