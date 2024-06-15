@@ -1,6 +1,6 @@
 const countryApiUrl = 'https://restcountries.com/v2/all';
-const startButton = document.getElementById("start");
-const anyButton = document.getElementById("any");
+let startButton = document.getElementById("start");
+let anyButton = document.getElementById("any");
 const sort = document.getElementById("sort");
 const input = document.getElementById("filter");
 const form = document.getElementById("form")
@@ -8,13 +8,15 @@ const list = document.getElementById("list")
 
 let countries = [];
 let filteredCountries = [];
+startButton = false
+anyButton = true
+
 
 addEventListener();
 
 function addEventListener() {
-
+  
   form.addEventListener("click",choseButton)
-  input.addEventListener("keyup", filter);
 }
 
 
@@ -22,57 +24,70 @@ function addEventListener() {
 // fetchging data
 
 fetch(countryApiUrl)
- .then((response) => response.json())
- .then(async (data) => {
-    await data.forEach((element) => {
-      countries.push(element.name);
-      
-    });
-   //  display(filteredCountries);
- });
+.then((response) => response.json())
+.then(async (data) => {
+  await data.forEach((element) => {
+    countries.push(element.name);
+    
+  });
+  //  display(filteredCountries);
+});
 
 
 
- // display arr mutod in the HTML
+// display arr metod in the HTML
 
 function display(arr) {
- list.innerHTML = '';
-
- arr.map((ar) => {
+  
+  arr.map((ar) => {
     const li = `<li>${ar}</li>`;
     list.innerHTML += li;
- });
- }
- 
+  });
+}
+
 //chose buttton whick filter aray
 
 function choseButton(e){
+
+  input.addEventListener("keyup", filterAny);
+  
   switch(e.target.id){
-
-
+    
+    
     case "start":
-    e.preventDefault()
-    console.log("you click start button")
-    break;
+      e.preventDefault()
 
-    case "any":
-    // filter()
-    e.preventDefault()
-    console.log("you click any button")
-    break;
+      filterStart()
+      break;
+      
+      case "any":
+        e.preventDefault()
+        filterAny()
+        console.log("you click any button")
+        break;
+        
+        case "sort":
+          e.preventDefault()
+          filteredCountries.reverse()
+          filterAny()
+          break;
+        }
+      }
+      
+      
+      
+      function filterAny(){
+        let inputValue = input.value.toLowerCase().trim()
+        
+        list.innerHTML = '';
+        filteredCountries = []
+        
+      if(inputValue.length !==0){
 
-    case "sort":
-    e.preventDefault()
-    console.log("you click sort button")
-    break;
-  }
-}
-function filter(e){
-   let inputValue = e.target.value.toLowerCase().trim()
-   if(inputValue.length !==0){
-    countries.forEach((country)=>{
-       if(country.toLowerCase().trim().includes(inputValue,0)){
-       filteredCountries.push(country)
+      countries.forEach((country)=>{
+
+         if(country.toLowerCase().trim().includes(inputValue,0)){
+          filteredCountries.push(country)
 
       }else{
 
@@ -80,30 +95,33 @@ function filter(e){
       }
     })
   }else{
-    // console.log("Lütfen bir değer girin")
-    list.innerHTML=""
+    // alert("Lütfen geçerli bir değer girin")
   }
-  console.log(filteredCountries)
   display(filteredCountries)
 }
  
-// filter country name function
+function filterStart(){
+  let inputValue = input.value.toLowerCase().trim()
+  
+  list.innerHTML = '';
+  filteredCountries = []
+  
+if(inputValue.length !==0){
 
-// function filter(e) {
-//  let filterValue = e.target.value;
-//  let filter = [];
+countries.forEach((country)=>{
 
-//  if (filterValue.length > 0) {
-//     countries.forEach((country) => {
-//       if (country.toLowerCase().includes(filterValue.toLowerCase())) {
-//         filter.push(country);
-//       }
-//     });
-//     filteredCountries = filter;
-//  } else {
-//    const ul = document.querySelector('#list');
-//    ul.innerHTML = '';
-//  }
+   if(country.toLowerCase().trim().startsWith(inputValue,0)){
+    filteredCountries.push(country)
 
-//  display(filteredCountries);
-// }
+}else{
+
+  console.log("Aradığınız ülke bulunamadı")
+}
+})
+}else{
+// alert("Lütfen geçerli bir değer girin")
+}
+display(filteredCountries)
+}
+
+

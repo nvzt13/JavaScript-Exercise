@@ -8,7 +8,7 @@ li{
     list-style: none;
     border: 1px solid;
     padding: 20px 10px;
-    background-image: url(./images/map_image.jpg);
+    background-image: url("./map_image.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     object-position: 50% 50%;
@@ -22,10 +22,10 @@ body{
 
 }
 .container{
-    background-image: url("./images/globe-2.jpg");
+    background-image: url("./globe-2.jpg");
     background-repeat: no-repeat;
     background-size:100% 60vh;
-    object-fit: contain;
+    object-fit: cover;
     height: 60vh;
     display: flex;
     justify-content: center;
@@ -58,7 +58,7 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: black;
+    color: white;
     }
     .header h1{
     margin-bottom: 20px;
@@ -97,6 +97,6 @@ align-items: center;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    height: 40vh;
-    background-color: antiquewhite;
+    min-height: 40vh;
+    background-color: rgb(86, 223, 186);
 }
