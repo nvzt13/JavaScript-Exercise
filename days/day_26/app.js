@@ -67,11 +67,11 @@ function choseButton(e){
     break;
   }
 }
-function filter(){
-   let inputValue = input.value
+function filter(e){
+   let inputValue = e.target.value.toLowerCase().trim()
    if(inputValue.length !==0){
     countries.forEach((country)=>{
-       if(country.startsWith(inputValue)){
+       if(country.toLowerCase().trim().includes(inputValue,0)){
        filteredCountries.push(country)
 
       }else{
