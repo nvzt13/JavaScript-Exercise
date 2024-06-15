@@ -39,10 +39,13 @@ fetch(countryApiUrl)
 
 function display(arr) {
   
+  let dizi = []
   arr.map((ar) => {
+    
     const li = `<li>${ar}</li>`;
-    list.innerHTML += li;
+    dizi.push(li)
   });
+  list.innerHTML = dizi.reverse();
 }
 
 //chose buttton whick filter aray
@@ -66,11 +69,6 @@ function choseButton(e){
         console.log("you click any button")
         break;
         
-        case "sort":
-          e.preventDefault()
-          filteredCountries.reverse()
-          filterAny()
-          break;
         }
       }
       
