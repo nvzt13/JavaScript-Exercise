@@ -4,6 +4,7 @@ const anyButton = document.getElementById("any");
 const sort = document.getElementById("sort");
 const input = document.getElementById("filter");
 const form = document.getElementById("form")
+const list = document.getElementById("list")
 
 let countries = [];
 let filteredCountries = [];
@@ -13,7 +14,7 @@ addEventListener();
 function addEventListener() {
 
   form.addEventListener("click",choseButton)
-  //input.addEventListener("keydown", filter);
+  input.addEventListener("keyup", filter);
 }
 
 
@@ -35,12 +36,11 @@ fetch(countryApiUrl)
  // display arr mutod in the HTML
 
 function display(arr) {
- const countryWrapper = document.querySelector('#list');
- countryWrapper.innerHTML = '';
+ list.innerHTML = '';
 
  arr.map((ar) => {
     const li = `<li>${ar}</li>`;
-    countryWrapper.innerHTML += li;
+    list.innerHTML += li;
  });
  }
  
@@ -67,17 +67,24 @@ function choseButton(e){
     break;
   }
 }
-filter()
 function filter(){
-  input.addEventListener("keydown",()=>{
-    
-    countries.forEach((country) => {
-    if (country.toLowerCase().includes(input.value)) {
-       filteredCountries.push(country);
-      console.log(filteredCountries)
-       }
-  })
-})
+   let inputValue = input.value
+   if(inputValue.length !==0){
+    countries.forEach((country)=>{
+       if(country.startsWith(inputValue)){
+       filteredCountries.push(country)
+
+      }else{
+
+        console.log("Aradığınız ülke bulunamadı")
+      }
+    })
+  }else{
+    // console.log("Lütfen bir değer girin")
+    list.innerHTML=""
+  }
+  console.log(filteredCountries)
+  display(filteredCountries)
 }
  
 // filter country name function
