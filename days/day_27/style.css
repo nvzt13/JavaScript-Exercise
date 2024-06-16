@@ -43,6 +43,10 @@ h1{
 .main{
   display:  flex;
   flex-direction: column;
+  margin-bottom:15%;
+}
+.main p{
+  margin-top: 25px;
 }
 .container .main .challenge{
   display: flex;

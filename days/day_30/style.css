@@ -10,15 +10,22 @@ body{
 .container{
     display: flex;
     flex-wrap: wrap;
+    margin-top: 25px;
 }
 .container .header{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    width: 80%;
-    height: 40vh;
+    width: 100%;
+    height: auto;
     margin: 0 auto;
+}
+h3{
+    font-size:400%
+}
+p{
+    font-size: 200%;
 }
 .container .header form{
     display: flex;
@@ -27,7 +34,11 @@ body{
     width: 60%;
     justify-content: space-around;
 }
-
+.container .header form input{
+    padding: 10px 20px;
+    border-radius:10px;
+    font-size:x-large
+}
 .container .header .button-wrapper{
     display: flex;
     flex-direction: row;
@@ -35,19 +46,18 @@ body{
     border-radius:25%;
 }
 .container .header .button-wrapper button{
-    border-radius: 25px;
+    border-radius: 10px;
     background-color: yellow;
-    padding: 2px 8px;
+    padding: 15px 35px;
 }
 
 /* main css*/
 
 .container .main{
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    
 }
 .container .country-wrapper{
     display: flex;
@@ -58,10 +68,10 @@ body{
     background-color: aliceblue;
     margin: 5px;
     padding: 10px 0;
-       
+    
 }
 .container .country-wrapper img{
-   margin: 5px 0;
+    margin: 5px 0;
     width: 80%;
 }
 .container .country-wrapper ul{

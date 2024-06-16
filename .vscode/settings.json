@@ -1,0 +1,6 @@
+{
+    "accessibility.signals.terminalCommandSucceeded": {
+        "sound": "off",
+        "announcement": "off"
+    }
+}
