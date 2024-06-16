@@ -1,90 +1,86 @@
 *{
-    /* border: 1px solid; */
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif,'Times New Roman', Times, serif,monospace;
+  /* border: 1px solid; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif,'Times New Roman', Times, serif,monospace;
 }
 .container{
-    display: flex;
-    flex-direction:column;
-    justify-content:space-evenly;
-    margin: 0 10%;
-    height: 100vh;
+  display: flex;
+  flex-direction:column;
+  justify-content:space-evenly;
+  margin: 0 10%;
+  height: auto;
 }
 
 /*   Header CSS */
 
 .header{
-    display: flex;
-    flex-direction: column;
-    justify-content:space-between;
-    height:25%;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  min-height:25%;
 }
 .header .title{
-    letter-spacing: 1em;
+  letter-spacing: 1em;
 }
 .header .title .card-wrapper{
   
 }
 .header .title .card-wrapper .card{
- 
-}
-.header .title .card-wrapper .card img{
-  width:300px;
-  height: 300px;
-  object-fit: cover;
-  object-position: 50% 38%;
-  border-radius: 50%;
   
 }
 .header .header-animation{
-    background-color:yellow;
-   padding: 25px;
+  background-color:yellow;
+  padding: 5%;
 }
-
+h1{
+  font-size:600%;
+  letter-spacing:0.4em
+}
 /* Main CSS */
 
 .main{
-    display:  flex;
-    flex-direction: column;
+  display:  flex;
+  flex-direction: column;
 }
 .container .main .challenge{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 .container .main .challenge .skill{
-    padding: 50px 25px;
-    text-align: center;
-    margin-top: 10px;
-    border: 1px solid;
-    border-radius: 10px;
+  display: flex;
+  padding: 75px;
+  align-items: center;
+  justify-content: center;
+  margin-top:5%;
+  border: 1px solid;
+  border-radius: 10px;
 }
 
 /* Footer CSS*/
 
 span{
-    color:fuchsia;
-    font-weight: bold;
+  color:fuchsia;
+  font-weight: bold;
 }
 
 
 #header {
-    animation-duration: 2s;
-    animation-name: slidein;
-    animation-iteration-count: infinite;
-    display: inline;
-    font-weight: bold;
+  animation-duration: 2s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  display: inline;
+  font-weight: bold;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 0;
   }
   
-  @keyframes slidein {
-    from {
-      margin-left: 0;
-    }
-  
-    to {
-      margin-left: 10%;
-    }
+  to {
+    margin-left: 10%;
   }
-  
+}
