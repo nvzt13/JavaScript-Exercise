@@ -5,6 +5,7 @@ const sort = document.getElementById("sort");
 const input = document.getElementById("filter");
 const form = document.getElementById("form")
 const list = document.getElementById("list")
+const text = document.getElementById("text")
 
 let countries = [];
 let filteredCountries = [];
@@ -45,81 +46,89 @@ function display(arr) {
     const li = `<li>${ar}</li>`;
     dizi.push(li)
   });
-  list.innerHTML = dizi.reverse();
+  list.innerHTML=dizi
+  sort.addEventListener("click",(e)=>{
+    e.preventDefault()
+    list.innerHTML = dizi.reverse();
+
+  })
 }
 
 //chose buttton whick filter aray
 
 function choseButton(e){
-
+  
   input.addEventListener("keyup", filterAny);
   
   switch(e.target.id){
     
     
     case "start":
-      e.preventDefault()
+    e.preventDefault()
+    filterStart()
+    break;
+    
+    case "any":
+    e.preventDefault()
+    filterAny()
+    break;
+    
+  }
+}
 
-      filterStart()
-      break;
+// filter array on click any button
+
+function filterAny(){
+  let inputValue = input.value.toLowerCase().trim()
+  
+  list.innerHTML = '';
+  filteredCountries = []
+  
+  if(inputValue.length !==0){
+    
+    countries.forEach((country)=>{
       
-      case "any":
-        e.preventDefault()
-        filterAny()
-        console.log("you click any button")
-        break;
+      if(country.toLowerCase().trim().includes(inputValue,0)){
+        filteredCountries.push(country)
         
-        }
-      }
-      
-      
-      
-      function filterAny(){
-        let inputValue = input.value.toLowerCase().trim()
-        
-        list.innerHTML = '';
-        filteredCountries = []
-        
-      if(inputValue.length !==0){
-
-      countries.forEach((country)=>{
-
-         if(country.toLowerCase().trim().includes(inputValue,0)){
-          filteredCountries.push(country)
-
       }else{
-
-        console.log("Aradığınız ülke bulunamadı")
+        
+        // console.log("Aradığınız ülke bulunamadı")
       }
     })
+    text.innerHTML=`Countries containing ${inputValue} are ${filteredCountries.length}`
+
   }else{
     // alert("Lütfen geçerli bir değer girin")
   }
   display(filteredCountries)
 }
- 
+
+// filter array on click start button
+
 function filterStart(){
   let inputValue = input.value.toLowerCase().trim()
   
   list.innerHTML = '';
   filteredCountries = []
   
-if(inputValue.length !==0){
-
-countries.forEach((country)=>{
-
-   if(country.toLowerCase().trim().startsWith(inputValue,0)){
-    filteredCountries.push(country)
-
-}else{
-
-  console.log("Aradığınız ülke bulunamadı")
-}
-})
-}else{
-// alert("Lütfen geçerli bir değer girin")
-}
-display(filteredCountries)
+  if(inputValue.length !==0){
+    
+    countries.forEach((country)=>{
+      
+      if(country.toLowerCase().trim().startsWith(inputValue,0)){
+        filteredCountries.push(country)
+        
+      }else{
+        
+        // console.log("Aradığınız ülke bulunamadı")
+      }
+    })
+    text.innerHTML=`Countries start with ${inputValue} are ${filteredCountries.length}`
+  }else{
+    // alert("Lütfen geçerli bir değer girin")
+  }
+  display(filteredCountries)
 }
 
 
