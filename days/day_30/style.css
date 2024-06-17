@@ -5,7 +5,7 @@
     /* border: 1px solid; */
 }
 body{
-    background-color: rgb(241, 238, 234);
+    background-color: rgb(172, 194, 157);
 }
 .container{
     display: flex;
@@ -41,7 +41,8 @@ p{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    border-radius:25%;
+    margin-top:15px;
+    margin-bottom:10px;
 }
 .container .header .button-wrapper button{
     border-radius: 10px;
