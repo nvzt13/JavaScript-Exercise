@@ -5,7 +5,7 @@
     /* border: 1px solid; */
 }
 body{
-    background-color: rgb(172, 194, 157);
+    background-color: rgb(32, 220, 160);
 }
 .container{
     display: flex;
@@ -46,8 +46,10 @@ p{
 }
 .container .header .button-wrapper button{
     border-radius: 10px;
-    background-color: yellow;
+    background-color: rgb(37, 156, 220);
     padding: 15px 35px;
+    color:aliceblue;
+    font-size:large;
 }
 
 /* main css*/
@@ -73,12 +75,19 @@ p{
     margin: 5px 0;
     width: 80%;
 }
+.container .country-wrapper p{
+    font-size: x-large;
+    margin-top: 5px;
+}
+.icon{
+    width: 60px;
+}
 .container .country-wrapper ul{
     width: 80%;
     list-style: none;
 }
 .container .country-wrapper ul li{
-    font-size: 0.7em;
+    font-size: 1em;
 }
 
 

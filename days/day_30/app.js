@@ -23,7 +23,7 @@ function showCountries() {
     <p class = "country-name">${data.name } </p>
     <ul>
     <li>Capital: ${data.capital} </li>
-    <li>Langue: ${data.langues} </li>
+    <li>Langue: ${data.languages} </li>
     <li>Population: ${data.population} </li>
     <ul>
     </div>
@@ -52,10 +52,10 @@ function searchCountry(e) {
     inputValue.length > 0) {  
       searchCountries.push(filterCountry)
     }
-    else if (inputValue.length == 0){
-      showCountries()
-    }
   })
+  if (inputValue.length == 0){
+    showCountries()
+  }
   getInformationCountries()
   }
 
@@ -74,7 +74,7 @@ function getInformationCountries() {
         <p class = "country-name">${data.name } </p>
         <ul>
         <li>Capital: ${data.capital} </li>
-        <li>Langue: ${data.langues} </li>
+        <li>Langue: ${data.languages} </li>
         <li>Population: ${data.population} </li>
         <ul>
         </div>
