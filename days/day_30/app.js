@@ -1,76 +1,93 @@
 const main = document.getElementById("main");
 const form = document.getElementById("search");
-const input = document.getElementById("input")
+const input = document.getElementById("input");
 
-let countries = []
+let countries = [];
+
+countriesData.forEach(element =>  {
+countries.push(element.name)
+});
 
 runEvents()
 
-function runEvents(){
-  input.addEventListener("keyup",searchCountry)
+// run events functions
+function runEvents() {
+  input.addEventListener("keyup", searchCountry)
 }
 
-countriesData.forEach(element => {
-  countries.push(element.name)
-})
+// get data from user and search in countries array
+function searchCountry() {
+  let inputValue = input.value.toLowerCase().trim();
+  let searchCountries = [];
 
-
-function searchCountry(){
-  let inputValue = input.value.toLowerCase()
-  countries.forEach((country)=>{
-    if(country.toLowerCase().startsWith(inputValue)){
-      console.log(country)
+  countries.forEach((filterCountry) => {
+    if(filterCountry.toLowerCase().trim().startsWith(inputValue) && 
+    inputValue.length > 0) {  
+       searchCountries.push(filterCountry)
     }
   })
+  return searchCountries;
 }
 
+console.log(searchCountry())
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// let searchCountryInformation = []
-
-// // ülkelerimiz için bir sınıf
-// class Country {
-//   constructor(countryName, flag, population, langue, capital) {
-//     this.countryName = countryName
-//     this.flag = flag
-//     this.population = population
-//     this.langue = langue
-//     this.capital = capital
-//   }
-//   displayCountry() {
-//     const element =
-//     `<div class="country-wrapper">
-//       <img src="${this.flag}" alt="">
-//       <p class="country-name">${this.countryName}</p>
-//       <ul>
-//           <li>Capital: ${ this.capital}</li>
-//           <li>Langue: ${this.langue}</li>
-//           <li>Population: ${ this.population}</li>
-//       </ul>
-//     </div>
-//    `
-//    main.innerHTML=""
-//     main.innerHTML+=element
-    
-//   }
+// getInformation()
+// // get imformation data of countries
+// function getInformation() {
+//   let filteredCountries = searchCountry()
+//   filteredCountries.forEach((country) => {
+//     console.log(country)
+//   })
 // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// class for countries
+class Country {
+  constructor(name, flag, population, langue, capital) {
+    this.name = name;
+    this.flag = flag;
+    this.population = population;
+    this.langue = langue;
+    this.capital = capital
+  }
+  displayCountry() {
+    const element = `
+    <div class = "country-wrapper">
+    <img src = "${this.flag}>
+    <p class = "country-name"> </p>
+    <ul>
+    <li>Capital: ${this.capital} </li>
+    <li>Langue: ${this.langue} </li>
+    <li>Population: ${this.population} </li>
+    <ul>
+    </div>
+    `;
+    main.innerHTML += element
+  }
+}
+
 
 // addEventListener();
 // function addEventListener() {
