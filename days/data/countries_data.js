@@ -103,7 +103,7 @@ const countriesData = [
 	},
 	{
 			"name": "Antigua and Barbuda",
-			"capital": "Saint John's",
+			"capital": "Saint Johns",
 			"languages": [
 					"English"
 			],
@@ -982,7 +982,7 @@ const countriesData = [
 	},
 	{
 			"name": "Ghana",
-			"capital": "Accra",
+			"capital":"Accra",
 			"languages": [
 					"English"
 			],
@@ -2849,7 +2849,7 @@ const countriesData = [
 			"area": 752618
 	},
 	{
-			"name": "Zimbabwe",
+			"name":"Zimbabwe",
 			"capital": "Harare",
 			"languages": [
 					"English",
