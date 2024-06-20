@@ -66,8 +66,9 @@ function searchCountry(e) {
   countriesData.forEach((data) => {
     if(data.name.toLowerCase().trim().startsWith(inputValue) && 
     inputValue.length > 0) {  
+      capital.push(data.capital)
       let card = new Country (data.name, data.flag,
-         data.capital, data.languages, data.p)
+         data.capital, data.languages, data.population)
          card.createCard(filteredCountries)
     }  
     main.innerHTML = "";
@@ -77,8 +78,7 @@ function searchCountry(e) {
   if (inputValue.length == 0){
     showCountries()
   }  
-  
-  }
+}
   
 // reverse countries array on click name button
 function reverseCountries(e) {
@@ -94,12 +94,16 @@ function reverseCountries(e) {
     }
   }
 function reverseCountriesArrayCapitalName (e) {
-  e.preventDefault()
-  main.innerHTML = "";
-  if(input.value.length == 0 ) {
-    cards.forEach((card)=>{
+e.preventDefault()
 
-      console.log(card.className())
-    })
+console.log(capital)
+console.log(capital.sort())
+countriesData.forEach((data) => {
+  for(let capi of capital.sort()){
+    if(data.capital == capi){
+      console.log(data.population)
   }
 }
+  
+}
+  )}
