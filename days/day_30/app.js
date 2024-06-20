@@ -33,7 +33,7 @@ let filteredCountries = [];
 let cards = [];
 let capital = [];
 
-showCountries()
+showCountriesFirsly()
 runEvents()
 
 // run events functions
@@ -44,14 +44,14 @@ function runEvents() {
 }
 
 // show countries in firsly
-function showCountries() {
+function showCountriesFirsly() {
   if (input.value.length == 0 ) {
     countriesData.forEach((data) => {
       let card = new Country(data.name, data.flag, data.capital, data.languages, data.population)
       card.createCard(cards)
         // capital.push(data.capital)
       })
-      main.innerHTML = cards
+      displayArrInHtml(cards)
     }
 }
 
@@ -71,12 +71,12 @@ function searchCountry(e) {
          data.capital, data.languages, data.population)
          card.createCard(filteredCountries)
     }  
-    main.innerHTML = "";
-    main.innerHTML = filteredCountries
+    displayArrInHtml(filteredCountries)
+    
     
   })  
   if (inputValue.length == 0){
-    showCountries()
+    showCountriesFirsly()
   }  
 }
   
@@ -95,15 +95,28 @@ function reverseCountries(e) {
   }
 function reverseCountriesArrayCapitalName (e) {
 e.preventDefault()
+ 
 
-console.log(capital)
 console.log(capital.sort())
-countriesData.forEach((data) => {
-  for(let capi of capital.sort()){
-    if(data.capital == capi){
-      console.log(data.population)
-  }
-}
+capital.sort().forEach((capi) => {
+   countriesData.forEach((data) =>  {
+     if(data.capital == capi){
+       let card = new Country(data.name, data.flag, data.capital, data.languages, data.population)
+       card.createCard(capital)
+     }
+    
+  displayArrInHtml(capital)
+  
+   })
   
 }
+
   )}
+  
+  function displayArrInHtml(arr){
+    
+    main.innerHTML = '';
+    main.innerHTML = arr;
+    
+   
+  }
