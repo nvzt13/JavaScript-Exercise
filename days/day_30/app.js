@@ -4,119 +4,111 @@ const input = document.getElementById("input");
 const reverseButton = document.getElementById("reverseButton")
 const capitalButton = document.getElementById("capitalButton")
 
-class Country {
-  constructor (countryName, flag, capital, languages, population){
-    this.countryName = countryName;
-    this.flag = flag;
-    this.capital = capital;
-    this.languages = languages;
-    this.population = population
-  }
-  createCard (arr) {
+let filteredWord = '';
+let filteredCountries = [];
+let clickButton = false;
+ 
+createCardAndDisplay(countriesData)
+
+function createCardAndDisplay(arr){
+  let cards = [];
+  arr.forEach((data) => {
     let card =  `
         <div class = "country-wrapper">
-        <img src = "${this.flag}">
-        <p class = "country-name">${this.countryName } </p>
+        <img src = "${data.flag}">
+        <p class = "country-name">${data.name } </p>
         <ul>
-        <li>Capital: ${this.capital} </li>
-        <li>Langue: ${this.languages} </li>
-        <li>Population: ${this.population} </li>
+        <li>Capital: ${data.capital} </li>
+        <li>Langue: ${data.languages} </li>
+        <li>Population: ${data.population} </li>
         <ul>
         </div>
-        `;        
-        arr.push(card)
-      }
+        `; 
+        cards.push(card)
+  })
+  main.innerHTML = ''
+  main.innerHTML = cards
 }
 
 
-let filteredCountries = [];
-let cards = [];
-let capital = [];
+// input event listener
 
-showCountriesFirsly()
-runEvents()
-
-// run events functions
-function runEvents() {
-  input.addEventListener("keyup", searchCountry)
-  reverseButton.addEventListener("click", reverseCountries)
-  capitalButton.addEventListener("click", reverseCountriesArrayCapitalName)
-}
-
-// show countries in firsly
-function showCountriesFirsly() {
-  if (input.value.length == 0 ) {
-    countriesData.forEach((data) => {
-      let card = new Country(data.name, data.flag, data.capital, data.languages, data.population)
-      card.createCard(cards)
-        // capital.push(data.capital)
-      })
-      displayArrInHtml(cards)
-    }
-}
-
-
-// get data from user and fill in searchCountries array
-function searchCountry(e) {
+input.addEventListener('keyup', (e)=>{
+  e.preventDefault()
+  let value = e.target.value.trim().toLowerCase()
+   filteredWord = value
+   if(filteredWord.length > 0){
+      createCardAndDisplay(gettingFilteredWordData(filteredWord))
+   }
+   else if(filteredWord.length == 0){
+     createCardAndDisplay(countriesData)
+   }
   
+})
+
+function gettingFilteredWordData(string){
   filteredCountries = [];
-  main.innerHTML = "";
-  let inputValue = e.target.value.toLowerCase().trim();
- 
   countriesData.forEach((data) => {
-    if(data.name.toLowerCase().trim().startsWith(inputValue) && 
-    inputValue.length > 0) {  
-      capital.push(data.capital)
-      let card = new Country (data.name, data.flag,
-         data.capital, data.languages, data.population)
-         card.createCard(filteredCountries)
-    }  
-    displayArrInHtml(filteredCountries)
-    
-    
-  })  
-  if (inputValue.length == 0){
-    showCountriesFirsly()
-  }  
+    if(data.name.toLowerCase().trim().startsWith(string)){
+  
+      filteredCountries.push(data)
+    }
+  })
+  return filteredCountries
 }
-  
-// reverse countries array on click name button
-function reverseCountries(e) {
-  
-    e.preventDefault()
-    main.innerHTML = "" 
-    
-    if (input.value == 0){
-      main.innerHTML = cards.reverse()
-    }
-    else {
-      main.innerHTML = filteredCountries.reverse()
-    }
+reverseArrays(countriesData)
+
+function reverseArrays(arr){
+  if(arr == countriesData){
+   return countriesData.reverse()
   }
-function reverseCountriesArrayCapitalName (e) {
-e.preventDefault()
- 
-
-console.log(capital.sort())
-capital.sort().forEach((capi) => {
-   countriesData.forEach((data) =>  {
-     if(data.capital == capi){
-       let card = new Country(data.name, data.flag, data.capital, data.languages, data.population)
-       card.createCard(capital)
-     }
-    
-  displayArrInHtml(capital)
-  
-   })
-  
+  else if(arr == filteredCountries){
+    return filteredCountries.reverse()
+  }
 }
 
-  )}
-  
-  function displayArrInHtml(arr){
-    
-    main.innerHTML = '';
-    main.innerHTML = arr;
-    
+function sortCountriesToCapitalName(arr) {
+  return arr.sort((a, b) =>{
+    if(a.capital < b.capital) return -1;
+    if(a.capital > b.capital) return +1;
+    return 0;
+  });
+}
+function sortCountries(arr) {
+  return arr.sort((a, b) =>{
+    if(a.capital < b.name) return -1;
+    if(a.capital > b.name) return +1;
+    return 0;
+  });
+}
+
+// buttons click events
+
+form.addEventListener('click', (e) => {
+  e.preventDefault()
+  let element = e.target;
+  if(!element.matches('button')) return;
+  switch(element.id){
+    case'reverseButton':
+      if(input.value.length > 0){
+        createCardAndDisplay(filteredCountries.reverse())
+        }
+        else if(input.value.length == 0){
+          createCardAndDisplay(countriesData.reverse())
+      }
+      break
+      case'capitalButton':
+         if(input.value.length > 0 && clickButton ==false ){
+           createCardAndDisplay(sortCountriesToCapitalName(filteredCountries))
+           clickButton = true
    
+           console.log(filteredCountries)
+        }
+         else if(input.value.length >0 && clickButton == true){
+           createCardAndDisplay(sortCountries(filteredCountries))
+          console.log(filteredCountries)
+          clickButton = false;
+      }
+      break;
   }
+});
