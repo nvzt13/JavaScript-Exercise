@@ -4,7 +4,6 @@ const input = document.getElementById("input");
 const reverseButton = document.getElementById("reverseButton")
 const capitalButton = document.getElementById("capitalButton")
 
-let filteredWord = '';
 let filteredCountries = [];
  
 createCardAndDisplay(countriesData)
@@ -34,31 +33,27 @@ function createCardAndDisplay(arr){
 // input event listener
 
 input.addEventListener('keyup', (e)=>{
+  filteredCountries = [];
   e.preventDefault()
   let value = e.target.value.trim().toLowerCase()
-   filteredWord = value
-   if(filteredWord.length > 0){
-     main.className = "filtered-countries"
-      createCardAndDisplay(gettingFilteredWordData(filteredWord))
-   }
-   else if(filteredWord.length == 0){
-     main.className = "main"
-     createCardAndDisplay(countriesData)
+   
+if (value.length > 0){
+countriesData.forEach((data) => {
+ if(data.name.toLowerCase().trim().startsWith(value)){
+      filteredCountries.push(data)
+        }
+})
+main.className = 'filtered-countries'
+  createCardAndDisplay(filteredCountries)
 
-   }
-  
+}
+else if (value.length == 0){
+main.className = 'main'
+  createCardAndDisplay(countriesData)
+}
 })
 
-function gettingFilteredWordData(string){
-  filteredCountries = [];
-  countriesData.forEach((data) => {
-    if(data.name.toLowerCase().trim().startsWith(string)){
-  
-      filteredCountries.push(data)
-    }
-  })
-  return filteredCountries
-}
+   
 
 function sortCountriesToCapitalName(arr) {
   return arr.sort((a, b) =>{
@@ -76,7 +71,8 @@ form.addEventListener('click', (e) => {
   if(!element.matches('button')) return;
   switch(element.id){
     case'reverseButton':
-   if(main.className == "main"){
+   if (input.value.length == 0){
+     if(main.className == "main"){
       main.className = "main-reverse"
       createCardAndDisplay(countriesData.reverse())
     }
@@ -84,14 +80,17 @@ form.addEventListener('click', (e) => {
       main.className = "main"
       createCardAndDisplay(countriesData.reverse())
   }
-     else if(main.className == "filtered-countries"){
-        main.className = "filtered-countries-reverse"
-        createCardAndDisplay(filteredCountries.reverse())
-        }
-        else if(main.className == "filtered-countries-reverse"){
-          main.className = "filtered-countries"
-          createCardAndDisplay(filteredCountries.reverse())
-          }
+   else if (!main.className == 'main' || !main.className == 'main-reverse'){
+     main.className = 'main'
+     createCardAndDisplay(countriesData)
+   }
+ }
+   else if(input.value.length > 0){
+     if(main.className == 'filteredCountries'){
+       main.className = 'filteredCountries-reverse'
+       createCardAndDisplay(filteredCountries)
+     }
+   }
       break
       case'capitalButton':
          if(main.className == "main"){
