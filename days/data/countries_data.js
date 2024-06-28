@@ -13,7 +13,7 @@ const countriesData = [
 			"area": 652230
 	},
 	{
-			"name": "Åland Islands",
+			"name": "Aland Islands",
 			"capital": "Mariehamn",
 			"languages": [
 					"Swedish"
@@ -32,7 +32,8 @@ const countriesData = [
 			"population": 2837743,
 			"flag": "https://flagcdn.com/al.svg",
 			"region": "Europe",
-			"area": 28748
+			"area": 28748,
+			"borders": "Macao"
 	},
 	{
 			"name": "Algeria",
