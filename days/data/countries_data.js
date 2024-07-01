@@ -92,17 +92,6 @@ const countriesData = [
 			"area": 91
 	},
 	{
-			"name": "Antarctica",
-			"languages": [
-					"English",
-					"Russian"
-			],
-			"population": 1000,
-			"flag": "https://flagcdn.com/aq.svg",
-			"region": "Polar",
-			"area": 14000000
-	},
-	{
 			"name": "Antigua and Barbuda",
 			"capital": "Saint Johns",
 			"languages": [
@@ -343,18 +332,6 @@ const countriesData = [
 			"flag": "https://flagcdn.com/bw.svg",
 			"region": "Africa",
 			"area": 582000
-	},
-	{
-			"name": "Bouvet Island",
-			"languages": [
-					"Norwegian",
-					"Norwegian Bokmål",
-					"Norwegian Nynorsk"
-			],
-			"population": 0,
-			"flag": "https://flagcdn.com/bv.svg",
-			"region": "Antarctic Ocean",
-			"area": 49
 	},
 	{
 			"name": "Brazil",
@@ -1129,16 +1106,6 @@ const countriesData = [
 			"area": 27750
 	},
 	{
-			"name": "Heard Island and McDonald Islands",
-			"languages": [
-					"English"
-			],
-			"population": 0,
-			"flag": "https://flagcdn.com/hm.svg",
-			"region": "Antarctic",
-			"area": 412
-	},
-	{
 			"name": "Vatican City",
 			"capital": "Vatican City",
 			"languages": [
@@ -1506,17 +1473,6 @@ const countriesData = [
 			"flag": "https://flagcdn.com/lu.svg",
 			"region": "Europe",
 			"area": 2586
-	},
-	{
-			"name": "Macao",
-			"languages": [
-					"Chinese",
-					"Portuguese"
-			],
-			"population": 649342,
-			"flag": "https://flagcdn.com/mo.svg",
-			"region": "Asia",
-			"area": 30
 	},
 	{
 			"name": "North Macedonia",
@@ -2066,7 +2022,7 @@ const countriesData = [
 					"English"
 			],
 			"population": 3194034,
-			"flag": "https://flagcdn.com/pr.svg",
+			"flag": "https://fla bugcdn.com/pr.svg",
 			"region": "Americas",
 			"area": 8870
 	},

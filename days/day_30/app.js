@@ -5,7 +5,7 @@ const reverseButton = document.getElementById("reverseButton")
 const capitalButton = document.getElementById("capitalButton")
 
 let filteredCountries = [];
-
+let cloneCountriesData = countriesData.slice()
 createCardAndDisplay(sortCountriesToCountriName(countriesData))
 
 
@@ -43,15 +43,18 @@ form.addEventListener('click', (e) => {
     if (input.value.length == 0){
       if(main.className == "main"){
         main.className = "main-reverse"
-        createCardAndDisplay(sortCountriesToCountriName(countriesData))
+        createCardAndDisplay(sortCountriesToCountriName(countriesData).reverse())
+      
         
       }
       else if(main.className == "main-reverse"){
         main.className = "main"
-        createCardAndDisplay(sortCountriesToCountriName(countriesData).reverse())
-        
+        createCardAndDisplay(sortCountriesToCountriName(countriesData))
       }
-      
+      else if (main.className !== 'main' || main.className !== 'main-reverse'){
+        main.className = 'main'
+        createCardAndDisplay(sortCountriesToCountriName(countriesData))
+      }
     }
     else if(input.value.length > 0){
       if(main.className == 'filtered-countries'){
@@ -67,15 +70,17 @@ form.addEventListener('click', (e) => {
     break
     case'capitalButton':
     if(input.value.length == 0 ){
-      if(main.className == "main"){
-        main.className = "main-reverse"
-        createCardAndDisplay(sortCountriesToCapitalName
-          (sortCountriesToCountriName(countriesData)))
+      if(main.className == "main-capital"){
+        main.className = "main-capital-reverse"
+        createCardAndDisplay(sortCountriesToCapitalName(sortCountriesToCountriName(countriesData)).reverse())
         }
-        else if(main.className == "main-reverse"){
-          main.className = "main"
-          createCardAndDisplay(sortCountriesToCapitalName
-            (sortCountriesToCountriName(countriesData)).reverse())
+        else if(main.className == "main-capital-reverse"){
+          main.className = "main-capital"
+          createCardAndDisplay(sortCountriesToCapitalName(sortCountriesToCountriName(countriesData)))
+          }
+          else if (main.className !== 'main-capital' || main.className !== 'main-capital-reverse'){
+            main.className = 'main-capital'
+           createCardAndDisplay(sortCountriesToCapitalName(sortCountriesToCountriName(countriesData)))
           }
     }
     else if(input.value.length > 0){
@@ -103,7 +108,7 @@ input.addEventListener('keyup', (e)=>{
   }
   else if (value.length == 0){
     main.className = 'main'
-    createCardAndDisplay((sortCountriesToCountriName(countriesData)))
+    createCardAndDisplay((sortCountriesToCountriName(cloneCountriesData)))
   }
 })
 
