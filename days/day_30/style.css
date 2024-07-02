@@ -55,7 +55,7 @@ p{
 /* main css*/
 
 .container .main, .main-reverse, .filtered-countries, 
-.filtered-countries-reverse, .main-capital, .main-capital-reverse{
+.filtered-countries-reverse, .main-capital, .main-capital-reverse, .filtered-capital, .filtered-capital-reverse, .main-population, .main-population-reverse, .filtered-population, .filtered-population-reverse{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

@@ -1,8 +1,6 @@
 const main = document.getElementById("main");
 const form = document.getElementById("search");
 const input = document.getElementById("input");
-const reverseButton = document.getElementById("reverseButton")
-const capitalButton = document.getElementById("capitalButton")
 
 let filteredCountries = [];
 let cloneCountriesData = countriesData.slice()
@@ -29,6 +27,7 @@ function createCardAndDisplay(arr){
   })
   main.innerHTML = ''
   main.innerHTML = cards
+  console.clear()
   console.log(main.className)
 }
 // buttons click events
@@ -39,24 +38,24 @@ form.addEventListener('click', (e) => {
   let element = e.target;
   if(!element.matches('button')) return;
   switch(element.id){
+    
+    // click reverse button
     case'reverseButton':
     if (input.value.length == 0){
       if(main.className == "main"){
         main.className = "main-reverse"
         createCardAndDisplay(sortCountriesToCountriName(countriesData).reverse())
-      
-        
       }
       else if(main.className == "main-reverse"){
         main.className = "main"
         createCardAndDisplay(sortCountriesToCountriName(countriesData))
       }
-      else if (main.className !== 'main' || main.className !== 'main-reverse'){
+      else {
         main.className = 'main'
         createCardAndDisplay(sortCountriesToCountriName(countriesData))
       }
     }
-    else if(input.value.length > 0){
+    else {
       if(main.className == 'filtered-countries'){
         main.className = 'filtered-countries-reverse'
         createCardAndDisplay(filteredCountries.reverse())
@@ -65,9 +64,14 @@ form.addEventListener('click', (e) => {
         main.className = 'filtered-countries'
         createCardAndDisplay(filteredCountries.reverse())
       }
-      //! burası
+       else{
+         main.className = 'filtered-countries';
+         createCardAndDisplay(sortCountriesToCountriName(filteredCountries))
+       }
     }
     break
+    
+    // click  capital button
     case'capitalButton':
     if(input.value.length == 0 ){
       if(main.className == "main-capital"){
@@ -78,15 +82,57 @@ form.addEventListener('click', (e) => {
           main.className = "main-capital"
           createCardAndDisplay(sortCountriesToCapitalName(sortCountriesToCountriName(countriesData)))
           }
-          else if (main.className !== 'main-capital' || main.className !== 'main-capital-reverse'){
+          else {
             main.className = 'main-capital'
            createCardAndDisplay(sortCountriesToCapitalName(sortCountriesToCountriName(countriesData)))
           }
     }
-    else if(input.value.length > 0){
-      
+    else {
+      if(main.className == 'filtered-capital'){
+        main.className = 'filtered-capital-reverse'
+        createCardAndDisplay(sortCountriesToCapitalName(sortCountriesToCountriName(filteredCountries)).reverse())
+      }
+      else if (main.className == 'filtered-capital-reverse'){
+        main.className = 'filtered-capital'
+        createCardAndDisplay(sortCountriesToCapitalName(sortCountriesToCountriName(filteredCountries)))
+      }
+      else{
+        main.className = 'filtered-capital'
+        createCardAndDisplay(sortCountriesToCapitalName(sortCountriesToCountriName(filteredCountries)))
+      }
     }
     break;
+    
+    // click population button
+    case 'population-button':
+      if (input.value.length == 0){
+        if (main.className == 'main-population'){
+          main.className = 'main-population-reverse'
+          createCardAndDisplay(sortCountriesToPopulation(countriesData).reverse())
+        }
+        else if (main.className == 'main-population-reverse'){
+          main.className = 'main-population'
+          createCardAndDisplay(sortCountriesToPopulation(countriesData))
+        }
+        else {
+          main.className = 'main-population'
+          createCardAndDisplay(sortCountriesToPopulation(countriesData))
+        }
+      }
+     else{
+       if(main.className == 'filtered-population'){
+         main.className = 'filtered-population-reverse'
+         createCardAndDisplay(sortCountriesToPopulation(filteredCountries).reverse())
+       }
+       else if (main.className == 'filtered-population-reverse'){
+         main.className = 'filtered-population'
+         createCardAndDisplay(sortCountriesToPopulation(filteredCountries))
+       } 
+       else {
+         main.className = 'filtered-population'
+         createCardAndDisplay(sortCountriesToPopulation(filteredCountries))
+       }
+     }
   }
 });
 
@@ -110,7 +156,7 @@ input.addEventListener('keyup', (e)=>{
     main.className = 'main'
     createCardAndDisplay((sortCountriesToCountriName(cloneCountriesData)))
   }
-})
+});
 
 // sort to capital name countries function 
 
@@ -126,6 +172,13 @@ function sortCountriesToCountriName(arr) {
   return arr.sort((a, b) =>{
     if(a.name < b.name) return -1;
     if(a.name > b.name) return +1;
+    return 0;
+  });
+}
+function sortCountriesToPopulation (arr) {
+  return arr.sort((a, b) => {
+    if(a.population < b.population) return +1
+    if(a.population > b.population) return -1
     return 0;
   });
 }
