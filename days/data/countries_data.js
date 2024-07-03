@@ -356,15 +356,6 @@ const countriesData = [
 			"area": 60
 	},
 	{
-			"name": "United States Minor Outlying Islands",
-			"languages": [
-					"English"
-			],
-			"population": 300,
-			"flag": "https://flagcdn.com/um.svg",
-			"region": "Americas"
-	},
-	{
 			"name": "Virgin Islands (British)",
 			"capital": "Road Town",
 			"languages": [

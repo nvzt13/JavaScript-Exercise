@@ -1,9 +1,12 @@
 const main = document.getElementById("main");
 const form = document.getElementById("search");
 const input = document.getElementById("input");
+const ctx = document.getElementById('myChart');
+
 
 let filteredCountries = [];
-let cloneCountriesData = countriesData.slice()
+let countriesPopulation = [];
+let countriesName = [];
 createCardAndDisplay(sortCountriesToCountriName(countriesData))
 
 
@@ -12,6 +15,8 @@ createCardAndDisplay(sortCountriesToCountriName(countriesData))
 function createCardAndDisplay(arr){
   let cards = [];
   arr.forEach((data) => {
+    countriesPopulation.push(data.population)
+    countriesName.push(data.name)
     let card =  `
         <div class = "country-wrapper">
         <img src = "${data.flag}">
@@ -25,6 +30,8 @@ function createCardAndDisplay(arr){
         `; 
     cards.push(card)
   })
+generateGraphic()
+
   main.innerHTML = ''
   main.innerHTML = cards
   console.clear()
@@ -136,7 +143,7 @@ form.addEventListener('click', (e) => {
   }
 });
 
-// input event listener
+//--------------------input event listener----------------------\\
 
 input.addEventListener('keyup', (e)=>{
   filteredCountries = [];
@@ -147,6 +154,7 @@ input.addEventListener('keyup', (e)=>{
     sortCountriesToCountriName(countriesData).forEach((data) => {
       if(data.name.toLowerCase().trim().startsWith(value)){
         filteredCountries.push(data)
+
       }
     })
     main.className = 'filtered-countries'
@@ -154,7 +162,7 @@ input.addEventListener('keyup', (e)=>{
   }
   else if (value.length == 0){
     main.className = 'main'
-    createCardAndDisplay((sortCountriesToCountriName(cloneCountriesData)))
+    createCardAndDisplay((sortCountriesToCountriName(countriesData)))
   }
 });
 
@@ -180,5 +188,28 @@ function sortCountriesToPopulation (arr) {
     if(a.population < b.population) return +1
     if(a.population > b.population) return -1
     return 0;
+  });
+}
+
+
+function generateGraphic(){
+
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels:sortCountriesToPopulation(countriesName).slice(0,8),
+      datasets: [{
+        label: '# of Votes',
+        data:sortCountriesToPopulation(countriesPopulation).slice(0,8),
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
   });
 }

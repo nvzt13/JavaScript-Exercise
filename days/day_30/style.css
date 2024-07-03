@@ -44,7 +44,7 @@ p{
     margin-top:15px;
     margin-bottom:10px;
 }
-.container .header .button-wrapper button{
+button{
     border-radius: 10px;
     background-color: rgb(37, 156, 220);
     padding: 15px 35px;
@@ -55,7 +55,10 @@ p{
 /* main css*/
 
 .container .main, .main-reverse, .filtered-countries, 
-.filtered-countries-reverse, .main-capital, .main-capital-reverse, .filtered-capital, .filtered-capital-reverse, .main-population, .main-population-reverse, .filtered-population, .filtered-population-reverse{
+.filtered-countries-reverse, .main-capital, .main-capital-reverse,
+ .filtered-capital, .filtered-capital-reverse, .main-population,
+  .main-population-reverse, .filtered-population,
+   .filtered-population-reverse{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -91,5 +94,13 @@ p{
     font-size: 1em;
 }
 
+.graphic{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin:30px auto ;
+}
 
 
