@@ -93,9 +93,11 @@ button{
 .container .country-wrapper ul li{
     font-size: 1em;
 }
-
+.graphic-wrapper2{
+  display: none;
+}
 .graphic-wrapper{
-    display: flex;
+    display:flex;
     width: 80%;
     justify-content: center;
     align-items: center;

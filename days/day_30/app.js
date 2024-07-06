@@ -3,15 +3,16 @@ const form = document.getElementById("search");
 const input = document.getElementById("input");
 let ctx = document.getElementById('myChart');
 const graphic = document.getElementById("graphic")
+const icon = document.getElementById('icon')
 
 let filteredCountries = [];
 let countriesPopulation = [];
+let  mostSpekingLangue = new Map();
 
+calculateMostSpeakingLangues(countriesData)
 createCardAndDisplay(sortCountriesToCountriName(countriesData))
-generateGraphic(sortArrayNames(countriesData).slice(0,8),
-sortArrays(countriesPopulation).slice(0,8))
 
-// create cart and display in HTML function
+// create carts and display in HTML function
 function createCardAndDisplay(arr){
   let cards = [];
   arr.forEach((data) => {
@@ -30,10 +31,8 @@ function createCardAndDisplay(arr){
         `; 
     cards.push(card)
   })
-  
   main.innerHTML = ''
   main.innerHTML = cards
-  console.log(main.className)
 }
 
 // buttons click events
@@ -140,15 +139,10 @@ form.addEventListener('click', (e) => {
   }
 });
 
-//--------------------input event listener----------------------\\
+//input event listener
 input.addEventListener('keyup', (e)=>{
   countriesPopulation = [];
   filteredCountries = [];
-
-   new Chart(ctx, {  });
-
-
-  // ctx = null;
   
   e.preventDefault()
   let value = e.target.value.trim().toLowerCase()
@@ -162,28 +156,67 @@ input.addEventListener('keyup', (e)=>{
     })
     main.className = 'filtered-countries'
     createCardAndDisplay(filteredCountries)
-    generateGraphic(sortArrayNames(filteredCountries),
+    updateGrapgic(sortArrayNames(filteredCountries),
     sortArrays(countriesPopulation))
   }
   else if (value.length == 0){
     main.className = 'main'
     createCardAndDisplay((sortCountriesToCountriName(countriesData)))
-    generateGraphic(sortArrayNames(countriesData).slice(0,8),
+    updateGrapgic(sortArrayNames(countriesData).slice(0,8),
     sortArrays(countriesPopulation).slice(0,8))
   }
 });
 
-
-function generateGraphic(names, population){
+// return sort countries name function
+function sortArrays(arr){
+  return arr.sort((a, b) => {return b-a})
+}
   
+ // Return the names of countries sorted by country population
+  function sortArrayNames (arr){
+  let countriesName = [];
+  sortCountriesToPopulation(arr).forEach((data)=>{
+    countriesName.push(data.name)
+  })
+  return countriesName;
+}
 
-  new Chart(ctx, {
+// return sort countries data array by countries name
+function sortCountriesToCountriName(arr) {
+  return arr.sort((a, b) =>{
+    if(a.name < b.name) return -1;
+    if(a.name > b.name) return +1;
+    return 0;
+  });
+}
+
+// return sort capital name
+function sortCountriesToCapitalName(arr) {
+  return arr.sort((a, b) =>{
+    if(a.capital == undefined ) return -1
+    if(a.capital < b.capital) return -1;
+    if(a.capital > b.capital) return +1;
+    return 0;
+  });
+}
+
+// return sort populations
+function sortCountriesToPopulation (arr) {
+  return arr.sort((a, b) => {
+    if(a.population < b.population) return +1
+    if(a.population > b.population) return -1
+    return 0;
+  });
+}
+
+// Object for graphic 
+let myCharts =  new Chart(ctx, {
     type: 'bar',
     data: {
-      labels:names,
+      labels:sortArrayNames(countriesData).slice(0,8),
       datasets: [{
         label: '# of Votes',
-        data:population,
+        data:sortArrays(countriesPopulation).slice(0,8),
         borderWidth: 1
       }]
     },
@@ -195,41 +228,22 @@ function generateGraphic(names, population){
       }
     }
   });
-  console.log(ctx)
+
+// update graphic when pressing keyboard
+function  updateGrapgic(countriesNames, countriesPopulations) {
+  myCharts.data.labels = countriesNames;
+  myCharts.data.datasets[0].data = countriesPopulations;
+  myCharts.update()
 }
 
-function sortArrays(arr){
-  return arr.sort((a, b) => {return b-a})
-}
-function sortArrayNames (arr){
-  let countriesName = [];
-  
-  sortCountriesToPopulation(arr).forEach((data)=>{
-    countriesName.push(data.name)
+icon.addEventListener('click', ()=> {
+  graphic.classList.toggle('graphic-wrapper')
+})
+
+
+function calculateMostSpeakingLangues(array) {
+  // Tab to edit
+  array.forEach((data) =>{
+    mostSpekingLangue.set(data.languages,data.name)
   })
-  return countriesName;
-}
-
-// sort to capital name countries function 
-function sortCountriesToCapitalName(arr) {
-  return arr.sort((a, b) =>{
-    if(a.capital == undefined ) return -1
-    if(a.capital < b.capital) return -1;
-    if(a.capital > b.capital) return +1;
-    return 0;
-  });
-}
-function sortCountriesToCountriName(arr) {
-  return arr.sort((a, b) =>{
-    if(a.name < b.name) return -1;
-    if(a.name > b.name) return +1;
-    return 0;
-  });
-}
-function sortCountriesToPopulation (arr) {
-  return arr.sort((a, b) => {
-    if(a.population < b.population) return +1
-    if(a.population > b.population) return -1
-    return 0;
-  });
 }
