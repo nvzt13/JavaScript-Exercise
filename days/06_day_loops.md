@@ -204,6 +204,40 @@ for(let i=1; i<=100; i+=2){
 ```
 
  9. Use for loop to iterate from 0 to 100 and print only prime numbers
+ ```js
+ //app.js
+ 
+ // Function to check if a number is prime
+function isPrime(num) {
+  // 1 and numbers <= 1 are not prime
+  if (num <= 1) {
+    return false;
+  }
+  // 2 and 3 are prime
+  if (num <= 3) {
+    return true;
+  }
+  // Exclude even numbers and multiples of 3
+  if (num % 2 === 0 || num % 3 === 0) {
+    return false;
+  }
+  // Check divisibility from 5 upwards
+  for (let i = 5; i * i <= num; i += 6) {
+    if (num % i === 0 || num % (i + 2) === 0) {
+      return false;
+    }
+  }
+  return true;
+}
+
+// Loop from 0 to 100 and print prime numbers
+for (let i = 0; i <= 100; i++) {
+  if (isPrime(i)) {
+    console.log(i);
+  }
+}
+
+ ```
  10. Use for loop to iterate from 0 to 100 and print the sum of all numbers.
 ```
 The sum of all numbers from 0 to 100 is 5050.

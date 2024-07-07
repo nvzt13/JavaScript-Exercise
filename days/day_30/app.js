@@ -242,8 +242,10 @@ icon.addEventListener('click', ()=> {
 
 
 function calculateMostSpeakingLangues(array) {
-  // Tab to edit
+
   array.forEach((data) =>{
     mostSpekingLangue.set(data.languages,data.name)
   })
 }
+
+

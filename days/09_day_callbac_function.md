@@ -32,10 +32,10 @@ const products = [
 1. Explain the difference between forEach, map, filter, and reduce.
 
 ```
-foreach dizideki her bir eleman için bir fonksiyon çalıştırir.Dizideki elemani degistirebilir ama yeni bir dizi olisturamaz.
-map foreach ile aynidir farki map yeni bir dizi döndürür.
-reduce, bir dizideki her öğe için belirtilen bir fonksiyonu çalıştırır ve bu fonksiyonun sonuçlarını biriktirerek tek bir değer döndürür. Bu fonksiyon, dizinin her öğesini değiştiremez, ancak bir önceki fonksiyon çağrısının sonucunu alarak bir sonraki fonksiyon çağrısına aktarır. 
-filrer JavaScript’te filter metodu, bir dizideki elemanları belirli bir koşula göre filtrelemek için kullanılan bir dizidir. Filter metodu, orijinal diziyi değiştirmez, ancak koşulu sağlayan elemanlardan oluşan yeni bir dizi döndürür
+foreach runs a function for each element in the array. It can change the element in the array, but it cannot create a new array.
+map is the same as foreach, except map returns a new array.
+reduce runs a specified function for each element in an array and accumulates the results of that function, returning a single value. This function cannot modify every element of the array, but takes the result of the previous function call and passes it to the next function call.
+filterer In JavaScript, the filter method is an array used to filter elements in an array based on a certain condition. The filter method does not modify the original array, but returns a new array consisting of elements that satisfy the condition
 ```
 
  2. Define a callback function before you use it in forEach, map, filter or reduce.

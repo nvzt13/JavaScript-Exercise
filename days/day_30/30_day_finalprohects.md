@@ -9,4 +9,4 @@
 1. Create the following using HTML, CSS, and JavaScript
   
 
-  <img src="Ekran görüntüsü_2024-06-13_19-33-46.png">
+  <img src="Ekran görüntüsü_2024-07-07_09-28-08.png">
